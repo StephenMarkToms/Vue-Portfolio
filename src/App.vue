@@ -5,18 +5,10 @@
       <router-link to="/about">About</router-link>
     </div>
     
-      <transition 
-        v-on:enter="enter" 
-        v-on:leave="leave"
-        v-bind:css="false"
-        appear
-      >
-        <template id="page">
+
           
           <router-view/>
       
-        </template>
-      </transition>
   
   </div>
 </template>
