@@ -50,6 +50,7 @@
 
 <script>
 
+
 export default {
   name: "app",
   template: '#page',
@@ -78,4 +79,7 @@ export default {
 
 		} }
 };
+
+
+
 </script>

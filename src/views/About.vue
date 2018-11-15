@@ -33,13 +33,13 @@ export default {
 
 
 			tl.set(el, {
-				y: window.innerWidth * 1.5,
+				x: window.innerWidth * 1.5,
 				scale: 0.8,
 				transformOrigin: '50% 50%' });
 
 
 			tl.to(el, 0.5, {
-				y: 0,
+				x: 0,
 				ease: Power4.easeOut });
 
 
@@ -49,8 +49,10 @@ export default {
 
 		},
 		leave: function leave(el, done) {
-			TweenMax.to(el, 1, {
-				y: window.innerHeight * -1.5,
+			TweenMax.fromTo(el, 1, {
+				autoAlpha: 1 },
+			{
+				autoAlpha: 0,
 				ease: Power4.easeOut,
 				onComplete: done });
       } 
