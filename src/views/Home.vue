@@ -16,11 +16,16 @@
             <div class="container">
               <div class="row mt-5">
 
-                <div class="col-8 ml-2 mt-5">
+                <div class="col-7 ml-2 mt-5">
 
+                  <h1 class="text-white text-left" style="color: rgb(86, 86, 86) !important;">
+                    <b>
+                      The world doesn't just need another photographer videographer developer
+                    </b>
+                  </h1>
                   <h1 class="text-white text-left">
                     <b>
-                      The world doesn't need another photographer, programmer, developer.
+                      It needs an innovative thinker to bring a vision to life
                     </b>
                   </h1>
 
@@ -39,7 +44,6 @@
 
 <script>
 
-//alert(this.$App.state);
 
 export default {
   name: "home",
