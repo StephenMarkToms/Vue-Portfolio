@@ -19,6 +19,9 @@ import 'bootstrap/scss/bootstrap.scss'
 //import GreenSock
 import 'gsap/TweenMax'
 
+//fonts
+import './scss/fonts.scss'
+
 //global styles
 import './scss/main.scss'
 
