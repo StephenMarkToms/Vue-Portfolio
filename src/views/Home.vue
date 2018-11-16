@@ -10,16 +10,26 @@
         v-bind:css="false"
         appear
       >
-        <template id="page" v-bind:class="state.view">
-
+        <template id="page">
           <div class="home page">
-            <img alt="Vue logo" src="../assets/logo.png">
-            <h2>Home Page</h2>
-             <p>Click Below for different animation exit</p>
-            <br>
-            <router-link v-on:click.native="setNewAnimation" :to="{ name: 'about', params: {enterAnimation: 'Enter Animation 2' } }">About Animation 2</router-link>
-          </div>
+            
+            <div class="container">
+              <div class="row mt-5">
 
+                <div class="col-8 ml-2 mt-5">
+
+                  <h1 class="text-white text-left">
+                    <b>
+                      The world doesn't need another photographer, programmer, developer.
+                    </b>
+                  </h1>
+
+                </div>
+              </div>
+            </div>
+
+
+          </div>
         </template>
       
   </transition>
