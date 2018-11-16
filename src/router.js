@@ -6,6 +6,7 @@ import About from "./views/About.vue";
 Vue.use(Router);
 
 export default new Router({
+  mode: 'history',
   routes: [
     {
       path: "/",
@@ -20,6 +21,9 @@ export default new Router({
             {call: 'transition', modifier: 'temp', argument: {speed: '1.5s', opacity: '0.6s', termination: 400}}
           ]
         }
+      },
+      props:{
+        animation: 'home-animation'
       }
     },
     {

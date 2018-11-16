@@ -25,9 +25,23 @@
 <script>
 
 export default {
-  name: "home",
+	name: "about",
+	data() {
+    return {
+      enterAnimation: 'enter'
+    }
+	},
+	created() {
+			this.enterAnimation = this.$route.params.enterAnimation;
+	},
   methods: {
 		enter: function enter(el, done) {
+
+
+
+			console.log('entering animation!!! ' + this.enterAnimation);
+
+
 			var tl = new TimelineMax({
 				onComplete: done });
 

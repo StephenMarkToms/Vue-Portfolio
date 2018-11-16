@@ -19,6 +19,9 @@ import 'bootstrap/scss/bootstrap.scss'
 //import GreenSock
 import 'gsap/TweenMax'
 
+//global styles
+import './scss/main.scss'
+
 // jquery
 global.$ = $;
 
