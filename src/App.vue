@@ -1,9 +1,5 @@
 <template>
   <div id="app">
-    <!-- <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div> -->
 
       <div class="container">
 
@@ -11,13 +7,13 @@
           <router-link class="navbar-brand" to="/">smt.</router-link>
               <ul class="navbar-nav ml-auto">
                 <li class="nav-item active">
-                  <a class="nav-link" href="#">works</a>
+                  <a class="nav-link mx-2" href="#">works</a>
                 </li>
                 <li class="nav-item">
-                  <router-link class="nav-link" to="/about">about</router-link>
+                  <router-link class="nav-link mx-2" to="/about">about</router-link>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">contact</a>
+                  <a class="nav-link mx-2" href="#">contact</a>
                 </li>
               </ul>
           </nav>
