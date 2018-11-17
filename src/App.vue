@@ -6,19 +6,18 @@
         <nav class="navbar navbar-expand-lg navbar-dark">
           <router-link class="navbar-brand" to="/">smt.</router-link>
               <ul class="navbar-nav ml-auto">
-                <li class="nav-item active">
-                  <a class="nav-link mx-2" href="#">works</a>
+                <li class="nav-item">
+                  <a class="nav-link mx-2 css-hover" href="#">works</a>
                 </li>
                 <li class="nav-item">
-                  <router-link class="nav-link mx-2" to="/about">about</router-link>
+                  <router-link class="nav-link mx-2 css-hover" to="/about">about</router-link>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link mx-2" href="#">contact</a>
+                  <a class="nav-link mx-2 css-hover" href="#">contact</a>
                 </li>
               </ul>
           </nav>
 
-          
 
           <!-- page -->
           <router-view/>
@@ -55,9 +54,17 @@
 
 
 <script>
+      
+
+
+
+
+
 
 
 export default {
+  
+
   mounted () {
     //  [App.vue specific] When App.vue is finish loading finish the progress bar
     this.$Progress.finish()
@@ -83,11 +90,14 @@ export default {
       //  finish the progress bar
       this.$Progress.finish()
     })
+    
   },
   name: "app",
   template: '#page',
 	methods: {
 		enter: function enter(el, done) {
+      
+
 			TweenMax.fromTo(el, 1, {
 				autoAlpha: 0,
 				scale: 1.5 },

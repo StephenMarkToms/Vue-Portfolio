@@ -19,11 +19,14 @@ import 'bootstrap/scss/bootstrap.scss'
 //import GreenSock
 import 'gsap/TweenMax'
 
+import './assets/vendor/SplitText.min.js'
+
 //fonts
 import './scss/fonts.scss'
 
 //global styles
 import './scss/main.scss'
+
 
 // jquery
 global.$ = $;

@@ -52,3 +52,19 @@ body{
     -webkit-transform: scaleX(1);
     transform: scaleX(1);
   }
+
+
+  
+
+
+  .callout{
+    white-space: nowrap;
+    // overflow-y: hidden;
+
+  }
+  .callout h1{
+    margin: 0;
+    padding: 0;
+    display: inline;
+    // font-size: 200%;
+  }
