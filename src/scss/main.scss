@@ -59,8 +59,8 @@ body{
 
   .callout{
     white-space: nowrap;
-    // overflow-y: hidden;
-
+    overflow-y: hidden;
+    width: 110vw;
   }
   .callout h1{
     margin: 0;
@@ -68,3 +68,12 @@ body{
     display: inline;
     // font-size: 200%;
   }
+
+  @media (max-width: 575.98px) {
+    .callout h1{
+
+        //font-size: 1.2em;
+
+    }
+  }
+ 
