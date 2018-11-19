@@ -4,7 +4,7 @@
       <div class="container">
 
         <nav class="navbar navbar-expand-lg navbar-dark">
-          <router-link class="navbar-brand" to="/">smt.</router-link>
+          <router-link class="navbar-brand" to="/">smt<span style="color: #00c0ff;">.</span></router-link>
               <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
                   <a class="nav-link mx-2 css-hover" href="#">works</a>
@@ -69,6 +69,12 @@ export default {
   mounted () {
     //  [App.vue specific] When App.vue is finish loading finish the progress bar
     this.$Progress.finish()
+
+
+    TweenMax.from($('.navbar-brand'), .5, {delay: 3, x: "-=100", alpha: 0});
+
+    TweenMax.from($('.navbar-nav'), .5, {delay: 3, x: "+=100", alpha: 0});
+
   },
   created () {
     //  [App.vue specific] When App.vue is first loaded start the progress bar
@@ -90,7 +96,9 @@ export default {
     this.$router.afterEach((to, from) => {
       //  finish the progress bar
       this.$Progress.finish()
+      
     })
+
     
   },
   name: "app",

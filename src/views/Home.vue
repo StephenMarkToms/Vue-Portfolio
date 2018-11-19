@@ -37,14 +37,17 @@
                 </h1>
 
                 <h1 id="line-3" class="text-white text-left" style="color: rgb(86, 86, 86) !important;">
-                    <span class="text-white">It needs a visionary</span>
+                    <span class="text-white">It needs a </span> <span id="ending">visionary</span>
                 </h1>             
             </div>
+
+            
 
             <div id="home-content" class="container">
               
               <div class="row mt-5">
                 <div class="col-12 ml-2 mt-5">
+                  
                   
 
                 </div>
@@ -218,6 +221,23 @@ export default {
 
           tl.staggerFrom(chars, 1.5, {delay: 3.5, opacity:0, scale:0, y:80, rotationX:180, transformOrigin:"0% 50% -50",  ease:Back.easeOut}, 0.01, "+=0");
 
+
+          TweenMax.set(
+              $('#ending'),
+                {
+                  delay: 3,
+                  css:{color:"white"}
+                }
+              );
+
+          TweenMax.to(
+              $('#ending'), 2.75,
+                {
+                  delay: 4,
+                  css:{color:"#00c0ff"},
+                  ease: Power4.easeInOut
+                }
+              );
 
           
         }
