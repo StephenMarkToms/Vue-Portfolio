@@ -54,37 +54,10 @@ body{
   }
 
 
-  
 
+   
 
-//   .callout{
-//     white-space: nowrap;
-//     //overflow-y: none;
-//     width: 110vw;
-//   }
-//   .callout h1{
-//     margin: 0;
-//     padding: 0;
-//     display: inline;
-//     // font-size: 200%;
-//   }
-
-    button{
-
-        background-color: red;
-
-    }
-
-
-    .callout-row{
-
-        position: absolute;
-        //left: 7vw;
-        width: 70%;
-
-
-    }
-
+    
     .callout h1{
 
         overflow: hidden;
@@ -101,12 +74,43 @@ body{
 
     }
 
+    #line-3{
+
+        position: absolute;
+        left: 9.5%;
+        font-size: 4em;
+
+    }
+
+    #home-content{
+
+        top: 40%;
+
+    }
+
 
   @media (max-width: 575.98px) {
     .callout h1{
-
         font-size: 1.2em;
+    }
+    .callout{
+        padding-left: 0; 
+        margin-left: -5%;
+    }
+
+    #line-2{
+
+        margin-left: 6%;
 
     }
+
+    #line-3{
+
+        position: absolute;
+        left: 8%;
+        font-size: 2em;
+
+    }
+
   }
  
