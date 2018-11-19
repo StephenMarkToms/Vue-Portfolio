@@ -118,50 +118,54 @@ export default {
               $('#line-1'),
                 {
                   x: "-5%",
-                  scaleX: 2,
-                  scaleY: 2,
+                  scaleX: 4,
+                  scaleY: 4,
                   margin: "50 0 0 50",
+                  alpha: 0,
                 }
               );
 
           TweenMax.set(
               $('#line-2'),
                 {
-                  x: "-70%",
-                  scaleX: 2,
-                  scaleY: 2,
+                  x: "-20%",
+                  scaleX: 4,
+                  scaleY: 4,
                   margin: "50 0 0 50",
+                  alpha: 0,
                 }
               );
     
           //end
           TweenMax.to(
               $('#line-1'),
-              2.5,
+              3,
                 {
                   x: "-75%",
                   scaleX: 1,
                   scaleY: 1,
                   ease: Power2.easeOut,
                   margin: "0 0 0 50",
+                  alpha: 1,
                 }
               );
 
           TweenMax.to(
               $('#line-2'),
-              2.5,
+              3.5,
                 {
                   x: "-11.2%",
                   scaleX: 1,
                   scaleY: 1,
                   ease: Power2.easeOut,
                   margin: "0 0 0 50",
+                  alpha: 1,
                 }
               );
 
           TweenMax.to(
-              $('.remove-text'),
-              .75,
+              $('#line-1 .remove-text'),
+              1,
                 {
                   delay: 2,
                   alpha: 0,
@@ -170,18 +174,37 @@ export default {
               );
 
           TweenMax.to(
-              $('.keep-text'), .5,
+              $('#line-1 .keep-text'), 1,
                 {
-                  delay: 1.5,
+                  delay: 2,
                   css:{color:"white"},
                   ease: Power4.easeInOut
                 }
               );
-          
-          TweenMax.to(
-              $('.keep-text'), 3,
+
+           TweenMax.to(
+              $('#line-2 .keep-text'), 1,
                 {
-                  delay: 3,
+                  delay: 2.5,
+                  css:{color:"white"},
+                  ease: Power4.easeInOut
+                }
+              );
+            
+            TweenMax.to(
+              $('#line-2 .remove-text'),
+              1,
+                {
+                  delay: 2.5,
+                  alpha: 0,
+                  ease: Power2.easeOut,
+                }
+              );
+           
+          TweenMax.to(
+              $('.keep-text'), 2.75,
+                {
+                  delay: 3.5,
                   css:{color:"rgb(86, 86, 86)"},
                   ease: Power4.easeInOut
                 }
@@ -193,7 +216,7 @@ export default {
 
           TweenLite.set("#line-3", {perspective:400});
 
-          tl.staggerFrom(chars, 1.5, {delay: 3, opacity:0, scale:0, y:80, rotationX:180, transformOrigin:"0% 50% -50",  ease:Back.easeOut}, 0.01, "+=0");
+          tl.staggerFrom(chars, 1.5, {delay: 3.5, opacity:0, scale:0, y:80, rotationX:180, transformOrigin:"0% 50% -50",  ease:Back.easeOut}, 0.01, "+=0");
 
 
           
