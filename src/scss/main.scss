@@ -57,22 +57,55 @@ body{
   
 
 
-  .callout{
-    white-space: nowrap;
-    overflow-y: hidden;
-    width: 110vw;
-  }
-  .callout h1{
-    margin: 0;
-    padding: 0;
-    display: inline;
-    // font-size: 200%;
-  }
+//   .callout{
+//     white-space: nowrap;
+//     //overflow-y: none;
+//     width: 110vw;
+//   }
+//   .callout h1{
+//     margin: 0;
+//     padding: 0;
+//     display: inline;
+//     // font-size: 200%;
+//   }
+
+    button{
+
+        background-color: red;
+
+    }
+
+
+    .callout-row{
+
+        position: absolute;
+        //left: 7vw;
+        width: 70%;
+
+
+    }
+
+    .callout h1{
+
+        overflow: hidden;
+        display: inline-block;
+        white-space: nowrap;
+
+    }
+
+    .callout{
+
+        margin-top: 10%;
+        overflow-x: hidden;
+        padding-left: 5%;
+
+    }
+
 
   @media (max-width: 575.98px) {
     .callout h1{
 
-        //font-size: 1.2em;
+        font-size: 1.2em;
 
     }
   }
