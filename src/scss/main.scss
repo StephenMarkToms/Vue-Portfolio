@@ -114,5 +114,24 @@ body{
 
   }
 
-  
- 
+  .nav-link{
+
+    display: inline;
+
+  }
+
+  .navbar-nav{
+
+    display: inline;
+
+  }
+
+
+
+  .collapsing {
+      
+    -webkit-transition: all .01s ease-out;
+    -o-transition: all .01s ease-out;
+    transition: all .01s ease-out;
+
+  }

@@ -5,17 +5,17 @@
 
         <nav class="navbar navbar-expand-lg navbar-dark">
           <router-link class="navbar-brand" to="/">smt<span style="color: #00c0ff;">.</span></router-link>
-              <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                  <a class="nav-link mx-2 css-hover" href="#">works</a>
-                </li>
-                <li class="nav-item">
-                  <router-link class="nav-link mx-2 css-hover" to="/about">about</router-link>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link mx-2 css-hover" href="#">contact</a>
-                </li>
-              </ul>
+
+            
+
+              <div class="navbar-nav ml-auto">
+                  <a class="nav-item nav-link mx-2" href="#">works</a>
+                
+                  <router-link class="nav-item nav-link mx-2" to="/about">about</router-link>
+                
+                  <a class="nav-item nav-link mx-2" href="#">contact</a>
+              </div>
+
           </nav>
 
 
