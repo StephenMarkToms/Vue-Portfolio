@@ -8,13 +8,21 @@
 
             
 
-              <div class="navbar-nav ml-auto">
+              <div class="navbar-nav ml-auto d-none d-sm-block">
                   <a class="nav-item nav-link mx-2" href="#">works</a>
                 
                   <router-link class="nav-item nav-link mx-2" to="/about">about</router-link>
                 
                   <a class="nav-item nav-link mx-2" href="#">contact</a>
               </div>
+
+
+              <div class="navbar-nav ml-auto d-block d-sm-none">
+                <a class="nav-item nav-link" href="#">
+                  menu
+                </a>
+              </div>
+
 
           </nav>
 
@@ -71,9 +79,9 @@ export default {
     this.$Progress.finish()
 
 
-    TweenMax.from($('.navbar-brand'), .5, {delay: 3, x: "-=100", alpha: 0});
+    TweenMax.from($('.navbar-brand'), .75, {delay: 2.75, x: "-=100", alpha: 0, ease: Power4.easeOut});
 
-    TweenMax.from($('.navbar-nav'), .5, {delay: 3, x: "+=100", alpha: 0});
+    TweenMax.from($('.navbar-nav'), .75, {delay: 2.75, x: "+=100", alpha: 0, ease: Power4.easeOut});
 
   },
   created () {

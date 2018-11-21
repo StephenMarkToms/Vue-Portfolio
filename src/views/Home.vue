@@ -46,9 +46,11 @@
             <div id="home-content" class="container">
               
               <div class="row mt-5">
-                <div class="col-12 ml-2 mt-5">
+                <div class="col-12 mt-5">
                   
-                  
+                  <!-- <div class="tile-1">
+                    <img class="img-fluid" src="../assets/case-study-1.jpg" >
+                  </div>  -->
 
                 </div>
               </div>

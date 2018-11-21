@@ -22,7 +22,7 @@ body{
 
 .nav-link{
     position: relative;
-    color: #000;
+    color: #818181;
     text-decoration: none;
 }
   
@@ -89,9 +89,11 @@ body{
     }
 
 
+
   @media (max-width: 575.98px) {
     .callout h1{
-        font-size: 1.2em;
+        font-size: 1.1em;
+        
     }
     .callout{
         padding-left: 0; 
@@ -113,6 +115,28 @@ body{
     }
 
   }
+
+  @media (min-width: 768px){
+
+    .callout h1{
+
+        font-size: 2em;
+
+    }
+
+  }
+
+  @media (max-width: 320px){
+    .callout{
+        padding-left: 0;
+        margin-left: -10%;
+        font-size: .9em;
+    }
+  }
+
+
+
+  
 
   .nav-link{
 
