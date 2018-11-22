@@ -14,39 +14,25 @@
           <div class="home page">
             
 
-            <div class="callout">
-                <h1 id="line-1" class="text-left" style="color: rgb(86, 86, 86) !important;">
-                   <span class="remove-text">
-                     The world doesn't just need another photographer videographer developer The world doesn't just need another photographer videographer developer The world doesn't just need another photographer videographer developer 
-                   </span>
-                     <span class="keep-text">The world doesn't just need another</span>
-                     <span class="remove-text">
-                        photographer videographer developer
-                     </span>
-
-                </h1>
-
-                <h1 id="line-2" class="text-white text-left" style="color: rgb(86, 86, 86) !important;">
-                   <span class="remove-text">
-                     e world doesn't just need another 
-                   </span>
-                    <span class="keep-text">photographer videographer developer</span>
-                    <span class="remove-text">
-                     The world doesn't just need another photographer videographer developer The world doesn't just need another photographer videographer developer The world doesn't just need another photographer videographer developer 
-                    </span>
-                </h1>
-
-                <h1 id="line-3" class="text-white text-left" style="color: rgb(86, 86, 86) !important;">
-                    <span class="text-white">It needs a </span> <span id="ending">visionary</span>
-                </h1>             
-            </div>
             
 
-            <div id="home-content" class="container">
+            <div id="home-content mt-5" class="container">
               
-              <div class="row mt-5">
-                <div class="col-12 mt-5">
+              <div class="row mt-5 mx-auto">
+                <div class="col-12 col-lg-8 mt-5">
                   
+                  <h1 class="quote text-left text-white mb-0">
+                      The world doesn't just need an<span id="frag">oth</span>er photographer videographer developer 
+                  </h1>
+
+                  <h1 class="quote text-left" style="color: rgb(86, 86, 86) !important;">
+                      <span class="text-white">It needs a </span> <span id="ending">visionary</span>
+                  </h1>  
+
+                  <CaseStudy name="Studio Eleven" icon="case-study-1"></CaseStudy>
+
+                  
+
                   <!-- <div class="tile-1">
                     <img class="img-fluid" src="../assets/case-study-1.jpg" >
                   </div>  -->
@@ -70,9 +56,12 @@
 </template>
 
 <script>
-
+import CaseStudy from '../components/CaseStudy.vue';
 
 export default {
+  components: {
+      CaseStudy
+  },
   name: "home",
   data() {
     return {
@@ -112,133 +101,25 @@ export default {
       animateCallout();
 
 
-       
+       function pos(){
+
+         console.log("frag pos: " + $('#frag').x);
+
+       }
        
           
         function animateCallout(){
         
-          //initial set
-          TweenMax.set(
-              $('#line-1'),
-                {
-                  x: "-5%",
-                  scaleX: 4,
-                  scaleY: 4,
-                  margin: "50 0 0 50",
-                  alpha: 0,
-                }
-              );
+          pos();
 
-          TweenMax.set(
-              $('#line-2'),
-                {
-                  x: "-20%",
-                  scaleX: 4,
-                  scaleY: 4,
-                  margin: "50 0 0 50",
-                  alpha: 0,
-                }
-              );
-    
-          //end
-          TweenMax.to(
-              $('#line-1'),
-              3,
-                {
-                  x: "-75%",
-                  scaleX: 1,
-                  scaleY: 1,
-                  ease: Power2.easeOut,
-                  margin: "0 0 0 50",
-                  alpha: 1,
-                }
-              );
-
-          TweenMax.to(
-              $('#line-2'),
-              3.5,
-                {
-                  x: "-11.2%",
-                  scaleX: 1,
-                  scaleY: 1,
-                  ease: Power2.easeOut,
-                  margin: "0 0 0 50",
-                  alpha: 1,
-                }
-              );
-
-          TweenMax.to(
-              $('#line-1 .remove-text'),
-              1,
-                {
-                  delay: 2,
-                  alpha: 0,
-                  ease: Power2.easeOut,
-                }
-              );
-
-          TweenMax.to(
-              $('#line-1 .keep-text'), 1,
-                {
-                  delay: 2,
-                  css:{color:"white"},
-                  ease: Power4.easeInOut
-                }
-              );
-
-           TweenMax.to(
-              $('#line-2 .keep-text'), 1,
-                {
-                  delay: 2.5,
-                  css:{color:"white"},
-                  ease: Power4.easeInOut
-                }
-              );
-            
-            TweenMax.to(
-              $('#line-2 .remove-text'),
-              1,
-                {
-                  delay: 2.5,
-                  alpha: 0,
-                  ease: Power2.easeOut,
-                }
-              );
-           
-          TweenMax.to(
-              $('.keep-text'), 2.75,
-                {
-                  delay: 3.5,
-                  css:{color:"rgb(86, 86, 86)"},
-                  ease: Power4.easeInOut
-                }
-              );
-
-          var tl = new TimelineLite, 
-          mySplitText = new SplitText("#line-3", {type:"words,chars"}), 
-          chars = mySplitText.chars; //an array of all the divs that wrap each character
-
-          TweenLite.set("#line-3", {perspective:400});
-
-          tl.staggerFrom(chars, 1.5, {delay: 3.5, opacity:0, scale:0, y:80, rotationX:180, transformOrigin:"0% 50% -50",  ease:Back.easeOut}, 0.01, "+=0");
+          TweenMax.to('#frag', 3, {delay: 4, x: "+15", y: "-30", ease: Power4.easeIn, onComplete: pos() } );
+          
+          var mySplitText = new SplitText(".quote", {type:"lines"}),
+          t2 = new TimelineLite();
 
 
-          TweenMax.set(
-              $('#ending'),
-                {
-                  delay: 3,
-                  css:{color:"white"}
-                }
-              );
+          t2.staggerFrom(mySplitText.lines, 0.75, {delay: 2, opacity:0, cycle:{x:[100, -100], ease:Power4.easeOut}}, 0.2)
 
-          TweenMax.to(
-              $('#ending'), 2.75,
-                {
-                  delay: 4,
-                  css:{color:"#00c0ff"},
-                  ease: Power4.easeInOut
-                }
-              );
 
           
         }
