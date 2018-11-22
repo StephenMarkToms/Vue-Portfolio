@@ -40,7 +40,6 @@
                     <span class="text-white">It needs a </span> <span id="ending">visionary</span>
                 </h1>             
             </div>
-
             
 
             <div id="home-content" class="container">
