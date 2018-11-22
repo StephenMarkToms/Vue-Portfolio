@@ -2,19 +2,15 @@
 
       
 
-      <div class="case-study" v-bind:style="{ backgroundImage: 'url(' + this.bg + ')' }">
+      <div class="case-study" :style="{'background-image': 'url(' + require('../assets/' + thumbnail + '.jpg') + ')'}">
 
-        <h1>{{ name }}</h1>
-        <h1>{{ name }}</h1>
-        <h1>{{ name }}</h1>
-        <h1>{{ name }}</h1>
-        <h1>{{ name }}</h1>
-        <div class="img-banner" :style="{'background-image': 'url(' + require('../assets/' + icon + '.jpg') + ')'}">
-
-          adsfasdfsad
+     
+                
+                  <h2 class="my-auto mx-auto">{{ name }}</h2>
+                
+             
+            
         
-        </div>
-
       </div>
 
 </template>
@@ -25,16 +21,28 @@ export default {
   bgSrc: "./assets/imgs/case-study-1.jpg",
   props: {
     name: String,
-    bg: String,
-    icon: String
+    thumbnail: String
   }
 };
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
+<style lang="scss" scoped>
 
+  .case-study{
 
+    min-height: 300px;
+    display: flex;
+    background-size: 105%;
+    background-position: center;
+
+  }
+
+  h2{
+
+    font-size: 3em;
+
+  }
 
 
 </style>

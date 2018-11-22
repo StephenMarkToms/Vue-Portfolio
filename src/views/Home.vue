@@ -22,14 +22,14 @@
                 <div class="col-12 col-lg-8 mt-5">
                   
                   <h1 class="quote text-left text-white mb-0">
-                      The world doesn't just need an<span id="frag">oth</span>er photographer videographer developer 
+                      The world doesn't just need another photographer videographer developer 
                   </h1>
 
                   <h1 class="quote text-left" style="color: rgb(86, 86, 86) !important;">
                       <span class="text-white">It needs a </span> <span id="ending">visionary</span>
                   </h1>  
 
-                  <CaseStudy name="Studio Eleven" icon="case-study-1"></CaseStudy>
+                  <CaseStudy name="Studio Eleven" thumbnail="studio-eleven"></CaseStudy>
 
                   
 
