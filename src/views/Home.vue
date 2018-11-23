@@ -16,13 +16,13 @@
 
             
 
-            <div id="home-content mt-2" class="container">
+            <div id="home-content" class="page-container">
               
               <div class="row mt-2 mb-4 mx-auto">
                 <div class="col-12 px-0 px-md-auto col-lg-7 mt-5">
                   
                   <h1 class="quote text-left text-white mb-0 ">
-                      A multidisciplinary Web Developer based in York, PA. Designing brand identities and visual experiences to help organizations innovate their business.
+                      A multidisciplinary Digital Designer based in York, PA. Creating brand identities, websites and visual experiences to help organizations innovate their business.
                   </h1>
 
                 </div>
@@ -40,11 +40,11 @@
                         disc="How we created a new brand image and website refresh for an upcoming hair salon"
                     ></CaseStudy>
 
-                    <CaseStudy 
-                        name="Studio Eleven" 
-                        thumbnail="studio-eleven" 
-                        title="Studio Eleven Hair Salon"
-                        disc="How we created a new brand image and website refresh for an upcoming hair salon"
+                    <CaseStudy class="my-auto"
+                        name="Callie Tomblin" 
+                        thumbnail="callie-tomblin" 
+                        title="Musician Website"
+                        disc="Creating a brand identity for a musician"
                     ></CaseStudy>
 
                   </div>
