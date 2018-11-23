@@ -1,9 +1,7 @@
 <template>
 
     
-
-
-        <div class="col-md-5 col-12 mx-0 mt-2 text-left">
+      <div>
 
           <div class="wash" v-bind:style="{ backgroundColor: color}">
             <img class="img-fluid" v-bind:src="require('../assets/' + thumbnail + '.jpg')" />
@@ -12,9 +10,8 @@
           <h4 class="header text-white mt-3">{{ title }}</h4>
           <p class="header mt-1 pr-4">{{ disc }}</p>
 
-          
-
-        </div>
+      </div>
+      
 
 
 </template>

@@ -12,17 +12,28 @@
       >
         <template id="page">
           <div class="home page">
-            
+
+        
+            <Navigation></Navigation>
 
             
 
             <div id="home-content" class="page-container">
               
               <div class="row mt-2 mt-md-5 mb-4 mx-auto">
-                <div class="col-12 px-0 px-md-auto col-lg-5 mt-5">
+                <div class="col-12 px-0 px-md-auto col-lg-9 mt-5">
                   
-                  <h1 class="quote text-left text-white mb-0 mt-lg-5">
-                      A multidisciplinary Digital Designer based in York, PA. Creating brand identities, websites and visual experiences to help organizations innovate their business.
+                  <h1 class="quote text-left text-white mb-0">
+                    <span style="margin-bottom: 1em; font-size: 2.5em; font-weight: 600; font-family: sailec;">Stephen Mark Toms</span>
+                  </h1>
+                  <h1 class="quote text-left text-white mb-0 mt-lg-3">
+                      A multidisciplinary Digital Designer
+                      <br>
+                      based in York, PA. Creating brand
+                      <br>
+                      identities, websites and visual experiences  
+                      <br>
+                      to help organizations innovate their business.
                   </h1>
 
                 </div>
@@ -33,25 +44,86 @@
 
                   <div class="row mt-md-6 justify-content-between">
 
-                    <CaseStudy class="my-5"
-                        name="Studio Eleven" 
-                        thumbnail="studio-eleven" 
-                        title="Studio Eleven Hair Salon"
-                        disc="Creating a brand identity and website refresh for an upcoming hair salon"
-                        color="red"
-                    ></CaseStudy>
+                    <div class="col-md-5 col-12 mx-0 mt-2 text-left">
 
-                    <CaseStudy class="mt-6 my-md-auto"
-                        name="Callie Tomblin" 
-                        thumbnail="callie-tomblin" 
-                        title="Callie Tomblin"
-                        disc="Establishing a brand identity for a musician"
-                    ></CaseStudy>
+                      <CaseStudy class="my-5"
+                          name="Studio Eleven" 
+                          thumbnail="studio-eleven-2" 
+                          title="Studio Eleven Hair Salon"
+                          disc="Creating a brand identity and website refresh for an upcoming hair salon"
+                          color="red"
+                      ></CaseStudy>
+                    </div>
+
+                    <div class="col-md-6 col-12 mx-0 mt-2 text-left my-md-auto">
+                      <CaseStudy class="mt-6 my-md-auto"
+                          name="Callie Tomblin" 
+                          thumbnail="callie-tomblin" 
+                          title="Callie Tomblin"
+                          disc="Establishing a brand identity for a musician"
+                          color="#666324"
+                      ></CaseStudy>
+                    </div>
 
                   </div>
 
                 </div>
               </div>
+
+              <div class="row mx-0 mt-md-5">
+                <div class="col-12 px-0 mt-5 mx-0">
+
+                  <div class="row mt-md-10 justify-content-end">
+
+                     <div class="col-md-10 col-12 mx-0 mt-2 text-left">
+                        <CaseStudy class="my-5"
+                            name="Studio Eleven" 
+                            thumbnail="jake" 
+                            title="Studio Eleven Hair Salon"
+                            disc="Creating a brand identity and website refresh for an upcoming hair salon"
+                            color="blue"
+                        ></CaseStudy>
+                     </div>
+
+
+                  </div>
+
+                </div>
+              </div>
+
+
+              <div class="row mx-0 mt-md-5">
+                <div class="col-12 px-0 mt-5 mx-0">
+
+                  <div class="row mt-md-10 justify-content-between">
+
+                     <div class="col-md-5 my-auto col-12 mx-0 mt-2 text-left">
+                        <CaseStudy class="my-5"
+                            name="Studio Eleven" 
+                            thumbnail="jve" 
+                            title="Studio Eleven Hair Salon"
+                            disc="Creating a brand identity and website refresh for an upcoming hair salon"
+                            color="blue"
+                        ></CaseStudy>
+                     </div>
+
+                     <div class="col-md-6 col-12 mx-0 mt-2 text-left">
+                        <CaseStudy class="my-5"
+                            name="Studio Eleven" 
+                            thumbnail="emc" 
+                            title="Studio Eleven Hair Salon"
+                            disc="Creating a brand identity and website refresh for an upcoming hair salon"
+                            color="orange"
+                        ></CaseStudy>
+                     </div>
+
+
+                  </div>
+
+                </div>
+              </div>
+
+
 
             </div>
 
@@ -70,9 +142,11 @@
 
 <script>
 import CaseStudy from '../components/CaseStudy.vue';
+import Navigation from '../components/Navigation.vue';
 
 export default {
   components: {
+      Navigation,
       CaseStudy
   },
   name: "home",

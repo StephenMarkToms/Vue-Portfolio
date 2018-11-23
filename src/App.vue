@@ -3,30 +3,6 @@
 
       <div class="container">
 
-        <nav class="navbar navbar-expand-lg navbar-dark">
-          <router-link class="navbar-brand" to="/">smt<span style="color: #00c0ff;">.</span></router-link>
-
-            
-
-              <div class="navbar-nav ml-auto d-none d-sm-block">
-                  <a class="nav-item nav-link mx-2" href="#">works</a>
-                
-                  <router-link class="nav-item nav-link mx-2" to="/about">about</router-link>
-                
-                  <a class="nav-item nav-link mx-2" href="#">contact</a>
-              </div>
-
-
-              <div class="navbar-nav ml-auto d-block d-sm-none">
-                <a class="nav-item nav-link" href="#">
-                  menu
-                </a>
-              </div>
-
-
-          </nav>
-
-
           <!-- page -->
           <router-view/>
 
@@ -53,7 +29,6 @@
 .page {
   position: absolute;
   left: 0;
-  top: 100px;
   width: 100vw;
   height: 100vh;
   overflow-x: hidden;
