@@ -20,12 +20,32 @@
 
             <div id="home-content" class="page-container">
               
-              <div class="row mt-2 mt-md-5 mb-4 mx-auto">
-                <div class="col-12 px-0 px-md-auto col-lg-9 mt-5">
+              <div class="row mt-2 mt-md-0 mb-2 mx-auto justify-content-between">
+
+                <div class="col-12 px-0 px-md-0 col-lg-4 mt-5">
                   
-                  <h1 class="quote text-left text-white mb-0">
-                    <span style="margin-bottom: 1em; font-size: 2.5em; font-weight: 600; font-family: sailec;">Stephen Mark Toms</span>
+                  <h1 class="hero text-left mb-0">
+                    <span style="margin-bottom: 1em; font-size: 4.5em; font-weight: 600; font-family: sailec;">
+                      Stephen
+                    </span>
                   </h1>
+                  <h1 class="hero text-left mb-0">
+                    <span style="margin-bottom: 1em; font-size: 4.5em; font-weight: 600; font-family: sailec;">
+                      Mark
+                    </span>
+                  </h1>
+                  <h1 class="hero text-left mb-0">
+                    <span style="margin-bottom: 1em; font-size: 4.5em; font-weight: 600; font-family: sailec;">
+                      Toms
+                    </span>
+                  </h1>
+
+                </div>
+
+                <div class="col-12 px-0 col-lg-auto mt-5 mt-md-auto mb-4">
+                  
+                  
+
                   <h1 class="quote text-left text-white mb-0 mt-lg-3">
                       A multidisciplinary Digital Designer
                       <br>
@@ -42,13 +62,13 @@
               <div class="row mx-0 mt-md-5">
                 <div class="col-12 px-0 mt-5 mx-0">
 
-                  <div class="row mt-md-6 justify-content-between">
+                  <div class="row justify-content-between">
 
-                    <div class="col-md-5 col-12 mx-0 mt-2 text-left">
+                    <div class="col-md-5 col-12 mx-0 text-left">
 
                       <CaseStudy class="my-5"
                           name="Studio Eleven" 
-                          thumbnail="studio-eleven-2" 
+                          thumbnail="studio-eleven" 
                           title="Studio Eleven Hair Salon"
                           disc="Creating a brand identity and website refresh for an upcoming hair salon"
                           color="red"
@@ -194,7 +214,7 @@ export default {
         
           TweenMax.from('body', 2, {delay: .5, backgroundColor:"#ffffff", ease: Power3.easeOut});
 
-          TweenMax.to('#frag', 3, {delay: 4, x: "+15", y: "-30", ease: Power4.easeIn} );
+          TweenMax.from('.hero', 1, {delay: .5, color: '#00000', ease: Power4.easeIn} );
           
           var mySplitText = new SplitText(".quote", {type:"lines"}),
           t2 = new TimelineLite();
