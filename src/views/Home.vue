@@ -18,33 +18,34 @@
 
             <div id="home-content" class="page-container">
               
-              <div class="row mt-2 mb-4 mx-auto">
-                <div class="col-12 px-0 px-md-auto col-lg-7 mt-5">
+              <div class="row mt-2 mt-md-5 mb-4 mx-auto">
+                <div class="col-12 px-0 px-md-auto col-lg-5 mt-5">
                   
-                  <h1 class="quote text-left text-white mb-0 ">
+                  <h1 class="quote text-left text-white mb-0 mt-lg-5">
                       A multidisciplinary Digital Designer based in York, PA. Creating brand identities, websites and visual experiences to help organizations innovate their business.
                   </h1>
 
                 </div>
               </div>
 
-              <div class="row mx-0">
+              <div class="row mx-0 mt-md-5">
                 <div class="col-12 px-0 mt-5 mx-0">
 
-                  <div class="row justify-content-between">
+                  <div class="row mt-md-6 justify-content-between">
 
-                    <CaseStudy 
+                    <CaseStudy class="my-5"
                         name="Studio Eleven" 
                         thumbnail="studio-eleven" 
                         title="Studio Eleven Hair Salon"
-                        disc="How we created a new brand image and website refresh for an upcoming hair salon"
+                        disc="Creating a brand identity and website refresh for an upcoming hair salon"
+                        color="red"
                     ></CaseStudy>
 
-                    <CaseStudy class="my-auto"
+                    <CaseStudy class="mt-6 my-md-auto"
                         name="Callie Tomblin" 
                         thumbnail="callie-tomblin" 
-                        title="Musician Website"
-                        disc="Creating a brand identity for a musician"
+                        title="Callie Tomblin"
+                        disc="Establishing a brand identity for a musician"
                     ></CaseStudy>
 
                   </div>
