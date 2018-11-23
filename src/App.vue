@@ -45,7 +45,7 @@
 #app {
   text-align: center;
   color: #2c3e50;
-  background-color: #171717;
+  /* background-color: #171717; */
   overflow-x: hidden;
 }
 

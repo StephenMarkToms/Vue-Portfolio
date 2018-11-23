@@ -1,27 +1,28 @@
 <template>
 
-      
+    
 
-      <div class="case-study" :style="{'background-image': 'url(' + require('../assets/' + thumbnail + '.jpg') + ')'}">
 
-     
-                
-                  <h2 class="my-auto mx-auto">{{ name }}</h2>
-                
-             
-            
+        <div class="col-md-5 col-12 mx-0 mt-2 text-left">
+
+          
+          <img class="img-fluid" v-bind:src="require('../assets/' + thumbnail + '.jpg')" /> 
+          <h4 class="header text-white mt-3">{{ title }}</h4>
+          <p class="header text-white mt-1 pr-4">{{ disc }}</p>
         
-      </div>
+
+        </div>
+
 
 </template>
 
 <script>
 export default {
-  name: "CaseStudy",
-  bgSrc: "./assets/imgs/case-study-1.jpg",
   props: {
     name: String,
-    thumbnail: String
+    thumbnail: String,
+    title: String,
+    disc: String
   }
 };
 </script>
@@ -29,18 +30,23 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="scss" scoped>
 
-  .case-study{
-
-    min-height: 300px;
-    display: flex;
-    background-size: 105%;
-    background-position: center;
-
-  }
 
   h2{
 
     font-size: 3em;
+
+  }
+
+  .header{
+
+    font-size: 1em;
+
+  }
+
+  p{
+
+    font-family: sailec-thin;
+    font-size: .9em;
 
   }
 

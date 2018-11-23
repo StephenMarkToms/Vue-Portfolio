@@ -16,26 +16,38 @@
 
             
 
-            <div id="home-content mt-5" class="container">
+            <div id="home-content mt-2" class="container">
               
-              <div class="row mt-5 mx-auto">
-                <div class="col-12 col-lg-8 mt-5">
+              <div class="row mt-2 mb-4 mx-auto">
+                <div class="col-12 px-0 px-md-auto col-lg-7 mt-5">
                   
-                  <h1 class="quote text-left text-white mb-0">
-                      The world doesn't just need another photographer videographer developer 
+                  <h1 class="quote text-left text-white mb-0 ">
+                      A multidisciplinary Web Developer based in York, PA. Designing brand identities and visual experiences to help organizations innovate their business.
                   </h1>
 
-                  <h1 class="quote text-left" style="color: rgb(86, 86, 86) !important;">
-                      <span class="text-white">It needs a </span> <span id="ending">visionary</span>
-                  </h1>  
+                </div>
+              </div>
 
-                  <CaseStudy name="Studio Eleven" thumbnail="studio-eleven"></CaseStudy>
+              <div class="row mx-0">
+                <div class="col-12 px-0 mt-5 mx-0">
 
-                  
+                  <div class="row justify-content-between">
 
-                  <!-- <div class="tile-1">
-                    <img class="img-fluid" src="../assets/case-study-1.jpg" >
-                  </div>  -->
+                    <CaseStudy 
+                        name="Studio Eleven" 
+                        thumbnail="studio-eleven" 
+                        title="Studio Eleven Hair Salon"
+                        disc="How we created a new brand image and website refresh for an upcoming hair salon"
+                    ></CaseStudy>
+
+                    <CaseStudy 
+                        name="Studio Eleven" 
+                        thumbnail="studio-eleven" 
+                        title="Studio Eleven Hair Salon"
+                        disc="How we created a new brand image and website refresh for an upcoming hair salon"
+                    ></CaseStudy>
+
+                  </div>
 
                 </div>
               </div>
@@ -101,18 +113,13 @@ export default {
       animateCallout();
 
 
-       function pos(){
-
-         console.log("frag pos: " + $('#frag').x);
-
-       }
        
           
         function animateCallout(){
         
-          pos();
+          TweenMax.from('body', 2, {delay: .5, backgroundColor:"#ffffff", ease: Power3.easeOut});
 
-          TweenMax.to('#frag', 3, {delay: 4, x: "+15", y: "-30", ease: Power4.easeIn, onComplete: pos() } );
+          TweenMax.to('#frag', 3, {delay: 4, x: "+15", y: "-30", ease: Power4.easeIn} );
           
           var mySplitText = new SplitText(".quote", {type:"lines"}),
           t2 = new TimelineLite();
