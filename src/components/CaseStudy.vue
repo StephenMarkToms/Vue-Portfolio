@@ -10,8 +10,15 @@
           <h4 class="header text-white mt-3">{{ title }}</h4>
           <p class="header mt-1 pr-4">{{ disc }}</p>
 
-          <h1 id="disc-1" class="disc">{{ name }}</h1>
-          <h1 id="disc-2" class="disc">{{ name }}</h1>
+          <div class="disc2">
+            <p class="marquee">
+              <span>{{ disc }}</span>
+            </p>
+            <p class="marquee marquee2">
+              <span>{{ disc }}</span>
+            </p>
+          </div>
+          
 
       </div>
       
@@ -80,102 +87,45 @@ export default {
     color: white;
     position: absolute;
     top: 30%;
-    width: 200vw;
-    white-space: nowrap;
+    background-color: red;
 
-    &:hover{
-
-      animation-name: discAnime;
-      transition-timing-function: linear !important;
-      animation-iteration-count: 2;
-      animation-duration: 10s;
-
-    }
 
   }
 
-  #disc-1{
+  .disc2{
 
-     &:hover{
-
-      animation-name: discAnime;
-      transition-timing-function: linear !important;
-      animation-iteration-count: 2;
-      animation-duration: 10s;
-
-    }
+    position: absolute;
+    top: 50%;
 
   }
 
-  #disc-2{
 
-     &:hover{
+.marquee {
+  margin: 0 auto;
+  white-space: nowrap;
+  overflow: hidden;
+  position: absolute;
+}
 
-      animation-name: discAnime2;
-      transition-timing-function: linear !important;
-      animation-iteration-count: 2;
-      animation-duration: 10s;
+.marquee span {
+  display: inline-block;
+  padding-left: 80%;
+  animation: marquee 5s linear infinite;
+}
 
-    }
+.marquee2 span {
+  animation-delay: 2.5s;
+}
 
+@keyframes marquee {
+  0% {
+    transform: translate(0, 0);
   }
-
-  
-
-
-  $duration: 30s;
-
-  @-webkit-keyframes discAnime{
-    0% {
-      -webkit-transform: translate3d(0, 0, 0);
-      transform: translate3d(0, 0, 0);
-      visibility: visible;
-    }
-
-    100% {
-      -webkit-transform: translate3d(-120%, 0, 0);
-      transform: translate3d(-120%, 0, 0);
-    }
+  100% {
+    transform: translate(-100%, 0);
   }
+}
 
-  @keyframes discAnime{
-    0% {
-      -webkit-transform: translate3d(0, 0, 0);
-      transform: translate3d(0, 0, 0);
-      visibility: visible;
-    }
-
-    100% {
-      -webkit-transform: translate3d(-120%, 0, 0);
-      transform: translate3d(-120%, 0, 0);
-    }
-  }
-
-  @-webkit-keyframes discAnime2{
-    0% {
-      -webkit-transform: translate3d(120, 0, 0);
-      transform: translate3d(120, 0, 0);
-      visibility: visible;
-    }
-
-    100% {
-      -webkit-transform: translate3d(0%, 0, 0);
-      transform: translate3d(0%, 0, 0);
-    }
-  }
-
-  @keyframes discAnime2{
-    0% {
-      -webkit-transform: translate3d(120, 0, 0);
-      transform: translate3d(120, 0, 0);
-      visibility: visible;
-    }
-
-    100% {
-      -webkit-transform: translate3d(0%, 0, 0);
-      transform: translate3d(120%, 0, 0);
-    }
-  }
   
 
 

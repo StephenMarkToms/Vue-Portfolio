@@ -97,9 +97,9 @@
 
                      <div class="case-study px-0 col-md-10 col-12 mx-0 mt-2 text-left">
                         <CaseStudy class="my-5"
-                            name="Studio Eleven" 
+                            name="Jake Matthew Rivers" 
                             thumbnail="jake" 
-                            title="Studio Eleven Hair Salon"
+                            title="Jake Matthew Rivers"
                             disc="Creating a brand identity and website refresh for an upcoming hair salon"
                             color="blue"
                         ></CaseStudy>
@@ -119,9 +119,9 @@
 
                      <div class="case-study px-0 col-md-5 my-auto col-12 mx-0 mt-2 text-left">
                         <CaseStudy class="my-5"
-                            name="Studio Eleven" 
+                            name="Joppa View Elementary School" 
                             thumbnail="jve" 
-                            title="Studio Eleven Hair Salon"
+                            title="Joppa View Elementary School"
                             disc="Creating a brand identity and website refresh for an upcoming hair salon"
                             color="blue"
                         ></CaseStudy>
@@ -129,7 +129,7 @@
 
                      <div class="case-study px-0 col-md-6 col-12 mx-0 mt-2 text-left">
                         <CaseStudy class="my-5"
-                            name="Studio Eleven" 
+                            name="EMC Performing Arts" 
                             thumbnail="emc" 
                             title="Studio Eleven Hair Salon"
                             disc="Creating a brand identity and website refresh for an upcoming hair salon"
