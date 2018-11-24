@@ -42,7 +42,7 @@
 
                 </div>
 
-                <div class="col-12 px-0 col-lg-auto mt-5 mt-md-auto mb-4">
+                <div class="col-12 px-0 col-md-6 col-xl-auto mt-5 mt-md-auto mb-4">
                   
                   
 
@@ -64,7 +64,7 @@
 
                   <div class="row justify-content-between">
 
-                    <div class="col-md-5 col-12 mx-0 text-left">
+                    <div class="case-study px-0 col-md-5 col-12 mx-0 text-left">
 
                       <CaseStudy class="my-5"
                           name="Studio Eleven" 
@@ -75,7 +75,7 @@
                       ></CaseStudy>
                     </div>
 
-                    <div class="col-md-6 col-12 mx-0 mt-2 text-left my-md-auto">
+                    <div class="case-study px-0 col-md-6 col-12 mx-0 mt-2 text-left my-md-auto">
                       <CaseStudy class="mt-6 my-md-auto"
                           name="Callie Tomblin" 
                           thumbnail="callie-tomblin" 
@@ -95,7 +95,7 @@
 
                   <div class="row mt-md-10 justify-content-end">
 
-                     <div class="col-md-10 col-12 mx-0 mt-2 text-left">
+                     <div class="case-study px-0 col-md-10 col-12 mx-0 mt-2 text-left">
                         <CaseStudy class="my-5"
                             name="Studio Eleven" 
                             thumbnail="jake" 
@@ -117,7 +117,7 @@
 
                   <div class="row mt-md-10 justify-content-between">
 
-                     <div class="col-md-5 my-auto col-12 mx-0 mt-2 text-left">
+                     <div class="case-study px-0 col-md-5 my-auto col-12 mx-0 mt-2 text-left">
                         <CaseStudy class="my-5"
                             name="Studio Eleven" 
                             thumbnail="jve" 
@@ -127,7 +127,7 @@
                         ></CaseStudy>
                      </div>
 
-                     <div class="col-md-6 col-12 mx-0 mt-2 text-left">
+                     <div class="case-study px-0 col-md-6 col-12 mx-0 mt-2 text-left">
                         <CaseStudy class="my-5"
                             name="Studio Eleven" 
                             thumbnail="emc" 
