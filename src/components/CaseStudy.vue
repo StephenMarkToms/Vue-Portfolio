@@ -11,11 +11,11 @@
           <p class="header mt-1 pr-4">{{ disc }}</p>
 
           <div class="disc2">
-            <p class="marquee">
-              <span>{{ disc }}</span>
+            <p id="mar1" class="marquee">
+              <span>{{ name }}</span>
             </p>
-            <p class="marquee marquee2">
-              <span>{{ disc }}</span>
+            <p id="mar2" class="marquee marquee2">
+              <span>{{ name }}</span>
             </p>
           </div>
           
@@ -110,11 +110,27 @@ export default {
 .marquee span {
   display: inline-block;
   padding-left: 80%;
-  animation: marquee 5s linear infinite;
+  animation: marquee 6s linear infinite;
 }
 
 .marquee2 span {
-  animation-delay: 2.5s;
+  animation-delay: 3s;
+}
+
+#mar1{
+
+    color: white;
+    font-size: 5em;
+    font-weight: 800;
+
+}
+
+#mar2{
+
+    color: white;
+    font-size: 5em;
+    font-weight: 800;
+
 }
 
 @keyframes marquee {
