@@ -7,7 +7,7 @@ module.exports = {
 
   configureWebpack: {
     resolve: {
-      extensions: ['.js'],
+      extensions: ['.ts', '.vue', '.js'], // added .js
       alias: {
         'jquery': 'jquery/dist/jquery.slim.js',
       }
@@ -23,3 +23,4 @@ module.exports = {
     ]
   }
 }
+

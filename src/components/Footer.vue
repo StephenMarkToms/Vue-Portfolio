@@ -7,15 +7,27 @@
                 <span>About</span>
                 <span>About</span>
                 <span>About</span>
+                <span>About</span>
+                <span>About</span>
+                <span>About</span>
                 </div>
                 <div class="line">
+                <span>About</span>
+                <span>About</span>
+                <span>About</span>
                 <span>About</span>
                 <span>About</span>
                 <span>About</span>
                 </div>
             </div>
         </div>
+        <div class="row">
+
+            <h1>seconddsd footer</h1>
+
+        </div>
     </div>
+    
     
 
 
