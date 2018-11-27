@@ -47,7 +47,7 @@
                   
 
                   <h1 class="quote text-left text-white mb-0 mt-lg-3">
-                      A multidisciplinary Digital Designer
+                      A multimodal Digital Designer
                       <br>
                       based in York, PA. Creating brand
                       <br>
@@ -150,7 +150,8 @@
 
             </div>
 
-           <Footer></Footer>
+            <Footer></Footer>
+           
             
 
           </div>
@@ -167,12 +168,12 @@ import Navigation from '../components/Navigation.vue';
 import Footer from '../components/Footer.vue';
 
 export default {
-  name: "home",
   components: {
       Navigation,
-      CaseStudy,
       Footer,
+      CaseStudy
   },
+  name: "home",
   data() {
     return {
       animation: 'enter'
