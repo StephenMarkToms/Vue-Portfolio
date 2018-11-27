@@ -25,7 +25,24 @@
         </div>
         <div class="row">
 
-            <h1>secasdfasdonddsd footer</h1>
+            <div class="line">
+                <span>About</span>
+                <span>About</span>
+                <span>About</span>
+                <span>About</span>
+                <span>About</span>
+                <span>About</span>
+                <span>About</span>
+                </div>
+                <div class="line">
+                <span>About</span>
+                <span>About</span>
+                <span>About</span>
+                <span>About</span>
+                <span>About</span>
+                <span>About</span>
+                <span>About</span>
+                </div>
 
         </div>
     </div>
