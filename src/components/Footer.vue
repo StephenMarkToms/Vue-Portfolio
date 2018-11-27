@@ -1,27 +1,23 @@
 <template>
 
     <div class="row mt-5">
-        <div class="row mt-5">
-            <div class="row mt-5">
-                <div class="marquee mt-5">
-                    <div class="lines">
-                        <div class="line">
-                            <span>About</span>
-                            <span>About</span>
-                            <span>About</span>
-                            <span>About</span>
-                            <span>About</span>
-                            <span>About</span>
-                        </div>
-                        <div class="line">
-                            <span>About</span>
-                            <span>About</span>
-                            <span>About</span>
-                            <span>About</span>
-                            <span>About</span>
-                            <span>About</span>
-                        </div>
-                    </div>
+        <div class="marquee">
+            <div class="lines">
+                <div class="line">
+                <span>Span Item 1</span>
+                <span>Span Item 2</span>
+                <span>Span Item 3</span>
+                <span>Span Item 4</span>
+                <span>Span Item 5</span>
+                <span>Span Item 6</span>
+                </div>
+                <div class="line">
+                <span>Span Item 1</span>
+                <span>Span Item 2</span>
+                <span>Span Item 3</span>
+                <span>Span Item 4</span>
+                <span>Span Item 5</span>
+                <span>Span Item 6</span>
                 </div>
             </div>
         </div>
