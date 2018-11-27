@@ -150,7 +150,7 @@
 
             </div>
 
-           
+           <Footer></Footer>
             
 
           </div>
@@ -164,13 +164,15 @@
 <script>
 import CaseStudy from '../components/CaseStudy.vue';
 import Navigation from '../components/Navigation.vue';
+import Footer from '../components/Footer.vue';
 
 export default {
+  name: "home",
   components: {
       Navigation,
-      CaseStudy
+      CaseStudy,
+      Footer,
   },
-  name: "home",
   data() {
     return {
       animation: 'enter'

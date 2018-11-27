@@ -1,7 +1,7 @@
 <template>
 
     <div class="row mt-5">
-        <div class="marquee">
+        <div class="scroller">
             <div class="lines">
                 <div class="line">
                 <span>About</span>
@@ -10,8 +10,10 @@
                 <span>About</span>
                 <span>About</span>
                 <span>About</span>
+                <span>About</span>
                 </div>
                 <div class="line">
+                <span>About</span>
                 <span>About</span>
                 <span>About</span>
                 <span>About</span>
@@ -23,7 +25,7 @@
         </div>
         <div class="row">
 
-            <h1>seconddsd footer</h1>
+            <h1>secasdfasdonddsd footer</h1>
 
         </div>
     </div>
@@ -41,7 +43,7 @@
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="scss" scoped>
 
-    .marquee {
+    .scroller {
         overflow: hidden;
         width: 100%;
     }
@@ -56,7 +58,7 @@
     }
 
     .line {
-        animation: marquee 15s linear infinite;
+        animation: scrollerAnime 15s linear infinite;
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
@@ -75,7 +77,7 @@
         margin-left: 0.5em;
     }
 
-    @keyframes marquee {
+    @keyframes scrollerAnime {
         0% {
             transform: translate3d(0, 0, 0);
         }
