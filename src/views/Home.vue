@@ -63,24 +63,24 @@
               <div class="row mt-5 pt-5 justify-content-center">
                 <div class="col mx-auto px-0 mt-5">
                   <h1 class="hero text-left mb-0">
-                      <span style="margin-bottom: 1em; font-size: 3em; font-weight: 100; font-family: sailec;">
-                        Stephen Mark Toms
+                      <span style="margin-bottom: 1em; font-size: 3em; font-style: unset; font-weight: 500;">
+                        smt<span style="color: #ffbd00; padding: 0;">.</span>
                       </span>
                   </h1>
                 </div>
 
               </div>
 
-              <div class="row justify-content-center">
+              <div class="row mb-5 pb-5 justify-content-center">
                 <div class="col mx-auto px-0 mt-5">
                   <h1 class="quote text-left text-white mb-0 mt-lg-3">
-                      A multimodal Digital Designer
+                      A multimodal <span style="border-bottom: solid 3px #ffbd00; padding-bottom: .1em;">Digital Designer</span>
                       <br>
                       based in York, PA. Creating brand
                       <br>
                       identities, websites and visual experiences  
                       <br>
-                      to help organizations innovate their business.
+                      to help organizations <i style="color: #ffbd00;"><b>innovate</b></i> their business.
                   </h1>
                 </div>
 
@@ -189,6 +189,14 @@
 
 
 </template>
+
+<style lang="scss" scoped>
+
+  
+
+</style>
+
+
 
 <script>
 import CaseStudy from '../components/CaseStudy.vue';

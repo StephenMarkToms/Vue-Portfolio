@@ -3,7 +3,7 @@
     
 
     <nav class="navbar navbar-expand-lg navbar-dark px-0">
-    <router-link class="navbar-brand" to="/">smt<span style="color: #00c0ff;">.</span></router-link>
+    <router-link class="navbar-brand" to="/">smt<span style="color: #ffbd00;">.</span></router-link>
 
       
 
