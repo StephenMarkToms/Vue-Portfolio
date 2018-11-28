@@ -10,13 +10,25 @@
           <h4 class="header text-white mt-3">{{ title }}</h4>
           <p class="header mt-1 pr-4">{{ disc }}</p>
 
-          <div class="disc2">
-            <p id="mar1" class="marquee">
-              <span>{{ name }}</span>
-            </p>
-            <p id="mar2" class="marquee marquee2">
-              <span>{{ name }}</span>
-            </p>
+          <div class="row mt-5 scroller-row">
+              <div class="scroller mt-5">
+                  <div class="lines">
+                      <div class="line">
+                        <span>{{ name }}</span>
+                        <span>{{ name }}</span>
+                        <span>{{ name }}</span>
+                        <span>{{ name }}</span>
+                        <span>{{ name }}</span>
+                      </div>
+                      <div class="line">
+                          <span>{{ name }}</span>
+                          <span>{{ name }}</span>
+                          <span>{{ name }}</span>
+                          <span>{{ name }}</span>
+                          <span>{{ name }}</span>
+                      </div>
+                  </div>
+              </div>
           </div>
           
 
@@ -45,6 +57,58 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="scss" scoped>
+
+  .scroller-row{
+
+    position: absolute;
+    bottom: 28%;
+
+  }
+
+
+  .scroller {
+        overflow: hidden;
+        width: 100%;
+    }
+
+    .lines {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;  
+        font-size: 7em;
+        font-weight: 800;
+        color: white;
+    }
+
+    .line {
+        animation: scrollerAnime 30s linear infinite;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        align-content: flex-start;
+        align-items: flex-start;
+        white-space: nowrap;
+    }
+
+    .line span {
+        padding-right: 0.5em;
+    }
+    
+    .line span:after {
+        content: ' ';
+        margin-left: 0.5em;
+    }
+
+    @keyframes scrollerAnime {
+        0% {
+            transform: translate3d(0, 0, 0);
+        }
+        100% {
+            transform: translate3d(-100%, 0, 0);
+        }
+    }
+
 
 
   h2{

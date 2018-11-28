@@ -1,7 +1,7 @@
 <template>
 
-    <div class="row mt-5 pt-5">
-        <div class="row mt-5 pt-5">
+    <div class="row mt-5">
+        <div class="row mt-5">
             <div class="row mt-5">
                 <div class="scroller mt-5">
                     <div class="lines">
@@ -21,7 +21,7 @@
                 </div>
             </div>
 
-            <div class="row py-5 bg-black">
+            <div class="row py-3 bg-black">
                 <div class="scroller-2">
                     <div class="lines-2">
                         <div class="line-2">
@@ -38,7 +38,7 @@
                 </div>
             </div>
         </div>
-        <div class="row pt-2 mx-auto breadcrumb bg-black">
+        <div class="row mx-auto breadcrumb bg-black">
             <div class="col">
                 <p class="text-white text-center mx-auto">Test</p>
             </div>
@@ -84,7 +84,7 @@ export default {
         flex-wrap: nowrap;  
         font-size: 7em;
         font-weight: 800;
-        color: white;
+        color: #202020;
     }
 
     .line {
@@ -127,7 +127,7 @@ export default {
         flex-wrap: nowrap;  
         font-size: 7em;
         font-weight: 800;
-        color: white;
+        color: #202020;
     }
 
     .line-2 {

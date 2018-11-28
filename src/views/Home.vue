@@ -20,7 +20,7 @@
 
             <div id="home-content" class="page-container">
               
-              <div class="row mt-2 mt-md-0 mb-2 mx-auto justify-content-between">
+              <!-- <div class="row mt-2 mt-md-0 mb-2 mx-auto justify-content-between">
 
                 <div class="col-12 px-0 px-md-0 col-lg-4 mt-5">
                   
@@ -57,7 +57,35 @@
                   </h1>
 
                 </div>
+              </div> -->
+
+
+              <div class="row mt-5 pt-5 justify-content-center">
+                <div class="col mx-auto px-0 mt-5">
+                  <h1 class="hero text-left mb-0">
+                      <span style="margin-bottom: 1em; font-size: 3em; font-weight: 100; font-family: sailec;">
+                        Stephen Mark Toms
+                      </span>
+                  </h1>
+                </div>
+
               </div>
+
+              <div class="row justify-content-center">
+                <div class="col mx-auto px-0 mt-5">
+                  <h1 class="quote text-left text-white mb-0 mt-lg-3">
+                      A multimodal Digital Designer
+                      <br>
+                      based in York, PA. Creating brand
+                      <br>
+                      identities, websites and visual experiences  
+                      <br>
+                      to help organizations innovate their business.
+                  </h1>
+                </div>
+
+              </div>
+
 
               <div class="row mx-0 mt-md-5">
                 <div class="col-12 px-0 mt-5 mx-0">
