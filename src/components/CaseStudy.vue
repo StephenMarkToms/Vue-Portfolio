@@ -3,14 +3,15 @@
     
       <div>
 
-          <div class="wash" v-bind:style="{ backgroundColor: color}">
+          <div class="wash">
+          <!-- <div class="wash" v-bind:style="{ backgroundColor: color}"> -->
             <img class="img-fluid" v-bind:src="require('../assets/' + thumbnail + '.jpg')" />
           </div>
 
           <h4 class="header text-white mt-3">{{ title }}</h4>
           <p class="header mt-1 pr-4">{{ disc }}</p>
 
-          <div class="row mt-5 scroller-row">
+          <div class="row mt-5 scroller-row d-none">
               <div class="scroller mt-5">
                   <div class="lines">
                       <div class="line">
@@ -140,7 +141,7 @@ export default {
 
   img{
 
-    opacity: .5;
+    //opacity: .5;
 
   }
 

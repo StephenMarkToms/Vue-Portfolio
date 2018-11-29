@@ -20,51 +20,17 @@
 
             <div id="home-content" class="page-container">
               
-              <!-- <div class="row mt-2 mt-md-0 mb-2 mx-auto justify-content-between">
-
-                <div class="col-12 px-0 px-md-0 col-lg-4 mt-5">
-                  
-                  <h1 class="hero text-left mb-0">
-                    <span style="margin-bottom: 1em; font-size: 4.5em; font-weight: 600; font-family: sailec;">
-                      Stephen
-                    </span>
-                  </h1>
-                  <h1 class="hero text-left mb-0">
-                    <span style="margin-bottom: 1em; font-size: 4.5em; font-weight: 600; font-family: sailec;">
-                      Mark
-                    </span>
-                  </h1>
-                  <h1 class="hero text-left mb-0">
-                    <span style="margin-bottom: 1em; font-size: 4.5em; font-weight: 600; font-family: sailec;">
-                      Toms
-                    </span>
-                  </h1>
-
-                </div>
-
-                <div class="col-12 px-0 col-md-6 col-xl-auto mt-5 mt-md-auto mb-4">
-                  
-                  
-
-                  <h1 class="quote text-left text-white mb-0 mt-lg-3">
-                      A multimodal Digital Designer
-                      <br>
-                      based in York, PA. Creating brand
-                      <br>
-                      identities, websites and visual experiences  
-                      <br>
-                      to help organizations innovate their business.
-                  </h1>
-
-                </div>
-              </div> -->
-
+              <h1 class="hero text-left mb-0">
+                  <span class="bg-txt">
+                    Hello World
+                  </span>
+              </h1>
 
               <div class="row mt-5 pt-5 justify-content-center">
                 <div class="col mx-auto px-0 mt-5">
                   <h1 class="hero text-left mb-0">
                       <span style="margin-bottom: 1em; font-size: 3em; font-style: unset; font-weight: 500;">
-                        smt<span style="color: #ffbd00; padding: 0;">.</span>
+                        Hello, world<span style="color: #ffbd00; padding: 0;">.</span>
                       </span>
                   </h1>
                 </div>
@@ -74,13 +40,13 @@
               <div class="row mb-5 pb-5 justify-content-center">
                 <div class="col mx-auto px-0 mt-5">
                   <h1 class="quote text-left text-white mb-0 mt-lg-3">
-                      A multimodal <span style="border-bottom: solid 3px #ffbd00; padding-bottom: .1em;">Digital Designer</span>
+                      I am a multimodal <del>Web Developer</del> <ins>Digital Designer</ins>
                       <br>
                       based in York, PA. Creating brand
                       <br>
                       identities, websites and visual experiences  
                       <br>
-                      to help organizations <i style="color: #ffbd00;"><b>innovate</b></i> their business.
+                      to help organizations <i style="color: #ffbd00; font-size: 1.23em;"><b>innovate</b></i> their business.
                   </h1>
                 </div>
 
@@ -192,7 +158,35 @@
 
 <style lang="scss" scoped>
 
-  
+  @import url('https://fonts.googleapis.com/css?family=Permanent+Marker');
+
+
+  .bg-txt{
+
+    position: absolute;
+    top: 6%;
+    font-size: 8em;
+    color: #212121;
+
+  }
+
+  del {
+    text-decoration-color: #ffbd00;
+  }
+
+  ins {
+    text-decoration: none;
+    font-size: 1.1em;
+    color: #ffbd00;
+    position: absolute;
+    font-weight: 500;
+    -webkit-transform: rotate(-10deg);
+    transform: rotate(-10deg);
+    margin-left: 14em;
+    margin-top: -3em;
+    font-family: 'Permanent Marker', cursive;
+    
+  }
 
 </style>
 
@@ -251,9 +245,9 @@ export default {
           
         function animateCallout(){
         
-          TweenMax.from('body', 2, {delay: .5, backgroundColor:"#ffffff", ease: Power3.easeOut});
+          //TweenMax.from('body', 2, {delay: .5, backgroundColor:"#ffffff", ease: Power3.easeOut});
 
-          TweenMax.from('.hero', 1, {delay: .5, color: '#00000', ease: Power4.easeIn} );
+          TweenMax.from('.hero', 1, {delay: .5, y: "+=50", alpha: 0, ease: Power4.easeIn} );
           
           var mySplitText = new SplitText(".quote", {type:"lines"}),
           t2 = new TimelineLite();
