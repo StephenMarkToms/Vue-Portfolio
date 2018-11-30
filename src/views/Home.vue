@@ -17,7 +17,7 @@
             <Navigation></Navigation>
 
             
-            <img src="../assets/supporting/brush.svg"
+            <!-- <img src="../assets/supporting/brush.svg"
             
               style="
               
@@ -30,7 +30,7 @@
               
               "
             
-            >
+            > -->
 
 
             <div id="home-content" class="page-container">
@@ -41,7 +41,7 @@
                   </span>
               </h1> -->
 
-              <div class="row mt-5 justify-content-center">
+              <div class="row mt-0 justify-content-center">
                 <div class="col mx-auto px-0 mt-5">
                   <h1 class="hero text-left mb-0">
                       <span style="margin-bottom: 1em; font-size: 3em; font-style: unset; font-weight: 500;">
@@ -53,7 +53,7 @@
               </div>
 
               <div class="row mb-5 pb-5 justify-content-center">
-                <div class="col mx-auto px-0 mt-5">
+                <div class="col mx-auto px-0 mt-2">
                   <h1 class="quote text-left text-white mb-0 mt-lg-3">
                       I am a multimodal Web Developer
                       <br>
