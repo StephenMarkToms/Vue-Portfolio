@@ -38,15 +38,33 @@
                 </div>
             </div>
         </div>
-        <div class="row mx-auto breadcrumb bg-black">
-            <div class="col">
-                <p class="text-white text-center mx-auto">Test</p>
+        <div class="row mb-0 mx-auto breadcrumb bg-black mr-5 pr-5">
+            <div class="col ml-5 pl-auto">
+                <a href="#">
+                    <p class=" text-left" style="color: #444137;">
+                        SMT Designs 2019 designed and developed by Stephen Mark Toms
+                    </p>
+                </a>
             </div>
-            <div class="col">
-                <p class="text-white text-center mx-auto">Test</p>
-            </div>
-            <div class="col">
-                <p class="text-white text-center mx-auto">Test</p>
+            
+            <div class="col mr-5 pr-0">
+                
+                    <p class="mr-5 pr-5 text-white text-right">
+                        <a href="#" class="text-white px-3">
+                            LinkedIn
+                        </a>
+                        <a href="#" class="text-white px-3">
+                            Facebook
+                        </a>
+                        <a href="#" class="text-white px-3">
+                            Instagram
+                        </a>
+                        <a href="#" class="text-white px-3">
+                            GitHub
+                        </a>
+                    </p>
+                
+                
             </div>
         </div>
     </div>

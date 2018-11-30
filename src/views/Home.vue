@@ -20,17 +20,17 @@
 
             <div id="home-content" class="page-container">
               
-              <h1 class="hero text-left mb-0">
+              <h1 class="text-left mb-0">
                   <span class="bg-txt">
                     Hello World
                   </span>
               </h1>
 
-              <div class="row mt-5 pt-5 justify-content-center">
+              <div class="row mt-5 justify-content-center">
                 <div class="col mx-auto px-0 mt-5">
                   <h1 class="hero text-left mb-0">
                       <span style="margin-bottom: 1em; font-size: 3em; font-style: unset; font-weight: 500;">
-                        Hello, world<span style="color: #ffbd00; padding: 0;">.</span>
+                        Stephen Mark Toms
                       </span>
                   </h1>
                 </div>
@@ -40,7 +40,7 @@
               <div class="row mb-5 pb-5 justify-content-center">
                 <div class="col mx-auto px-0 mt-5">
                   <h1 class="quote text-left text-white mb-0 mt-lg-3">
-                      I am a multimodal <del>Web Developer</del> <ins>Digital Designer</ins>
+                      I am a multimodal Web Developer
                       <br>
                       based in York, PA. Creating brand
                       <br>
@@ -54,13 +54,13 @@
 
 
               <div class="row mx-0 mt-md-5">
-                <div class="col-12 px-0 mt-5 mx-0">
+                <div class="col-12 px-0  mx-0">
 
                   <div class="row justify-content-between">
 
                     <div class="case-study px-0 col-md-5 col-12 mx-0 text-left">
 
-                      <CaseStudy class="my-5"
+                      <CaseStudy
                           name="Studio Eleven" 
                           thumbnail="studio-eleven" 
                           title="Studio Eleven Hair Salon"
@@ -167,6 +167,7 @@
     top: 6%;
     font-size: 8em;
     color: #212121;
+    line-height: 1em;
 
   }
 
