@@ -5,7 +5,7 @@
 
           <div class="wash">
           <!-- <div class="wash" v-bind:style="{ backgroundColor: color}"> -->
-            <img class="img-fluid" v-bind:src="require('../assets/' + thumbnail + '.jpg')" />
+            <img class="img-fluid case-img" v-bind:src="require('../assets/' + thumbnail + '.jpg')" />
           </div>
 
           <h4 class="header text-white mt-3">{{ title }}</h4>
@@ -58,6 +58,12 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="scss" scoped>
+
+  .case-img{
+
+    //border-bottom: solid 4px #ffc400;
+
+  }
 
   .scroller-row{
 

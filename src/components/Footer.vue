@@ -4,24 +4,26 @@
         <div class="row mt-5">
             <div class="row mt-5">
                 <div class="scroller mt-5">
-                    <div class="lines">
-                        <div class="line">
-                        <span>About</span>
-                        <span>About</span>
-                        <span>About</span>
-                        <span>About</span>
+                    <a href="#" class="marquee-link">    
+                        <div class="lines">
+                            <div class="line">
+                                <span>About</span>
+                                <span>About</span>
+                                <span>About</span>
+                                <span>About</span>
+                                </div>
+                                <div class="line">
+                                <span>About</span>
+                                <span>About</span>
+                                <span>About</span>
+                                <span>About</span>
+                            </div>
                         </div>
-                        <div class="line">
-                        <span>About</span>
-                        <span>About</span>
-                        <span>About</span>
-                        <span>About</span>
-                        </div>
-                    </div>
+                    </a>
                 </div>
             </div>
 
-            <div class="row py-3 bg-black">
+            <div class="row py-3 bg-black" >
                 <div class="scroller-2">
                     <div class="lines-2">
                         <div class="line-2">
@@ -47,7 +49,7 @@
                 </a>
             </div>
             
-            <div class="col mr-5 pr-0">
+            <div class="col mr-5 pr-0" >
                 
                     <p class="mr-5 pr-5 text-white text-right">
                         <a href="#" class="text-white px-3">
@@ -84,6 +86,18 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="scss" scoped>
+
+    .marquee-link{
+
+        text-decoration: none;
+
+        &:hover{
+
+            color: white !important;
+
+        }
+
+    }
 
     .breadcrumb{
 

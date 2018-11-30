@@ -17,14 +17,29 @@
             <Navigation></Navigation>
 
             
+            <img src="../assets/supporting/brush.svg"
+            
+              style="
+              
+                position: absolute;
+                left: -2%;
+                top: 28%;
+                height: 10vw;
+                width: 105vw;
+                transform: rotate(23deg);
+              
+              "
+            
+            >
+
 
             <div id="home-content" class="page-container">
               
-              <h1 class="text-left mb-0">
+              <!-- <h1 class="text-left mb-0">
                   <span class="bg-txt">
                     Hello World
                   </span>
-              </h1>
+              </h1> -->
 
               <div class="row mt-5 justify-content-center">
                 <div class="col mx-auto px-0 mt-5">
