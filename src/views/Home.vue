@@ -35,11 +35,11 @@
 
             <div id="home-content" class="page-container">
               
-              <!-- <h1 class="text-left mb-0">
+              <h1 class="text-left mb-0">
                   <span class="bg-txt">
                     Hello World
                   </span>
-              </h1> -->
+              </h1>
 
               <div class="row mt-0 justify-content-center">
                 <div class="col mx-auto px-0 mt-5">
@@ -179,10 +179,15 @@
   .bg-txt{
 
     position: absolute;
-    top: 6%;
+    top: 21%;
+    left: -5%;
+    word-break: break-all;
+    overflow-x: hidden;
     font-size: 8em;
-    color: #212121;
+    color: #1d1c1c;
     line-height: 1em;
+    width: 118vw;
+    display: inline;
 
   }
 
