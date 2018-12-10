@@ -38,7 +38,9 @@
           <h4 class="header text-white mt-3 "><span class="title-disc">{{ title }}</span></h4>
           <p class="header mt-1 pr-4 ">{{ disc }}</p>
 
-          
+          <div class="page-container">
+            <div class="page-2 hero-1"></div>
+          </div>
           
 
       </div>
@@ -58,12 +60,80 @@ export default {
   },
   mounted: function () {
     
-    // $( ".case-img" ).hover(
+    console.clear();
 
-    //     console.log("asdfadf")
-    //     //$( '.scoller-row' ).css( "opacity", "1" )
-    // );
+    var root = document.documentElement;
+    var body = document.body;
+    var pages = document.querySelectorAll(".page-2");
+    var tiles = document.querySelectorAll(".wash");
 
+    for (var i = 0; i < tiles.length; i++) {
+      addListeners(tiles[i], pages[i]);
+    }
+
+    function addListeners(tile, page) {
+
+      tile.addEventListener("click", function () {
+        animateHero(tile, page);
+      });
+
+      page.addEventListener("click", function () {
+        animateHero(page, tile);
+      });
+    }
+
+    function animateHero(fromHero, toHero) {
+
+      var clone = fromHero.cloneNode(true);
+
+      var from = calculatePosition(fromHero);
+      var to = calculatePosition(toHero);
+
+      TweenLite.set([fromHero, toHero], { visibility: "hidden" });
+      TweenLite.set(clone, { position: "absolute", margin: 0 });
+
+      body.appendChild(clone);
+
+      var style = {
+        x: to.left - from.left,
+        y: to.top - from.top,
+        width: to.width,
+        height: to.height,
+        autoRound: false,
+        ease: Power1.easeOut,
+        onComplete: onComplete };
+
+
+      TweenLite.set(clone, from);
+      TweenLite.to(clone, 0.3, style);
+
+      function onComplete() {
+
+        TweenLite.set(toHero, { visibility: "visible" });
+        body.removeChild(clone);
+      }
+    }
+
+    function calculatePosition(element) {
+
+      var rect = element.getBoundingClientRect();
+
+      var scrollTop = window.pageYOffset || root.scrollTop || body.scrollTop || 0;
+      var scrollLeft = window.pageXOffset || root.scrollLeft || body.scrollLeft || 0;
+
+      var clientTop = root.clientTop || body.clientTop || 0;
+      var clientLeft = root.clientLeft || body.clientLeft || 0;
+
+      return {
+        top: Math.round(rect.top + scrollTop - clientTop),
+        left: Math.round(rect.left + scrollLeft - clientLeft),
+        height: rect.height,
+        width: rect.width };
+
+    }
+
+
+    //hover code
     $(document).ready(function(){
 
       $('.hover').bind({
@@ -71,16 +141,14 @@ export default {
 
           $(e.target).prev().css('opacity', '.75');
           $(e.target).prev().prev().css('opacity', '.5');
-          //$(e.target).css('filter', 'grayscale(100%)');
-          console.log($(e.target).prev().prev());
-
+          $(e.target).prev().prev().css('transform', 'rotate(5deg) scale(.8)');
 
         },
         mouseleave: function(e) {
         
           $(e.target).prev().css('opacity', '0');
           $(e.target).prev().prev().css('opacity', '1');
-          //$(e.target).css('filter', 'none');
+          $(e.target).prev().prev().css('transform', 'rotate(0deg) scale(1)');
         
         }
       });
@@ -101,6 +169,24 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="scss" scoped>
 
+  .hero-1 {
+    background: #F4DB33;
+  }
+
+  .page-container {
+    visibility: hidden;
+  }
+
+  .page-2 {
+    cursor: pointer;
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    position: fixed;
+  }
+
   .hover{
 
     cursor: pointer;
@@ -111,6 +197,7 @@ export default {
 
     //border-bottom: solid 4px #ffc400;
     cursor: pointer;
+    transition: all 0.5s ease;
 
   }
   
@@ -127,6 +214,7 @@ export default {
     position: absolute;
     bottom: 28%;
     opacity: 0;
+    transition: all 0.5s ease;
 
   }
 
@@ -135,6 +223,7 @@ export default {
         overflow: hidden;
         width: 100%;
         //opacity: 0;
+        transition: all 0.5s ease;
     }
 
     .lines {
@@ -144,6 +233,7 @@ export default {
         font-size: 7em;
         font-weight: 800;
         color: white;
+        transition: all 0.5s ease;
     }
 
     .line {
@@ -155,6 +245,7 @@ export default {
         align-content: flex-start;
         align-items: flex-start;
         white-space: nowrap;
+        // transition: all 0.5s ease;
     }
 
     .line span {
@@ -207,6 +298,8 @@ export default {
   img{
 
     // opacity: .6;
+    transition: all 0.5s ease;
+    transform: scaleX(1.01);
 
   }
 

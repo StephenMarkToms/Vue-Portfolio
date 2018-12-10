@@ -108,6 +108,7 @@ export default {
     .scroller {
         overflow: hidden;
         width: 100%;
+        
     }
 
     .lines {
@@ -117,6 +118,14 @@ export default {
         font-size: 7em;
         font-weight: 800;
         color: #202020;
+        transition: all 0.5s ease;
+
+        &:hover{
+
+            color: white !important;
+
+        }
+
     }
 
     .line {
@@ -160,6 +169,15 @@ export default {
         font-size: 7em;
         font-weight: 800;
         color: #202020;
+
+        transition: all 0.5s ease;
+
+        &:hover{
+
+            color: white !important;
+
+        }
+
     }
 
     .line-2 {
@@ -171,6 +189,7 @@ export default {
         align-content: flex-start;
         align-items: flex-start;
         white-space: nowrap;
+
     }
 
     .line-2 span {
