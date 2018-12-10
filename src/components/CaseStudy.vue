@@ -4,8 +4,12 @@
       <div>
 
           <!-- <div class="wash"> -->
+          
           <div class="wash" v-bind:style="{ backgroundColor: color}">
             
+
+            <img class="img-fluid case-img" v-bind:src="require('../assets/' + thumbnail + '.jpg')" />
+
             <div class="row mt-5 scroller-row">
               <div class="scroller mt-5">
                     <div class="lines">
@@ -26,8 +30,11 @@
                     </div>
                 </div>
             </div>
+            <div class="hover" style="background-color:red; width: 100%; height: 100%; position: absolute; top: 0; opacity: .01;"></div>
           </div>
-          <img class="img-fluid case-img" v-bind:src="require('../assets/' + thumbnail + '.jpg')" />
+
+          
+          
           <h4 class="header text-white mt-3 "><span class="title-disc">{{ title }}</span></h4>
           <p class="header mt-1 pr-4 ">{{ disc }}</p>
 
@@ -59,18 +66,21 @@ export default {
 
     $(document).ready(function(){
 
-      $('.case-img').bind({
+      $('.hover').bind({
         mouseenter: function(e) {
 
-          $(e.target).prev().find('.scroller').css('opacity', '.75');
-          $(e.target).css('filter', 'grayscale(100%)');
+          $(e.target).prev().css('opacity', '.75');
+          $(e.target).prev().prev().css('opacity', '.5');
+          //$(e.target).css('filter', 'grayscale(100%)');
+          console.log($(e.target).prev().prev());
 
 
         },
         mouseleave: function(e) {
         
-          $(e.target).prev().find('.scroller').css('opacity', '0');
-          $(e.target).css('filter', 'none');
+          $(e.target).prev().css('opacity', '0');
+          $(e.target).prev().prev().css('opacity', '1');
+          //$(e.target).css('filter', 'none');
         
         }
       });
@@ -91,6 +101,12 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="scss" scoped>
 
+  .hover{
+
+    cursor: pointer;
+
+  }
+
   .case-img{
 
     //border-bottom: solid 4px #ffc400;
@@ -110,6 +126,7 @@ export default {
 
     position: absolute;
     bottom: 28%;
+    opacity: 0;
 
   }
 
@@ -117,7 +134,7 @@ export default {
   .scroller {
         overflow: hidden;
         width: 100%;
-        opacity: 0;
+        //opacity: 0;
     }
 
     .lines {
@@ -189,7 +206,7 @@ export default {
 
   img{
 
-    opacity: .6;
+    // opacity: .6;
 
   }
 
