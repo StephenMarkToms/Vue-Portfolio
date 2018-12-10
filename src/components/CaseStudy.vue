@@ -3,34 +3,35 @@
     
       <div>
 
-          <div class="wash">
-          <!-- <div class="wash" v-bind:style="{ backgroundColor: color}"> -->
-            <img class="img-fluid case-img" v-bind:src="require('../assets/' + thumbnail + '.jpg')" />
-          </div>
-
-          <h4 class="header text-white mt-3">{{ title }}</h4>
-          <p class="header mt-1 pr-4">{{ disc }}</p>
-
-          <div class="row mt-5 scroller-row d-none">
+          <!-- <div class="wash"> -->
+          <div class="wash" v-bind:style="{ backgroundColor: color}">
+            
+            <div class="row mt-5 scroller-row">
               <div class="scroller mt-5">
-                  <div class="lines">
-                      <div class="line">
-                        <span>{{ name }}</span>
-                        <span>{{ name }}</span>
-                        <span>{{ name }}</span>
-                        <span>{{ name }}</span>
-                        <span>{{ name }}</span>
-                      </div>
-                      <div class="line">
+                    <div class="lines">
+                        <div class="line">
                           <span>{{ name }}</span>
                           <span>{{ name }}</span>
                           <span>{{ name }}</span>
                           <span>{{ name }}</span>
                           <span>{{ name }}</span>
-                      </div>
-                  </div>
-              </div>
+                        </div>
+                        <div class="line">
+                            <span>{{ name }}</span>
+                            <span>{{ name }}</span>
+                            <span>{{ name }}</span>
+                            <span>{{ name }}</span>
+                            <span>{{ name }}</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
           </div>
+          <img class="img-fluid case-img" v-bind:src="require('../assets/' + thumbnail + '.jpg')" />
+          <h4 class="header text-white mt-3 "><span class="title-disc">{{ title }}</span></h4>
+          <p class="header mt-1 pr-4 ">{{ disc }}</p>
+
+          
           
 
       </div>
@@ -47,6 +48,38 @@ export default {
     title: String,
     disc: String,
     color: String
+  },
+  mounted: function () {
+    
+    // $( ".case-img" ).hover(
+
+    //     console.log("asdfadf")
+    //     //$( '.scoller-row' ).css( "opacity", "1" )
+    // );
+
+    $(document).ready(function(){
+
+      $('.case-img').bind({
+        mouseenter: function(e) {
+        // Hover event handler
+          //e.target.closest('.scroller').css('opacity', '0');
+          // console.log($(e.target).closest('.scroller'));
+          //console.log($(e.target).prev().find('.scroller'));
+          $(e.target).prev().find('.scroller').css('opacity', '0');
+
+          //.closest(":has(h3 span b)").find('span b');
+
+        },
+        mouseleave: function(e) {
+        // Hover event handler
+          //e.target.closest('.scroller').css('opacity', '.6');
+        }
+      });
+
+
+
+    });
+
   }
   
 };
@@ -62,6 +95,15 @@ export default {
   .case-img{
 
     //border-bottom: solid 4px #ffc400;
+    cursor: pointer;
+
+  }
+  
+  .title-disc{
+
+    text-decoration: none;
+    border-bottom: 3px solid #ffaf1e;
+    padding-bottom: 0px;
 
   }
 
@@ -147,7 +189,7 @@ export default {
 
   img{
 
-    //opacity: .5;
+    opacity: .5;
 
   }
 

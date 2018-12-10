@@ -16,21 +16,6 @@
         
             <Navigation></Navigation>
 
-            
-            <!-- <img src="../assets/supporting/brush.svg"
-            
-              style="
-              
-                position: absolute;
-                left: -2%;
-                top: 28%;
-                height: 10vw;
-                width: 105vw;
-                transform: rotate(23deg);
-              
-              "
-            
-            > -->
 
 
             <div id="home-content" class="page-container">
@@ -80,7 +65,7 @@
                           thumbnail="studio-eleven" 
                           title="Studio Eleven Hair Salon"
                           disc="Creating a brand identity and website refresh for an upcoming hair salon"
-                          color="red"
+                          color="#FFBD00"
                       ></CaseStudy>
                     </div>
 
@@ -90,7 +75,7 @@
                           thumbnail="callie-tomblin" 
                           title="Callie Tomblin"
                           disc="Establishing a brand identity for a musician"
-                          color="#666324"
+                          color="#FFBD00"
                       ></CaseStudy>
                     </div>
 
@@ -110,7 +95,7 @@
                             thumbnail="jake" 
                             title="Jake Matthew Rivers"
                             disc="Creating a brand identity and website refresh for an upcoming hair salon"
-                            color="blue"
+                            color="#FFBD00"
                         ></CaseStudy>
                      </div>
 
@@ -132,7 +117,7 @@
                             thumbnail="jve" 
                             title="Joppa View Elementary School"
                             disc="Creating a brand identity and website refresh for an upcoming hair salon"
-                            color="blue"
+                            color="#FFBD00"
                         ></CaseStudy>
                      </div>
 
@@ -142,7 +127,7 @@
                             thumbnail="emc" 
                             title="Studio Eleven Hair Salon"
                             disc="Creating a brand identity and website refresh for an upcoming hair salon"
-                            color="orange"
+                            color="#FFBD00"
                         ></CaseStudy>
                      </div>
 
@@ -183,6 +168,7 @@
     left: -5%;
     word-break: break-all;
     overflow-x: hidden;
+    overflow-y: hidden;
     font-size: 8em;
     color: #1d1c1c;
     line-height: 1em;
