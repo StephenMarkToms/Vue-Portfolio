@@ -38,9 +38,9 @@
           <h4 class="header text-white mt-3 "><span class="title-disc">{{ title }}</span></h4>
           <p class="header mt-1 pr-4 ">{{ disc }}</p>
 
-          <div class="page-container">
+          <!-- <div class="page-container">
             <div class="page-2 hero-1"></div>
-          </div>
+          </div> -->
           
 
       </div>
@@ -60,6 +60,8 @@ export default {
   },
   mounted: function () {
     
+
+    /*
     console.clear();
 
     var root = document.documentElement;
@@ -131,7 +133,7 @@ export default {
         width: rect.width };
 
     }
-
+    */
 
     //hover code
     $(document).ready(function(){
@@ -141,14 +143,14 @@ export default {
 
           $(e.target).prev().css('opacity', '.75');
           $(e.target).prev().prev().css('opacity', '.5');
-          $(e.target).prev().prev().css('transform', 'rotate(5deg) scale(.8)');
+          $(e.target).prev().prev().css('transform', 'scale(.8)');
 
         },
         mouseleave: function(e) {
         
           $(e.target).prev().css('opacity', '0');
           $(e.target).prev().prev().css('opacity', '1');
-          $(e.target).prev().prev().css('transform', 'rotate(0deg) scale(1)');
+          $(e.target).prev().prev().css('transform', 'scale(1)');
         
         }
       });
@@ -174,7 +176,7 @@ export default {
   }
 
   .page-container {
-    visibility: hidden;
+    visibility: auto;
   }
 
   .page-2 {
