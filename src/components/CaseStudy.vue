@@ -61,18 +61,17 @@ export default {
 
       $('.case-img').bind({
         mouseenter: function(e) {
-        // Hover event handler
-          //e.target.closest('.scroller').css('opacity', '0');
-          // console.log($(e.target).closest('.scroller'));
-          //console.log($(e.target).prev().find('.scroller'));
-          $(e.target).prev().find('.scroller').css('opacity', '0');
 
-          //.closest(":has(h3 span b)").find('span b');
+          $(e.target).prev().find('.scroller').css('opacity', '.75');
+          $(e.target).css('filter', 'grayscale(100%)');
+
 
         },
         mouseleave: function(e) {
-        // Hover event handler
-          //e.target.closest('.scroller').css('opacity', '.6');
+        
+          $(e.target).prev().find('.scroller').css('opacity', '0');
+          $(e.target).css('filter', 'none');
+        
         }
       });
 
@@ -118,6 +117,7 @@ export default {
   .scroller {
         overflow: hidden;
         width: 100%;
+        opacity: 0;
     }
 
     .lines {
@@ -189,7 +189,7 @@ export default {
 
   img{
 
-    opacity: .5;
+    opacity: .6;
 
   }
 
