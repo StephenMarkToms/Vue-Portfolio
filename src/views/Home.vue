@@ -10,9 +10,12 @@
         v-bind:css="false"
         appear
       >
+
+
         <template id="page">
           <div class="home page">
 
+            
         
             <Navigation></Navigation>
 
@@ -144,6 +147,8 @@
 
             </div>
 
+          
+
             <Footer></Footer>
            
             
@@ -158,8 +163,7 @@
 
 <style lang="scss" scoped>
 
-  @import url('https://fonts.googleapis.com/css?family=Permanent+Marker');
-
+  
 
   .bg-txt{
 

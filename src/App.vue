@@ -3,11 +3,19 @@
 
       <div class="container">
 
+          
+
           <!-- page -->
           <router-view/>
 
           <!-- set progressbar -->
           <vue-progress-bar></vue-progress-bar>
+
+          <div class="fixed-wash"></div>
+          <div class="fixed-wash"></div>
+          <div class="fixed-wash"></div>
+          <div class="fixed-wash"></div>
+          <div class="fixed-wash"></div>
 
       </div>
           
@@ -33,6 +41,22 @@
   height: 100vh;
   overflow-x: hidden;
 }
+
+
+.fixed-wash {
+  background: #ffbd00;
+  visibility: auto;
+  cursor: pointer;
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  position: fixed;
+  overflow-y: scroll;
+}
+
+
 
 </style>
 

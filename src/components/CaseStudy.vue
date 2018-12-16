@@ -38,9 +38,8 @@
           <h4 class="header text-white mt-3 "><span class="title-disc">{{ title }}</span></h4>
           <p class="header mt-1 pr-4 ">{{ disc }}</p>
 
-          <!-- <div class="page-container">
-            <div class="page-2 hero-1"></div>
-          </div> -->
+          
+        
           
 
       </div>
@@ -59,21 +58,24 @@ export default {
     color: String
   },
   mounted: function () {
-    
-
-    /*
+   
     console.clear();
+
+    
 
     var root = document.documentElement;
     var body = document.body;
-    var pages = document.querySelectorAll(".page-2");
+    var pages = document.querySelectorAll(".fixed-wash");
     var tiles = document.querySelectorAll(".wash");
 
     for (var i = 0; i < tiles.length; i++) {
       addListeners(tiles[i], pages[i]);
+      //animateHero(tiles[i], pages[i]);
     }
 
     function addListeners(tile, page) {
+
+      setHero(page, tile);
 
       tile.addEventListener("click", function () {
         animateHero(tile, page);
@@ -83,6 +85,37 @@ export default {
         animateHero(page, tile);
       });
     }
+
+    function setHero(fromHero, toHero) {
+
+      var clone = fromHero.cloneNode(true);
+
+      var from = calculatePosition(fromHero);
+      var to = calculatePosition(toHero);
+
+      TweenLite.set([fromHero, toHero], { visibility: "hidden" });
+      TweenLite.set(clone, { position: "absolute", margin: 0 });
+
+      body.appendChild(clone);
+
+      var style = {
+        x: to.left - from.left,
+        y: to.top - from.top,
+        width: to.width,
+        height: to.height,
+        autoRound: false,
+        ease: Power2.easeInOut,
+        onComplete: onComplete };
+
+      TweenLite.set(clone, style);
+
+      function onComplete() {
+
+        TweenLite.set(toHero, { visibility: "visible" });
+        body.removeChild(clone);
+      }
+    }
+
 
     function animateHero(fromHero, toHero) {
 
@@ -102,12 +135,12 @@ export default {
         width: to.width,
         height: to.height,
         autoRound: false,
-        ease: Power1.easeOut,
+        ease: Power3.easeInOut,
         onComplete: onComplete };
 
 
       TweenLite.set(clone, from);
-      TweenLite.to(clone, 0.3, style);
+      TweenLite.to(clone, 0.45, style);
 
       function onComplete() {
 
@@ -133,7 +166,9 @@ export default {
         width: rect.width };
 
     }
-    */
+
+      
+
 
     //hover code
     $(document).ready(function(){
@@ -165,11 +200,10 @@ export default {
 
 
 
-
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style lang="scss" scoped>
+<style lang="scss" >
 
   .hero-1 {
     background: #F4DB33;
@@ -187,6 +221,24 @@ export default {
     top: 0;
     left: 0;
     position: fixed;
+    overflow-y: scroll;
+  }
+
+  /* Page content */
+  .content {
+    padding: 16px;
+  }
+
+  /* The sticky class is added to the header with JS when it reaches its scroll position */
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%
+  }
+
+  /* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+  .sticky + .content {
+    padding-top: 102px;
   }
 
   .hover{
