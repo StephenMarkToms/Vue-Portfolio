@@ -77,13 +77,19 @@ export default {
 
       setHero(page, tile);
 
+      $(page).removeClass('d-none');
+
       tile.addEventListener("click", function () {
-        animateHero(tile, page);
+
+        TweenMax.to($(tile).find('.case-img')[0], .2, { autoAlpha: 0 });
+        TweenMax.to($(tile).find('.scroller-row')[0], .2, { autoAlpha: 0});
+
+        TweenMax.to($(tile), .5, { onComplete:function(){
+                animateHero(tile, page) 
+            }});
+
       });
 
-      page.addEventListener("click", function () {
-        animateHero(page, tile);
-      });
     }
 
     function setHero(fromHero, toHero) {
@@ -114,12 +120,29 @@ export default {
         TweenLite.set(toHero, { visibility: "visible" });
         body.removeChild(clone);
       }
+
     }
 
 
     function animateHero(fromHero, toHero) {
 
+      
+
+      //console.log($(fromHero).find('.case-img')[0]);
+
+      
+
       var clone = fromHero.cloneNode(true);
+      
+      $(clone).remove('.case-img');
+      console.log($(clone).find('img'));
+
+      //remove elements from cloned element
+      $(clone).find('img').remove();
+      $(clone).find('.scroller-row').remove();
+
+      //TweenMax.to($(clone).find('.case-img')[0], .2, { autoAlpha: 0 });
+      //TweenMax.to($(clone).find('.scroller-row')[0], .2, { autoAlpha: 0 });
 
       var from = calculatePosition(fromHero);
       var to = calculatePosition(toHero);
@@ -136,17 +159,18 @@ export default {
         height: to.height,
         autoRound: false,
         ease: Power3.easeInOut,
-        onComplete: onComplete };
+        onComplete: onComplete 
+      };
 
 
       TweenLite.set(clone, from);
       TweenLite.to(clone, 0.45, style);
 
       function onComplete() {
-
         TweenLite.set(toHero, { visibility: "visible" });
         body.removeChild(clone);
       }
+
     }
 
     function calculatePosition(element) {
@@ -205,24 +229,6 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="scss" >
 
-  .hero-1 {
-    background: #F4DB33;
-  }
-
-  .page-container {
-    visibility: auto;
-  }
-
-  .page-2 {
-    cursor: pointer;
-    position: absolute;
-    height: 100vh;
-    width: 100vw;
-    top: 0;
-    left: 0;
-    position: fixed;
-    overflow-y: scroll;
-  }
 
   /* Page content */
   .content {

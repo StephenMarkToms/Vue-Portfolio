@@ -11,11 +11,11 @@
           <!-- set progressbar -->
           <vue-progress-bar></vue-progress-bar>
 
-          <div class="fixed-wash"></div>
-          <div class="fixed-wash"></div>
-          <div class="fixed-wash"></div>
-          <div class="fixed-wash"></div>
-          <div class="fixed-wash"></div>
+          <div class="fixed-wash d-none"></div>
+          <div class="fixed-wash d-none"></div>
+          <div class="fixed-wash d-none"></div>
+          <div class="fixed-wash d-none"></div>
+          <div class="fixed-wash d-none"></div>
 
       </div>
           
@@ -46,7 +46,6 @@
 .fixed-wash {
   background: #ffbd00;
   visibility: auto;
-  cursor: pointer;
   position: absolute;
   height: 100vh;
   width: 100vw;
