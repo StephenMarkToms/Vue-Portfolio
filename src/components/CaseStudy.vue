@@ -135,7 +135,7 @@ export default {
       var clone = fromHero.cloneNode(true);
       
       $(clone).remove('.case-img');
-      console.log($(clone).find('img'));
+      //console.log($(clone).find('img'));
 
       //remove elements from cloned element
       $(clone).find('img').remove();

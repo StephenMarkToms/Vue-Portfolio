@@ -23,18 +23,18 @@
 
             <div id="home-content" class="page-container">
               
-              <h1 class="text-left mb-0">
+              <!-- <h1 class="text-left mb-0">
                   <span class="bg-txt">
                     Hello World
                   </span>
-              </h1>
+              </h1> -->
 
               <div class="row mt-0 justify-content-center">
                 <div class="col mx-auto px-0 mt-5">
                   <h1 class="hero text-left mb-0">
-                      <span style="margin-bottom: 1em; font-size: 3em; font-style: unset; font-weight: 500;">
+                      <!-- <span style="margin-bottom: 1em; font-size: 3em; font-style: unset; font-weight: 500;">
                         Stephen Mark Toms
-                      </span>
+                      </span> -->
                   </h1>
                 </div>
 
@@ -43,13 +43,14 @@
               <div class="row mb-5 pb-5 justify-content-center">
                 <div class="col mx-auto px-0 mt-2">
                   <h1 class="quote text-left text-white mb-0 mt-lg-3">
-                      I am a multimodal Web Developer
+                      A multimodal company
                       <br>
                       based in York, PA. Creating brand
                       <br>
                       identities, websites and visual experiences  
                       <br>
-                      to help organizations <i style="color: #ffbd00; font-size: 1.23em;"><b>innovate</b></i> their business.
+                      <!-- to help organizations <i style="color: #ffbd00; font-size: 1.23em;"><b>innovate</b></i> their business. -->
+                      to help organizations innovate their business.
                   </h1>
                 </div>
 
@@ -258,13 +259,13 @@ export default {
         
           //TweenMax.from('body', 2, {delay: .5, backgroundColor:"#ffffff", ease: Power3.easeOut});
 
-          TweenMax.from('.hero', 1, {delay: .5, y: "+=50", alpha: 0, ease: Power4.easeIn} );
+          //TweenMax.from('.hero', 1, {delay: .5, y: "+=50", alpha: 0, ease: Power4.easeIn} );
           
           var mySplitText = new SplitText(".quote", {type:"lines"}),
           t2 = new TimelineLite();
 
 
-          t2.staggerFrom(mySplitText.lines, 0.75, {delay: 2, opacity:0, cycle:{x:[100, -100], ease:Power4.easeOut}}, 0.2)
+          t2.staggerFrom(mySplitText.lines, 0.75, {delay: 2, opacity:0, y: 100, ease:Power4.easeOut}, 0.2)
 
 
           
