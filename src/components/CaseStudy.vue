@@ -4,9 +4,9 @@
       <div v-observe-visibility="{
           callback: visibilityChanged,
           intersection: {
-            rootMargin: '200px 0px'
+            rootMargin: '0px 0px 0px 0px'
           }
-        }" style="background-color:#131212;alpha:0;">
+        }" style="background-color:#131212; alpha:0;">
 
           <!-- <div class="wash"> -->
           
@@ -72,9 +72,10 @@ export default {
   },
   methods:{
     visibilityChanged(isVisible, { target }) { 
+      console.log(isVisible);
       if (isVisible && !this.animated) {
         this.animated = true;
-        TweenMax.from($(target), .5, {delay: 2, alpha: 0});
+        TweenMax.from($(target), .5, {delay: 1.5, alpha: 0});
       }      
     },
     doneAnimating(){

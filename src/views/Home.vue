@@ -62,7 +62,7 @@
 
                   <div class="row justify-content-between">
 
-                    <div class="case-study px-0 col-md-5 col-12 mx-0 text-left">
+                    <div class="case-study d-none px-0 col-md-5 col-12 mx-0 text-left">
 
                       <CaseStudy
                           ref="case1"
@@ -75,7 +75,7 @@
                       ></CaseStudy>
                     </div>
 
-                    <div class="case-study px-0 col-md-6 col-12 mx-0 mt-2 text-left my-md-auto">
+                    <div class="case-study d-none px-0 col-md-6 col-12 mx-0 mt-2 text-left my-md-auto">
                       <CaseStudy class="mt-6 my-md-auto"
                           ref="case2"
                           name="Callie Tomblin" 
@@ -97,8 +97,8 @@
 
                   <div class="row mt-md-10 justify-content-end">
 
-                     <div class="case-study px-0 col-md-10 col-12 mx-0 mt-2 text-left">
-                        <CaseStudy class="my-5"
+                     <div class="case-study d-none px-0 col-md-10 col-12 mx-0 mt-2 text-left">
+                        <CaseStudy class="my-5 "
                             ref="case3"
                             name="Jake Matthew Rivers" 
                             id="jake" 
@@ -121,7 +121,7 @@
 
                   <div class="row mt-md-10 justify-content-between">
 
-                     <div class="case-study px-0 col-md-5 my-auto col-12 mx-0 mt-2 text-left">
+                     <div class="case-study d-none px-0 col-md-5 my-auto col-12 mx-0 mt-2 text-left">
                         <CaseStudy class="my-5"
                             name="Joppa View Elementary School" 
                             thumbnail="jve" 
@@ -131,7 +131,7 @@
                         ></CaseStudy>
                      </div>
 
-                     <div class="case-study px-0 col-md-6 col-12 mx-0 mt-2 text-left">
+                     <div class="case-study d-none px-0 col-md-6 col-12 mx-0 mt-2 text-left">
                         <CaseStudy class="my-5"
                             name="EMC Performing Arts" 
                             thumbnail="emc" 
@@ -278,6 +278,7 @@ export default {
           setTimeout(
             function(){
               this.doneLoad = true;
+              $('.case-study').removeClass('d-none');
             }, 2000
           );
           
