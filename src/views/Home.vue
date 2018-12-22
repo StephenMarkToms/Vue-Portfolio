@@ -72,9 +72,6 @@
                           title="Studio Eleven Hair Salon"
                           disc="Creating a brand identity and website refresh for an upcoming hair salon"
                           color="#FFBD00"
-                          v-observe-visibility="{
-                                                  callback: (isVisible, entry) => visibilityChanged(isVisible, entry, this.$refs.case1, 1.4, null),
-                                                }"
                       ></CaseStudy>
                     </div>
 
@@ -87,9 +84,6 @@
                           title="Callie Tomblin"
                           disc="Establishing a brand identity for a musician"
                           color="#FFBD00"
-                          v-observe-visibility="{
-                                                  callback: (isVisible, entry) => visibilityChanged(isVisible, entry, this.$refs.case2, 1.6),
-                                                }"
                       ></CaseStudy>
                     </div>
 
@@ -112,10 +106,6 @@
                             title="Jake Matthew Rivers"
                             disc="Creating a brand identity and website refresh for an upcoming hair salon"
                             color="#FFBD00"
-                            v-observe-visibility="{
-                                                  callback: (isVisible, entry) => visibilityChanged(isVisible, entry, this.$refs.case3, 1),
-                                                  
-                                                }"
                         ></CaseStudy>
                      </div>
 
@@ -241,33 +231,6 @@ export default {
 
   methods: {
 
-    visibilityChanged: function (isVisible, entry, el, delay) {
-      this.isVisible = isVisible
-      
-      console.log(el.timesViewed);
-      console.log(entry);
-
-      el.timesViewed++;
-
-      if(el.$vnode.componentOptions.tag == 'CaseStudy' && isVisible){
-
-        var elID = "#" + el.$attrs.id;
-        TweenMax.from($(elID), 1.2, {delay: delay, alpha: 0, scale: .75, ease: Power4.easeOut});
-        TweenMax.from($(elID).find('img'), 1.2, {
-          delay: (delay + .5), 
-          alpha: 0, 
-          ease: Power4.easeOut, 
-          onComplete: function(){
-            el.doneAnimating();
-          }
-        
-        });
-        TweenMax.from($(elID).find('.wash'), 1.2, {delay: (delay + 1), alpha: 0, ease: Power4.easeOut});
-
-      }
-
-
-    },
 
     setNewAnimation: function (){
 

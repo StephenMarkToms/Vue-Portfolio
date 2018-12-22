@@ -28,8 +28,6 @@ import './scss/fonts.scss'
 import './scss/main.scss'
 
 import VueObserveVisibility from 'vue-observe-visibility'
-
-
 Vue.use(VueObserveVisibility)
 
 

@@ -1,7 +1,12 @@
 <template>
 
     
-      <div style="background-color:#131212;">
+      <div v-observe-visibility="{
+          callback: visibilityChanged,
+          intersection: {
+            rootMargin: '200px 0px'
+          }
+        }" style="background-color:#131212;alpha:0;">
 
           <!-- <div class="wash"> -->
           
@@ -55,6 +60,7 @@ export default {
   data(){
     return{
       timesViewed: 0,
+      animated: false,
     }
   },
   props: {
@@ -65,7 +71,12 @@ export default {
     color: String
   },
   methods:{
-
+    visibilityChanged(isVisible, { target }) { 
+      if (isVisible && !this.animated) {
+        this.animated = true;
+        TweenMax.from($(target), .5, {delay: 2, alpha: 0});
+      }      
+    },
     doneAnimating(){
 
       $(this.$el).find('img').addClass('case-img');
