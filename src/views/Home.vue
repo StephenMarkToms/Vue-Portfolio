@@ -65,22 +65,31 @@
                     <div class="case-study px-0 col-md-5 col-12 mx-0 text-left">
 
                       <CaseStudy
-                          v-observe-visibility="visibilityChanged"
+                          ref="case1"
                           name="Studio Eleven" 
+                          id="studio-eleven" 
                           thumbnail="studio-eleven" 
                           title="Studio Eleven Hair Salon"
                           disc="Creating a brand identity and website refresh for an upcoming hair salon"
                           color="#FFBD00"
+                          v-observe-visibility="{
+                                                  callback: (isVisible, entry) => visibilityChanged(isVisible, entry, this.$refs.case1, 1.4, null),
+                                                }"
                       ></CaseStudy>
                     </div>
 
                     <div class="case-study px-0 col-md-6 col-12 mx-0 mt-2 text-left my-md-auto">
                       <CaseStudy class="mt-6 my-md-auto"
+                          ref="case2"
                           name="Callie Tomblin" 
+                          id="callie-tomblin" 
                           thumbnail="callie-tomblin" 
                           title="Callie Tomblin"
                           disc="Establishing a brand identity for a musician"
                           color="#FFBD00"
+                          v-observe-visibility="{
+                                                  callback: (isVisible, entry) => visibilityChanged(isVisible, entry, this.$refs.case2, 1.6),
+                                                }"
                       ></CaseStudy>
                     </div>
 
@@ -96,11 +105,17 @@
 
                      <div class="case-study px-0 col-md-10 col-12 mx-0 mt-2 text-left">
                         <CaseStudy class="my-5"
+                            ref="case3"
                             name="Jake Matthew Rivers" 
+                            id="jake" 
                             thumbnail="jake" 
                             title="Jake Matthew Rivers"
                             disc="Creating a brand identity and website refresh for an upcoming hair salon"
                             color="#FFBD00"
+                            v-observe-visibility="{
+                                                  callback: (isVisible, entry) => visibilityChanged(isVisible, entry, this.$refs.case3, 1),
+                                                  
+                                                }"
                         ></CaseStudy>
                      </div>
 
@@ -218,16 +233,40 @@ export default {
   name: "home",
   data() {
     return {
-      animation: 'enter'
+      animation: 'enter',
+      doneLoad: false
     }
   },
   
 
   methods: {
 
-    visibilityChanged: function (isVisible, entry) {
+    visibilityChanged: function (isVisible, entry, el, delay) {
       this.isVisible = isVisible
-      console.log(entry)
+      
+      console.log(el.timesViewed);
+      console.log(entry);
+
+      el.timesViewed++;
+
+      if(el.$vnode.componentOptions.tag == 'CaseStudy' && isVisible){
+
+        var elID = "#" + el.$attrs.id;
+        TweenMax.from($(elID), 1.2, {delay: delay, alpha: 0, scale: .75, ease: Power4.easeOut});
+        TweenMax.from($(elID).find('img'), 1.2, {
+          delay: (delay + .5), 
+          alpha: 0, 
+          ease: Power4.easeOut, 
+          onComplete: function(){
+            el.doneAnimating();
+          }
+        
+        });
+        TweenMax.from($(elID).find('.wash'), 1.2, {delay: (delay + 1), alpha: 0, ease: Power4.easeOut});
+
+      }
+
+
     },
 
     setNewAnimation: function (){
@@ -271,9 +310,13 @@ export default {
           t2 = new TimelineLite();
 
 
-          t2.staggerFrom(mySplitText.lines, 0.75, {delay: 2, opacity:0, y: 100, ease:Power4.easeOut}, 0.2)
+          t2.staggerFrom(mySplitText.lines, 0.75, {delay: .5, opacity:0, y: 100, ease:Power4.easeOut}, 0.2)
 
-
+          setTimeout(
+            function(){
+              this.doneLoad = true;
+            }, 2000
+          );
           
         }
 

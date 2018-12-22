@@ -1,14 +1,14 @@
 <template>
 
     
-      <div>
+      <div style="background-color:#131212;">
 
           <!-- <div class="wash"> -->
           
           <div class="wash" v-bind:style="{ backgroundColor: color}">
             
 
-            <img class="img-fluid case-img" v-bind:src="require('../assets/' + thumbnail + '.jpg')" />
+            <img class="img-fluid" v-bind:src="require('../assets/' + thumbnail + '.jpg')" />
 
             <div class="row mt-5 scroller-row">
               <div class="scroller mt-5">
@@ -52,12 +52,43 @@
 
 
 export default {
+  data(){
+    return{
+      timesViewed: 0,
+    }
+  },
   props: {
     name: String,
     thumbnail: String,
     title: String,
     disc: String,
     color: String
+  },
+  methods:{
+
+    doneAnimating(){
+
+      $(this.$el).find('img').addClass('case-img');
+
+      $(this.$el).find('.hover').bind({
+        mouseenter: function(e) {
+          
+          $(e.target).prev().css('opacity', '.75');
+          $(e.target).prev().prev().css('opacity', '.5');
+          $(e.target).prev().prev().css('transform', 'scale(.8)');
+
+        },
+        mouseleave: function(e) {
+        
+          $(e.target).prev().css('opacity', '0');
+          $(e.target).prev().prev().css('opacity', '1');
+          $(e.target).prev().prev().css('transform', 'scale(1)');
+        
+        }
+      });
+
+    }
+
   },
   mounted: function () {
    
@@ -198,22 +229,22 @@ export default {
     //hover code
     $(document).ready(function(){
 
-      $('.hover').bind({
-        mouseenter: function(e) {
+      // $('.hover').bind({
+      //   mouseenter: function(e) {
+          
+      //     $(e.target).prev().css('opacity', '.75');
+      //     $(e.target).prev().prev().css('opacity', '.5');
+      //     $(e.target).prev().prev().css('transform', 'scale(.8)');
 
-          $(e.target).prev().css('opacity', '.75');
-          $(e.target).prev().prev().css('opacity', '.5');
-          $(e.target).prev().prev().css('transform', 'scale(.8)');
-
-        },
-        mouseleave: function(e) {
+      //   },
+      //   mouseleave: function(e) {
         
-          $(e.target).prev().css('opacity', '0');
-          $(e.target).prev().prev().css('opacity', '1');
-          $(e.target).prev().prev().css('transform', 'scale(1)');
+      //     $(e.target).prev().css('opacity', '0');
+      //     $(e.target).prev().prev().css('opacity', '1');
+      //     $(e.target).prev().prev().css('transform', 'scale(1)');
         
-        }
-      });
+      //   }
+      // });
 
 
 
@@ -359,7 +390,7 @@ export default {
   img{
 
     // opacity: .6;
-    transition: all 0.5s ease;
+    //transition: all 0.5s ease;
     transform: scaleX(1.01);
 
   }
