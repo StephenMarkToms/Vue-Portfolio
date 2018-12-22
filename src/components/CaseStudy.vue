@@ -7,10 +7,10 @@
 
           <!-- <div class="wash"> -->
           
-          <div class="wash" v-bind:style="{ backgroundColor: color}">
+          <div class="wash" style="background-color: #292929;">
             
 
-            <img class="img-fluid" v-bind:src="require('../assets/' + thumbnail + '.jpg')" />
+            <img class="img-fluid" style="opacity: 0;" v-bind:src="require('../assets/' + thumbnail + '.jpg')" />
 
             <div class="row mt-5 scroller-row">
               <div class="scroller mt-5">
@@ -37,8 +37,8 @@
 
           
           
-          <h4 class="header text-white mt-3 "><span class="title-disc">{{ title }}</span></h4>
-          <p class="header mt-1 pr-4 ">{{ disc }}</p>
+          <h4 class="header text-white mt-3" style="opacity: .01"><span class="title-disc">{{ title }}</span></h4>
+          <p class="header mt-1 pr-4" style="opacity: .01">{{ disc }}</p>
 
           
         
@@ -69,16 +69,25 @@ export default {
   },
   methods:{
     visibilityChanged(isVisible, { target }) { 
-      console.log(target);
+      //console.log(target);
       //console.log(isVisible);
       if (isVisible && !this.animated) {
         this.animated = true;
 
+
         TweenMax.to($(target).find('.hover'), .5, {delay: .5, opacity: .01});
 
-        TweenMax.from($(target), 1.5, {delay: 1, alpha: 0, scale: .8, ease: Power3.easeOut,
+        var thisColor = this.color;
+
+        TweenMax.from($(target), 1, {delay: 1, alpha: 0, scale: .8, ease: Power3.easeOut,
 
           onComplete: function (){
+
+            TweenMax.to($(target).find('.wash'), .5, {delay: .5, backgroundColor: thisColor});
+
+            TweenMax.set($(target).find('img'),{opacity: 1});
+
+            TweenMax.to($(target).find('.header'), 1, {delay: .5, opacity: 1});            
 
             $(target).find('img').addClass('case-img');
 

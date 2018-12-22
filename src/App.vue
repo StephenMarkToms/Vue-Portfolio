@@ -78,9 +78,9 @@ export default {
     this.$Progress.finish()
 
 
-    TweenMax.from($('.navbar-brand'), .75, {delay: 2.75, x: "-=100", alpha: 0, ease: Power4.easeOut});
+    TweenMax.from($('.navbar-brand'), .75, {delay: 1, x: "-=100", alpha: 0, ease: Power4.easeOut});
 
-    TweenMax.from($('.navbar-nav'), .75, {delay: 2.75, x: "+=100", alpha: 0, ease: Power4.easeOut});
+    TweenMax.from($('.navbar-nav'), .75, {delay: 1, x: "+=100", alpha: 0, ease: Power4.easeOut});
 
   },
   created () {

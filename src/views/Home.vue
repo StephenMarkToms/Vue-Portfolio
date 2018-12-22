@@ -279,7 +279,7 @@ export default {
             function(){
               this.doneLoad = true;
               $('.case-study').removeClass('d-none');
-            }, 2000
+            }, 500
           );
           
         }
