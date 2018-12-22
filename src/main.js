@@ -1,4 +1,6 @@
 /* eslint-disable */
+require('intersection-observer');
+
 
 import Vue from "vue";
 import VueProgressBar from 'vue-progressbar';
@@ -26,6 +28,8 @@ import './scss/fonts.scss'
 
 //global styles
 import './scss/main.scss'
+
+
 
 import VueObserveVisibility from 'vue-observe-visibility'
 Vue.use(VueObserveVisibility)

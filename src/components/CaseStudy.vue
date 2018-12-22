@@ -2,7 +2,8 @@
 
     
       <div v-observe-visibility="{
-          callback: visibilityChanged
+          callback: visibilityChanged,
+          threshold: .7
         }" style="alpha:0;">
 
           <!-- <div class="wash"> -->
@@ -95,8 +96,8 @@ export default {
               mouseenter: function(e) {
                 
                 $(e.target).prev().css('opacity', '.75');
-                $(e.target).prev().prev().css('opacity', '.5');
-                $(e.target).prev().prev().css('transform', 'scale(.8)');
+                $(e.target).prev().prev().css('opacity', '.1');
+                $(e.target).prev().prev().css('transform', 'scale(1.01)');
 
               },
               mouseleave: function(e) {
