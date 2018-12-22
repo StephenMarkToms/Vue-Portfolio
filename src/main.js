@@ -27,6 +27,10 @@ import './scss/fonts.scss'
 //global styles
 import './scss/main.scss'
 
+import VueObserveVisibility from 'vue-observe-visibility'
+Vue.use(VueObserveVisibility)
+
+
 
 // jquery
 global.$ = $;
@@ -55,5 +59,3 @@ new Vue({
   store,
   render: h => h(App)
 }).$mount("#app");
-
-

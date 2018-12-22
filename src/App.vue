@@ -71,7 +71,7 @@
 
 
 export default {
-  
+    
 
   mounted () {
     //  [App.vue specific] When App.vue is finish loading finish the progress bar
@@ -112,8 +112,6 @@ export default {
   template: '#page',
 	methods: {
 		enter: function enter(el, done) {
-      
-
 			TweenMax.fromTo(el, 1, {
 				autoAlpha: 0,
 				scale: 1.5 },
@@ -135,7 +133,7 @@ export default {
 				ease: Power4.easeOut,
 				onComplete: done });
 
-		} }
+    } },
 };
 
 

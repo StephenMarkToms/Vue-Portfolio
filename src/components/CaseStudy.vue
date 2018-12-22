@@ -49,6 +49,8 @@
 </template>
 
 <script>
+
+
 export default {
   props: {
     name: String,
@@ -59,7 +61,6 @@ export default {
   },
   mounted: function () {
    
-    console.clear();
 
     
 

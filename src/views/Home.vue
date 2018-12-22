@@ -65,6 +65,7 @@
                     <div class="case-study px-0 col-md-5 col-12 mx-0 text-left">
 
                       <CaseStudy
+                          v-observe-visibility="visibilityChanged"
                           name="Studio Eleven" 
                           thumbnail="studio-eleven" 
                           title="Studio Eleven Hair Salon"
@@ -223,6 +224,11 @@ export default {
   
 
   methods: {
+
+    visibilityChanged: function (isVisible, entry) {
+      this.isVisible = isVisible
+      console.log(entry)
+    },
 
     setNewAnimation: function (){
 
