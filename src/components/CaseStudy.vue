@@ -3,7 +3,8 @@
     
       <div v-observe-visibility="{
           callback: visibilityChanged,
-          threshold: .7
+          threshold: .7,
+          rootMargin: 500,
         }" style="alpha:0;">
 
           <!-- <div class="wash"> -->
