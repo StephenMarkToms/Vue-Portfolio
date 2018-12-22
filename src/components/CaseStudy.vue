@@ -2,11 +2,8 @@
 
     
       <div v-observe-visibility="{
-          callback: visibilityChanged,
-          intersection: {
-            rootMargin: '0px 0px 0px 0px'
-          }
-        }" style="background-color:#131212; alpha:0;">
+          callback: visibilityChanged
+        }" style="alpha:0;">
 
           <!-- <div class="wash"> -->
           
@@ -35,7 +32,7 @@
                     </div>
                 </div>
             </div>
-            <div class="hover" style="background-color:red; width: 100%; height: 100%; position: absolute; top: 0; opacity: .01;"></div>
+            <div class="hover" style="background-color:#171717; width: 100%; height: 100%; position: absolute; top: 0; opacity: 1;"></div>
           </div>
 
           
@@ -72,33 +69,40 @@ export default {
   },
   methods:{
     visibilityChanged(isVisible, { target }) { 
-      console.log(isVisible);
+      console.log(target);
+      //console.log(isVisible);
       if (isVisible && !this.animated) {
         this.animated = true;
-        TweenMax.from($(target), .5, {delay: 1.5, alpha: 0});
+
+        TweenMax.to($(target).find('.hover'), .5, {delay: .5, opacity: .01});
+
+        TweenMax.from($(target), 1.5, {delay: 1, alpha: 0, scale: .8, ease: Power3.easeOut,
+
+          onComplete: function (){
+
+            $(target).find('img').addClass('case-img');
+
+            $(target).find('.hover').bind({
+              mouseenter: function(e) {
+                
+                $(e.target).prev().css('opacity', '.75');
+                $(e.target).prev().prev().css('opacity', '.5');
+                $(e.target).prev().prev().css('transform', 'scale(.8)');
+
+              },
+              mouseleave: function(e) {
+              
+                $(e.target).prev().css('opacity', '0');
+                $(e.target).prev().prev().css('opacity', '1');
+                $(e.target).prev().prev().css('transform', 'scale(1)');
+              
+              }
+            });
+            
+          }
+        
+        });
       }      
-    },
-    doneAnimating(){
-
-      $(this.$el).find('img').addClass('case-img');
-
-      $(this.$el).find('.hover').bind({
-        mouseenter: function(e) {
-          
-          $(e.target).prev().css('opacity', '.75');
-          $(e.target).prev().prev().css('opacity', '.5');
-          $(e.target).prev().prev().css('transform', 'scale(.8)');
-
-        },
-        mouseleave: function(e) {
-        
-          $(e.target).prev().css('opacity', '0');
-          $(e.target).prev().prev().css('opacity', '1');
-          $(e.target).prev().prev().css('transform', 'scale(1)');
-        
-        }
-      });
-
     }
 
   },
