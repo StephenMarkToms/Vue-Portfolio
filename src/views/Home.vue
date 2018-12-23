@@ -245,6 +245,23 @@ export default {
 
 		enter: function enter(el, done) {
 
+      $.fn.isInViewport = function() {
+        var elementTop = $(this).offset().top;
+        var elementBottom = elementTop + $(this).outerHeight();
+
+        var viewportTop = $(window).scrollTop();
+        var viewportBottom = viewportTop + $(window).height();
+
+        //console.clear();
+        //console.log(elementTop, 'el top');
+        //console.log(viewportBottom, 'view bot');
+
+        return elementBottom > viewportTop && elementTop < (viewportBottom + 400);
+      };
+
+      
+
+
       console.log("entering " + this.animation);
 
         TweenMax.fromTo(el, 1, {

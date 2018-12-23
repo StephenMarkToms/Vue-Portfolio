@@ -1,11 +1,7 @@
 <template>
 
     
-      <div v-observe-visibility="{
-          callback: visibilityChanged,
-          threshold: .7,
-          rootMargin: 500,
-        }" style="alpha:0;">
+      <div style="alpha:0;">
 
           <!-- <div class="wash"> -->
           
@@ -58,7 +54,6 @@
 export default {
   data(){
     return{
-      timesViewed: 0,
       animated: false,
     }
   },
@@ -67,33 +62,51 @@ export default {
     thumbnail: String,
     title: String,
     disc: String,
-    color: String
+    color: String,
   },
-  methods:{
-    visibilityChanged(isVisible, { target }) { 
-      //console.log(target);
-      //console.log(isVisible);
-      if (isVisible && !this.animated) {
-        this.animated = true;
+  mounted: function () {
+   
+    let thisObj = this;
+
+    $(window).bind({
+        load:function(){
+          console.log('loaded');
+        },
+        resize:function(){
+
+        },
+        scroll:function(){
+
+        }
+    });
+
+    $('.page').on("load resize scroll",function(e){
+
+      console.log(thisObj);
+
+      if ($(thisObj.$el).isInViewport()) {
+        //console.log('in view ');
+        if (!thisObj.animated) {
+        thisObj.animated = true;
 
 
-        TweenMax.to($(target).find('.hover'), .5, {delay: .5, opacity: .01});
+        TweenMax.to($(thisObj.$el).find('.hover'), .5, {delay: .5, opacity: .01});
 
-        var thisColor = this.color;
+        var thisColor = thisObj.color;
 
-        TweenMax.from($(target), 1, {delay: 1, alpha: 0, scale: .8, ease: Power3.easeOut,
+        TweenMax.from($(thisObj.$el), 1, {delay: 1, alpha: 0, scale: .8, ease: Power3.easeOut,
 
           onComplete: function (){
 
-            TweenMax.to($(target).find('.wash'), .5, {delay: .5, backgroundColor: thisColor});
+            TweenMax.to($(thisObj.$el).find('.wash'), .5, {delay: .5, backgroundColor: thisColor});
 
-            TweenMax.set($(target).find('img'),{opacity: 1});
+            TweenMax.set($(thisObj.$el).find('img'),{opacity: 1});
 
-            TweenMax.to($(target).find('.header'), 1, {delay: .5, opacity: 1});            
+            TweenMax.to($(thisObj.$el).find('.header'), 1, {delay: .5, opacity: 1});            
 
-            $(target).find('img').addClass('case-img');
+            $(thisObj.$el).find('img').addClass('case-img');
 
-            $(target).find('.hover').bind({
+            $(thisObj.$el).find('.hover').bind({
               mouseenter: function(e) {
                 
                 $(e.target).prev().css('opacity', '.75');
@@ -113,14 +126,12 @@ export default {
           }
         
         });
-      }      
-    }
+      } 
+      } else {
+        //NOT IN VIEW
+      }
 
-  },
-  mounted: function () {
-   
-
-    
+    });
 
     var root = document.documentElement;
     var body = document.body;
@@ -249,33 +260,6 @@ export default {
         width: rect.width };
 
     }
-
-      
-
-
-    //hover code
-    $(document).ready(function(){
-
-      // $('.hover').bind({
-      //   mouseenter: function(e) {
-          
-      //     $(e.target).prev().css('opacity', '.75');
-      //     $(e.target).prev().prev().css('opacity', '.5');
-      //     $(e.target).prev().prev().css('transform', 'scale(.8)');
-
-      //   },
-      //   mouseleave: function(e) {
-        
-      //     $(e.target).prev().css('opacity', '0');
-      //     $(e.target).prev().prev().css('opacity', '1');
-      //     $(e.target).prev().prev().css('transform', 'scale(1)');
-        
-      //   }
-      // });
-
-
-
-    });
 
   }
   
