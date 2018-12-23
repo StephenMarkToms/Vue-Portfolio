@@ -68,70 +68,48 @@ export default {
    
     let thisObj = this;
 
-    $(window).bind({
-        load:function(){
-          console.log('loaded');
-        },
-        resize:function(){
+      $('.page').bind({
+          resize:function(){
+            checkViewStatus();
+          },
+          scroll:function(){
+            checkViewStatus();
+          }
+      });
+      
+      setTimeout(checkViewStatus, 1000);
 
-        },
-        scroll:function(){
-
-        }
-    });
-
-    $('.page').on("load resize scroll",function(e){
-
+      function checkViewStatus(){
       console.log(thisObj);
-
       if ($(thisObj.$el).isInViewport()) {
         //console.log('in view ');
         if (!thisObj.animated) {
-        thisObj.animated = true;
-
-
-        TweenMax.to($(thisObj.$el).find('.hover'), .5, {delay: .5, opacity: .01});
-
-        var thisColor = thisObj.color;
-
-        TweenMax.from($(thisObj.$el), 1, {delay: 1, alpha: 0, scale: .8, ease: Power3.easeOut,
-
-          onComplete: function (){
-
-            TweenMax.to($(thisObj.$el).find('.wash'), .5, {delay: .5, backgroundColor: thisColor});
-
-            TweenMax.set($(thisObj.$el).find('img'),{opacity: 1});
-
-            TweenMax.to($(thisObj.$el).find('.header'), 1, {delay: .5, opacity: 1});            
-
-            $(thisObj.$el).find('img').addClass('case-img');
-
-            $(thisObj.$el).find('.hover').bind({
-              mouseenter: function(e) {
-                
-                $(e.target).prev().css('opacity', '.75');
-                $(e.target).prev().prev().css('opacity', '.1');
-                $(e.target).prev().prev().css('transform', 'scale(1.01)');
-
-              },
-              mouseleave: function(e) {
-              
-                $(e.target).prev().css('opacity', '0');
-                $(e.target).prev().prev().css('opacity', '1');
-                $(e.target).prev().prev().css('transform', 'scale(1)');
-              
-              }
-            });
-            
-          }
-        
-        });
-      } 
-      } else {
-        //NOT IN VIEW
+          thisObj.animated = true;
+          TweenMax.to($(thisObj.$el).find('.hover'), .5, {delay: .5, opacity: .01});
+          var thisColor = thisObj.color;
+          TweenMax.from($(thisObj.$el), 1, {delay: 1, alpha: 0, scale: .8, ease: Power3.easeOut,
+            onComplete: function (){
+              TweenMax.to($(thisObj.$el).find('.wash'), .5, {delay: .5, backgroundColor: thisColor});
+              TweenMax.set($(thisObj.$el).find('img'),{opacity: 1});
+              TweenMax.to($(thisObj.$el).find('.header'), 1, {delay: .5, opacity: 1});            
+              $(thisObj.$el).find('img').addClass('case-img');
+              $(thisObj.$el).find('.hover').bind({
+                mouseenter: function(e) {
+                  $(e.target).prev().css('opacity', '.75');
+                  $(e.target).prev().prev().css('opacity', '.1');
+                  $(e.target).prev().prev().css('transform', 'scale(1.01)');
+                },
+                mouseleave: function(e) {
+                  $(e.target).prev().css('opacity', '0');
+                  $(e.target).prev().prev().css('opacity', '1');
+                  $(e.target).prev().prev().css('transform', 'scale(1)');
+                }
+              });
+            }
+          });
+        } 
       }
-
-    });
+    }
 
     var root = document.documentElement;
     var body = document.body;

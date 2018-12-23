@@ -256,7 +256,7 @@ export default {
         //console.log(elementTop, 'el top');
         //console.log(viewportBottom, 'view bot');
 
-        return elementBottom > viewportTop && elementTop < (viewportBottom + 400);
+        return elementBottom > viewportTop && elementTop < (viewportBottom + 200);
       };
 
       
