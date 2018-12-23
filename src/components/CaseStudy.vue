@@ -80,7 +80,7 @@ export default {
       setTimeout(checkViewStatus, 1000);
 
       function checkViewStatus(){
-      console.log(thisObj);
+      //console.log(thisObj);
       if ($(thisObj.$el).isInViewport()) {
         //console.log('in view ');
         if (!thisObj.animated) {
@@ -182,15 +182,15 @@ export default {
 
       var clone = fromHero.cloneNode(true);
       
-      $(clone).remove('.case-img');
+      //$(clone).remove('.case-img');
       //console.log($(clone).find('img'));
 
       //remove elements from cloned element
       $(clone).find('img').remove();
       $(clone).find('.scroller-row').remove();
 
-      //TweenMax.to($(clone).find('.case-img')[0], .2, { autoAlpha: 0 });
-      //TweenMax.to($(clone).find('.scroller-row')[0], .2, { autoAlpha: 0 });
+      TweenMax.to($(clone).find('img'), .2, { autoAlpha: 0 });
+      TweenMax.to($(clone).find('.scroller-row'), .2, { autoAlpha: 0 });
 
       var from = calculatePosition(fromHero);
       var to = calculatePosition(toHero);
@@ -285,7 +285,7 @@ export default {
   .title-disc{
 
     text-decoration: none;
-    border-bottom: 3px solid #ffaf1e;
+    //border-bottom: 3px solid #ffaf1e;
     padding-bottom: 0px;
 
   }

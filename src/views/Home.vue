@@ -62,16 +62,18 @@
 
                   <div class="row justify-content-between">
 
-                    <div class="case-study d-none px-0 col-md-5 col-12 mx-0 text-left">
+                    <div class="case-study d-none px-0 col-md-5 col-12 mx-0 text-left"
+                    >
 
                       <CaseStudy
+                          
                           ref="case1"
                           name="Studio Eleven" 
                           id="studio-eleven" 
                           thumbnail="studio-eleven" 
                           title="Studio Eleven Hair Salon"
                           disc="Creating a brand identity and website refresh for an upcoming hair salon"
-                          color="#FFBD00"
+                          color="#30C8C5"
                       ></CaseStudy>
                     </div>
 
@@ -83,7 +85,7 @@
                           thumbnail="callie-tomblin" 
                           title="Callie Tomblin"
                           disc="Establishing a brand identity for a musician"
-                          color="#FFBD00"
+                          color="#D1B160"
                       ></CaseStudy>
                     </div>
 
@@ -105,7 +107,8 @@
                             thumbnail="jake" 
                             title="Jake Matthew Rivers"
                             disc="Creating a brand identity and website refresh for an upcoming hair salon"
-                            color="#FFBD00"
+                            color="#b73a40"
+                            
                         ></CaseStudy>
                      </div>
 
@@ -127,7 +130,7 @@
                             thumbnail="jve" 
                             title="Joppa View Elementary School"
                             disc="Creating a brand identity and website refresh for an upcoming hair salon"
-                            color="#FFBD00"
+                            color="#8DD9FD"
                         ></CaseStudy>
                      </div>
 
@@ -137,7 +140,7 @@
                             thumbnail="emc" 
                             title="Studio Eleven Hair Salon"
                             disc="Creating a brand identity and website refresh for an upcoming hair salon"
-                            color="#FFBD00"
+                            color="#BBC5A1"
                         ></CaseStudy>
                      </div>
 
@@ -245,6 +248,7 @@ export default {
 
 		enter: function enter(el, done) {
 
+
       $.fn.isInViewport = function() {
         var elementTop = $(this).offset().top;
         var elementBottom = elementTop + $(this).outerHeight();
@@ -256,7 +260,7 @@ export default {
         //console.log(elementTop, 'el top');
         //console.log(viewportBottom, 'view bot');
 
-        return elementBottom > viewportTop && elementTop < (viewportBottom + 200);
+        return elementBottom > viewportTop && elementTop < (viewportBottom + 100);
       };
 
       

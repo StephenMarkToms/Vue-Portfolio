@@ -6,10 +6,9 @@
     <router-link class="navbar-brand" to="/">smt<span style="color: #ffbd00;">.</span></router-link>
 
       
-
         <div class="navbar-nav ml-auto d-none d-sm-block">
-            <a class="nav-item nav-link mx-2" href="#">works</a>
-          
+            <a class="nav-item nav-link mx-2 parallax" data-speed-x="200" data-speed-y="200" href="#">works</a>
+
             <router-link class="nav-item nav-link mx-2" to="/about">about</router-link>
           
             <a class="nav-item nav-link mx-2" href="#">contact</a>
