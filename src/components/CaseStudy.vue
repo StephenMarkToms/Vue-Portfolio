@@ -127,7 +127,12 @@ export default {
 
       $(page).removeClass('d-none');
 
-      tile.addEventListener("click", function () {
+
+      tile.addEventListener("click", function (e) {
+
+        var newColor = $(this).css("background-color");
+
+        $('.fixed-wash').css('background-color', newColor);
 
         TweenMax.to($(tile).find('.case-img')[0], .2, { autoAlpha: 0 });
         TweenMax.to($(tile).find('.scroller-row')[0], .2, { autoAlpha: 0});
@@ -177,8 +182,8 @@ export default {
       
 
       //console.log($(fromHero).find('.case-img')[0]);
-
-      
+      //console.log(thisObj_ref.color);
+      //$('.fixed-wash').css('background-color', thisObj_ref.color);
 
       var clone = fromHero.cloneNode(true);
       
@@ -213,6 +218,7 @@ export default {
 
       TweenLite.set(clone, from);
       TweenLite.to(clone, 0.45, style);
+
 
       function onComplete() {
         TweenLite.set(toHero, { visibility: "visible" });
