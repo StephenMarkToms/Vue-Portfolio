@@ -42,12 +42,7 @@
 
               <div class="row mb-5 pb-5">
                 <div class="col-10 px-0 mt-2">
-                  <h1 class="quote text-left text-white mb-0 mt-lg-3">
-                      A multimodal company
-                      based in York, PA. Creating brand
-                      identities, websites and visual experiences
-                      to help organizations innovate their business.
-                  </h1>
+                  <h1 class="quote text-left text-white mb-0 mt-lg-3">A multimodal company based in York, PA. Creating brand identities, websites and visual experiences to help organizations innovate their business.</h1>
                 </div>
 
               </div>
@@ -171,6 +166,7 @@
 
   .quote div {
     white-space: nowrap;
+    width: 50%;
   }
 
   .quote {
@@ -288,17 +284,39 @@ export default {
           
         function animateCallout(){
 
-          var mySplitText = new SplitText($(".quote")),
-          t2 = new TimelineLite();
 
-          mySplitText.split({type:"lines"}); 
-          t2.staggerFrom(mySplitText.lines, 0.75, {delay: .5, opacity:0, y: 100, ease:Power4.easeOut}, 0.2, 0, allDone);
+          $('.quote').css('opacity', '0');
 
-          function allDone(){
+          setTimeout(
+            function(){
 
-            mySplitText.revert();
+              $('.quote').css('opacity', '1');
 
-          }
+              var mySplitText = new SplitText($(".quote")),
+              t2 = new TimelineLite();
+
+              mySplitText.split({type:"lines"}); 
+              t2.staggerFrom(mySplitText.lines, 0.75, {delay: .5, opacity:0, y: 100, ease:Power4.easeOut}, 0.2, 0, allDone);
+
+              function allDone(){
+
+                mySplitText.revert();
+
+              }
+            }, 500
+          );
+          
+          // var mySplitText = new SplitText($(".quote")),
+          // t2 = new TimelineLite();
+
+          // mySplitText.split({type:"lines"}); 
+          // t2.staggerFrom(mySplitText.lines, 0.75, {delay: .5, opacity:0, y: 100, ease:Power4.easeOut}, 0.2, 0, allDone);
+
+          // function allDone(){
+
+          //   mySplitText.revert();
+
+          // }
 
           
           setTimeout(
