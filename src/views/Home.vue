@@ -40,16 +40,12 @@
 
               </div>
 
-              <div class="row mb-5 pb-5 justify-content-center">
-                <div class="col mx-auto px-0 mt-2">
+              <div class="row mb-5 pb-5">
+                <div class="col-10 px-0 mt-2">
                   <h1 class="quote text-left text-white mb-0 mt-lg-3">
                       A multimodal company
-                      <br>
                       based in York, PA. Creating brand
-                      <br>
-                      identities, websites and visual experiences  
-                      <br>
-                      <!-- to help organizations <i style="color: #ffbd00; font-size: 1.23em;"><b>innovate</b></i> their business. -->
+                      identities, websites and visual experiences
                       to help organizations innovate their business.
                   </h1>
                 </div>
@@ -173,7 +169,13 @@
 
 <style lang="scss" scoped>
 
-  
+  .quote div {
+    white-space: nowrap;
+  }
+
+  .quote {
+    box-sizing: border-box;
+  }
 
   .bg-txt{
 
@@ -285,17 +287,20 @@ export default {
        
           
         function animateCallout(){
-        
-          //TweenMax.from('body', 2, {delay: .5, backgroundColor:"#ffffff", ease: Power3.easeOut});
 
-          //TweenMax.from('.hero', 1, {delay: .5, y: "+=50", alpha: 0, ease: Power4.easeIn} );
-          
-          var mySplitText = new SplitText(".quote", {type:"lines"}),
+          var mySplitText = new SplitText($(".quote")),
           t2 = new TimelineLite();
 
+          mySplitText.split({type:"lines"}); 
+          t2.staggerFrom(mySplitText.lines, 0.75, {delay: .5, opacity:0, y: 100, ease:Power4.easeOut}, 0.2, 0, allDone);
 
-          t2.staggerFrom(mySplitText.lines, 0.75, {delay: .5, opacity:0, y: 100, ease:Power4.easeOut}, 0.2)
+          function allDone(){
 
+            mySplitText.revert();
+
+          }
+
+          
           setTimeout(
             function(){
               this.doneLoad = true;
