@@ -65,6 +65,27 @@ export default {
     color: String,
   },
   mounted: function () {
+
+
+    var $window = $(window);
+
+    console.clear();
+    console.log($window.width());
+    
+    let vueComp = this;
+
+    $($window).bind({
+        resize:function(){
+          console.log($window.width());
+          $(vueComp.$el).find('img').attr("src", (vueComp.thumbnail + "-mobile.jpg"));
+          //$(".img-fluid").attr("src", "bar2.jpg");
+        },
+        load:function(){
+          console.log($window.width());
+        }
+    });
+
+
    
     let thisObj = this;
 
