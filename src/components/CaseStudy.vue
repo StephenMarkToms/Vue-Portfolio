@@ -75,14 +75,16 @@ export default {
     let vueComp = this;
 
     $($window).bind({
+        load:function(){
+          console.log($window.width());
+          $(vueComp.$el).find('img').attr("src", (vueComp.thumbnail + "-mobile.jpg"));
+          //$(".img-fluid").attr("src", "bar2.jpg");
+        },
         resize:function(){
           console.log($window.width());
           $(vueComp.$el).find('img').attr("src", (vueComp.thumbnail + "-mobile.jpg"));
           //$(".img-fluid").attr("src", "bar2.jpg");
         },
-        load:function(){
-          console.log($window.width());
-        }
     });
 
 
