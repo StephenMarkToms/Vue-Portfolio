@@ -22,31 +22,12 @@
 
 
             <div id="home-content" class="page-container">
-              
-              <!-- <h1 class="text-left mb-0">
-                  <span class="bg-txt">
-                    Hello World
-                  </span>
-              </h1> -->
 
-              <div class="row mt-0 justify-content-center">
-                <div class="col mx-auto px-0 mt-5">
-                  <h1 class="hero text-left mb-0">
-                      <!-- <span style="margin-bottom: 1em; font-size: 3em; font-style: unset; font-weight: 500;">
-                        Stephen Mark Toms
-                      </span> -->
-                  </h1>
-                </div>
-
-              </div>
-
-              <div class="row mb-5 pb-5">
-                <div class="col-10 px-0 mt-2">
+              <div class="row mt-md-5 pt-5 mb-5 pb-5">
+                <div class="col-12 col-lg-8 px-0 mt-2">
                   <h1 class="quote text-left text-white mb-0 mt-lg-3">A multimodal company based in York, PA. Creating brand identities, websites and visual experiences to help organizations innovate their business.</h1>
                 </div>
-
               </div>
-
 
               <div class="row mx-0 mt-md-5">
                 <div class="col-12 px-0  mx-0">
@@ -171,7 +152,22 @@
 
   .quote {
     box-sizing: border-box;
+    font-size: 2.7em;
+    line-height: 1.5em;
   }
+
+  // Medium devices (tablets, 768px and up)
+  @media (max-width: 768px) { 
+    .quote {
+      font-size: 2em;
+    }
+ }
+
+ @media (max-width: 576px) {
+   .quote {
+      font-size: 1.2em;
+    }
+ }
 
   .bg-txt{
 
@@ -253,10 +249,6 @@ export default {
 
         var viewportTop = $(window).scrollTop();
         var viewportBottom = viewportTop + $(window).height();
-
-        //console.clear();
-        //console.log(elementTop, 'el top');
-        //console.log(viewportBottom, 'view bot');
 
         return elementBottom > viewportTop && elementTop < (viewportBottom + 100);
       };
