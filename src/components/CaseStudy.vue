@@ -8,7 +8,7 @@
           <div class="wash" style="background-color: #292929;">
             
 
-            <img class="img-fluid" style="opacity: 0;" v-bind:src="require('../assets/' + thumbnail + '.jpg')" />
+            <img class="img-fluid" style="opacity: 0;" v-bind:src="imgSrc" />
 
             <div class="row mt-5 scroller-row">
               <div class="scroller mt-5">
@@ -55,6 +55,7 @@ export default {
   data(){
     return{
       animated: false,
+      imgSrc: require('@/assets/' + this.thumbnail + '.jpg'),
     }
   },
   props: {
@@ -71,25 +72,21 @@ export default {
 
     console.clear();
     console.log($window.width());
-    
-    let vueComp = this;
-
-    $($window).bind({
-        load:function(){
-          console.log($window.width());
-          $(vueComp.$el).find('img').attr("src", (vueComp.thumbnail + "-mobile.jpg"));
-          //$(".img-fluid").attr("src", "bar2.jpg");
-        },
-        resize:function(){
-          console.log($window.width());
-          $(vueComp.$el).find('img').attr("src", (vueComp.thumbnail + "-mobile.jpg"));
-          //$(".img-fluid").attr("src", "bar2.jpg");
-        },
-    });
-
-
    
     let thisObj = this;
+
+    $(window).on("load resize",function(e){
+
+        //console.log($window.width());
+        if($window.width() <= 576 ){
+          //make mobile img
+          thisObj.imgSrc = require('@/assets/' + thisObj.thumbnail + '-mobile.jpg');
+        }else{
+          //make desktop img
+          thisObj.imgSrc = require('@/assets/' + thisObj.thumbnail + '.jpg');
+        }
+
+    });
 
       $('.page').bind({
           resize:function(){

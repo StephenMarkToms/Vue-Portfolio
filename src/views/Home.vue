@@ -24,7 +24,7 @@
             <div id="home-content" class="page-container">
 
               <div class="row mt-md-5 pt-5 mb-5 pb-5">
-                <div class="col-12 col-lg-8 px-0 mt-2">
+                <div class="col-12 col-lg-10 px-0 mt-2">
                   <h1 class="quote text-left text-white mb-0 mt-lg-3">A multimodal company based in York, PA. Creating brand identities, websites and visual experiences to help organizations innovate their business.</h1>
                 </div>
               </div>
