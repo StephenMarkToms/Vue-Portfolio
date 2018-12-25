@@ -23,7 +23,7 @@
 
             <div id="home-content" class="page-container">
 
-              <div class="row mt-md-5 pt-5 mb-5 pb-5">
+              <div class="row mt-md-5 pt-5 mb-5 pb-lg-5">
                 <div class="col-12 col-lg-10 px-0 mt-2">
                   <h1 class="quote text-left text-white mb-0 mt-lg-3">A multimodal company based in York, PA. Creating brand identities, websites and visual experiences to help organizations innovate their business.</h1>
                 </div>
@@ -67,12 +67,12 @@
               </div>
 
               <div class="row mx-0 mt-md-5">
-                <div class="col-12 px-0 mt-5 mx-0">
+                <div class="col-12 px-0 mt-lg-5 mx-0">
 
                   <div class="row mt-md-10 justify-content-end">
 
                      <div class="case-study d-none px-0 col-md-10 col-12 mx-0 mt-2 text-left">
-                        <CaseStudy class="my-5 "
+                        <CaseStudy class="my-lg-5 "
                             ref="case3"
                             name="Jake Matthew Rivers" 
                             id="jake" 
@@ -92,12 +92,12 @@
 
 
               <div class="row mx-0 mt-md-5">
-                <div class="col-12 px-0 mt-5 mx-0">
+                <div class="col-12 px-0 mt-lg-5 mx-0">
 
                   <div class="row mt-md-10 justify-content-between">
 
                      <div class="case-study d-none px-0 col-md-5 my-auto col-12 mx-0 mt-2 text-left">
-                        <CaseStudy class="my-5"
+                        <CaseStudy class="my-lg-5"
                             name="Joppa View Elementary School" 
                             thumbnail="jve" 
                             title="Joppa View Elementary School"
@@ -107,7 +107,7 @@
                      </div>
 
                      <div class="case-study d-none px-0 col-md-6 col-12 mx-0 mt-2 text-left">
-                        <CaseStudy class="my-5"
+                        <CaseStudy class="my-lg-5"
                             name="EMC Performing Arts" 
                             thumbnail="emc" 
                             title="Studio Eleven Hair Salon"

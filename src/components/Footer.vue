@@ -40,28 +40,28 @@
                 </div>
             </div>
         </div>
-        <div class="row mb-0 mx-auto breadcrumb bg-black mr-5 pr-5">
-            <div class="col ml-5 pl-auto">
+        <div class="row mb-0 mx-auto breadcrumb bg-black mr-5 pr-md-5">
+            <div class="col-12 col-lg-6 ml-lg-1 pl-auto">
                 <a href="#">
-                    <p class=" text-left" style="color: #444137;">
+                    <p class=" text-lg-left" style="color: #444137;">
                         SMT Designs 2019 designed and developed by Stephen Mark Toms
                     </p>
                 </a>
             </div>
             
-            <div class="col mr-5 pr-0" >
+            <div class="col-12 col-lg-5 pr-0" >
                 
-                    <p class="mr-5 pr-5 text-white text-right">
-                        <a href="#" class="text-white px-3">
+                    <p class="mr-5 pr-md-5 text-white text-lg-right">
+                        <a href="#" class="text-white px-1 px-md-3">
                             LinkedIn
                         </a>
-                        <a href="#" class="text-white px-3">
+                        <a href="#" class="text-white px-1 px-md-3">
                             Facebook
                         </a>
-                        <a href="#" class="text-white px-3">
+                        <a href="#" class="text-white px-1 px-md-3">
                             Instagram
                         </a>
-                        <a href="#" class="text-white px-3">
+                        <a href="#" class="text-white px-1 px-md-3">
                             GitHub
                         </a>
                     </p>
@@ -111,6 +111,8 @@ export default {
         
     }
 
+    
+
     .lines {
         display: flex;
         flex-direction: row;
@@ -127,6 +129,8 @@ export default {
         }
 
     }
+
+    
 
     .line {
         animation: scrollerAnime 30s linear infinite;
@@ -207,6 +211,15 @@ export default {
         }
         100% {
             transform: translate3d(0, 0, 0);
+        }
+    }
+
+    @media (max-width: 576px) {
+        .lines{
+            font-size: 4em;
+        }
+        .lines-2{
+            font-size: 4em;
         }
     }
 
