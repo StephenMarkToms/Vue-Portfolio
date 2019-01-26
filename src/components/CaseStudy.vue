@@ -189,7 +189,6 @@ export default {
       TweenLite.set(clone, style);
 
       function onComplete() {
-
         TweenLite.set(toHero, { visibility: "visible" });
         body.removeChild(clone);
       }
@@ -199,7 +198,7 @@ export default {
 
     function animateHero(fromHero, toHero) {
 
-      
+            
 
       //console.log($(fromHero).find('.case-img')[0]);
       //console.log(thisObj_ref.color);
@@ -243,6 +242,10 @@ export default {
       function onComplete() {
         TweenLite.set(toHero, { visibility: "visible" });
         body.removeChild(clone);
+
+        $(toHero).attr('id', 'activeWash');
+        setTimeout( () => thisObj.$router.push({ path: '/studio-eleven'}), 1000);
+
       }
 
     }

@@ -1,6 +1,7 @@
 import Vue from "vue";
 import Router from "vue-router";
 import Home from "./views/Home.vue";
+import StudioEleven from "./views/Studio-Eleven.vue";
 import About from "./views/About.vue";
 
 
@@ -13,6 +14,24 @@ export default new Router({
       path: "/",
       name: "home",
       component: Home,
+      meta: {
+        progress: {
+          func: [
+            {call: 'color', modifier: 'temp', argument: '#ffb000'},
+            {call: 'fail', modifier: 'temp', argument: '#6e0000'},
+            {call: 'location', modifier: 'temp', argument: 'top'},
+            {call: 'transition', modifier: 'temp', argument: {speed: '1.5s', opacity: '0.6s', termination: 400}}
+          ]
+        }
+      },
+      props:{
+        animation: 'home-animation'
+      }
+    },
+    {
+      path: "/studio-eleven",
+      name: "studio-eleven",
+      component: StudioEleven,
       meta: {
         progress: {
           func: [
