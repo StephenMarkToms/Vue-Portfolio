@@ -25,7 +25,7 @@
 
               <div class="row mt-md-5 pt-5 mb-5 pb-lg-5">
                 <div class="col-12 col-lg-10 px-0 mt-2">
-                  <h1 class="quote text-left text-white mb-0 mt-lg-3">A multimodal company based in York, PA. Creating brand identities, websites and visual experiences to help organizations innovate their business.</h1>
+                  <h1 class="quote text-left text-white mb-0 mt-lg-3">A multimodal designer based in Baltimore, MD. Creating brand identities, websites and visual experiences to help organizations innovate their business.</h1>
                 </div>
               </div>
 
@@ -336,14 +336,15 @@ export default {
           
           console.log("leaving NONE");
           TweenMax.fromTo(el, 1, {
-				autoAlpha: 0,
-				scale: 1.5 },
-        {
-          autoAlpha: 1,
-          scale: 1,
-          transformOrigin: '50% 50%',
-          ease: Power4.easeOut,
-          onComplete: done });
+          autoAlpha: 0,
+          scale: 1.5 },
+          {
+            autoAlpha: 1,
+            scale: 1,
+            transformOrigin: '50% 50%',
+            ease: Power4.easeOut,
+            onComplete: done 
+          });
 
         }else{
 

@@ -109,7 +109,7 @@ export default {
           var thisColor = thisObj.color;
           TweenMax.from($(thisObj.$el), 1, {delay: 1, alpha: 0, scale: .8, ease: Power3.easeOut,
             onComplete: function (){
-              TweenMax.to($(thisObj.$el).find('.wash'), .5, {delay: .5, backgroundColor: thisColor});
+              TweenMax.to($(thisObj.$el).find('.wash'), .01, {delay: .5, backgroundColor: thisColor});
               TweenMax.set($(thisObj.$el).find('img'),{opacity: 1});
               TweenMax.to($(thisObj.$el).find('.header'), 1, {delay: .5, opacity: 1});            
               $(thisObj.$el).find('img').addClass('case-img');
@@ -138,7 +138,9 @@ export default {
 
     for (var i = 0; i < tiles.length; i++) {
       addListeners(tiles[i], pages[i]);
-      //animateHero(tiles[i], pages[i]);
+      
+      $(pages[i]).css({"background-color": this.color, "height": "100vh", "width": "100vw", "top": "0", "left": "0", "positions": "fixed" });
+
     }
 
     function addListeners(tile, page) {
@@ -158,8 +160,8 @@ export default {
         TweenMax.to($(tile).find('.scroller-row')[0], .2, { autoAlpha: 0});
 
         TweenMax.to($(tile), .5, { onComplete:function(){
-                animateHero(tile, page) 
-            }});
+            animateHero(tile, page); 
+        }});
 
       });
 
@@ -244,7 +246,7 @@ export default {
         body.removeChild(clone);
 
         $(toHero).attr('id', 'activeWash');
-        setTimeout( () => thisObj.$router.push({ path: '/studio-eleven'}), 1000);
+        setTimeout( () => thisObj.$router.push({ path: '/studio-eleven'}), 200);
 
       }
 
