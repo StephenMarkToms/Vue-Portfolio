@@ -78,6 +78,15 @@ export default {
    
     let thisObj = this;
 
+    //console.log($window.width());
+    if($window.width() <= 768 ){
+      //make mobile img
+      thisObj.imgSrc = require('@/assets/' + thisObj.thumbnail + '-mobile.jpg');
+    }else{
+      //make desktop img
+      thisObj.imgSrc = require('@/assets/' + thisObj.thumbnail + '.jpg');
+    }
+
     $(window).on("load resize",function(e){
 
         //console.log($window.width());

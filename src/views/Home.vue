@@ -24,7 +24,7 @@
             <div id="home-content" class="page-container">
 
               <div class="row mt-md-5 pt-5 mb-5 pb-lg-5">
-                <div class="col-12 col-lg-10 px-0 mt-2">
+                <div class="col-12 col-lg-12 px-0 mt-2">
                   <h1 class="quote text-left text-white mb-0 mt-lg-3">A multimodal designer based in Baltimore, MD. Creating brand identities, websites and visual experiences to help organizations innovate their business.</h1>
                 </div>
               </div>
@@ -45,7 +45,7 @@
                           thumbnail="studio-eleven" 
                           title="Studio Eleven Hair Salon"
                           disc="Creating a brand identity and website refresh for an upcoming hair salon"
-                          color="#30C8C5"
+                          color="#a1d0c1"
                       ></CaseStudy>
                     </div>
 

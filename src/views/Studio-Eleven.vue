@@ -30,8 +30,8 @@
               </div>
 
               <div class="ribbon mx-0 row justify-content-between px-5 no-gutters">
-                <h2 class="my-3 mx-5" style="font-size: 1.3em; font-weight: 500;">Studio Eleven</h2>
-                <h2 class="my-auto mx-5" style="font-size: 1.2em; font-weight: 300; letter-spacing: .05em;">visit site</h2>
+                <h2 id="ribbon-title" class="my-3 mx-5" style="font-size: 1em; font-weight: 500;">Studio Eleven <span style="color: rgb(99, 99, 99);; font-weight: 500; font-size: 1em; margin-left: .5em;">Towson, Maryland</span> </h2>
+                <h2 class="my-auto mx-5" style="font-size: 1em; font-weight: 300; letter-spacing: .05em;"><a href="https://studioeleven.us">visit site</a></h2>
               </div>
 
               <div class="page-container">
@@ -72,7 +72,7 @@
 <style lang="scss" scoped>
 
   .ribbon{
-    background-color: rgb(48, 200, 197);
+    background-color: #a1d0c1;
     color: white;
   }
 
@@ -173,9 +173,16 @@ export default {
 
     animateWash(){
 
-          TweenMax.to($('#activeWash'), .65, {delay: .5, css:{height: "6.5%", top: "65%"}, ease:Power4.easeOut, onComplete: function(){
-              $('#activeWash').toggleClass('d-none');
+          TweenMax.to($('#activeWash'), .85, {delay: .5, css:{height: "6.5%", top: "65%"}, ease:Power4.easeInOut, onComplete: function(){
+              $('#activeWash').addClass('d-none');
           }});
+          TweenMax.from($('.cover-photo'), 1, {delay: .75, alpha: 0, scaleX: 1.1, scaleY: 1.1});
+
+          TweenMax.from($('.ribbon'), 1, {alpha: 0});
+
+          TweenMax.from($('#ribbon-title'), 1, {delay: 1.5, alpha: 0});
+
+          
 
     },
     setNewAnimation: function (){
