@@ -30,19 +30,44 @@
               </div>
 
               <div class="ribbon mx-0 row justify-content-between px-5 no-gutters">
-                <h2 id="ribbon-title" class="my-3 mx-5" style="font-size: 1em; font-weight: 500;">Studio Eleven <span style="color: rgb(99, 99, 99);; font-weight: 500; font-size: 1em; margin-left: .5em;">Towson, Maryland</span> </h2>
-                <h2 class="my-auto mx-5" style="font-size: 1em; font-weight: 300; letter-spacing: .05em;"><a href="https://studioeleven.us">visit site</a></h2>
+                <h2 id="ribbon-title" class="my-3 mx-5" style="font-size: 1em; font-weight: 500;">Studio Eleven <span style="color: #585858; font-weight: 300; font-size: 1em; margin-left: .5em;">Towson, Maryland</span> </h2>
+                <h2 class="my-auto mx-5" style="font-size: 1em; font-weight: 300; letter-spacing: .05em;"><a class="link" href="https://studioeleven.us">visit site  <i class="fas fa-arrow-right"></i></a></h2>
               </div>
 
               <div class="page-container">
-                <div class="row">
-                  <div class="mx-auto col-12 col-lg-8 px-0 mt-2">
-                      <p class="pt-5 pt-lg-0 text-left" style="font-size: 1.2em;">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                <div class="row justify-content-around">
+                  <div class="mx-auto col-12 col-lg-7 px-0 mt-2">
+                      
+                      <p class="pt-5 pt-lg-0 text-left" style="font-size: 1.5em; font-weight: 100;">
+                        <span class="text-left" style="color: white; font-size: .9em; font-weight: 500;"> 
+                          QUICK WORDS
+                        </span>
+                        <br>
+                        <span class="newslab" style="color:white;">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.  
+                        </span>
                       </p>
                   </div>
-                  <div class="col px-0  mx-0">
-                        <h2>hello</h2>
+                  <div class="col-2 px-0  mx-5">
+                        <p class="pt-5 pt-lg-0 text-left" style="font-size: 1em; font-weight: 100;">
+                        <span style="color: white; font-size: .9em; font-weight: 500;"> 
+                          client:
+                        </span>
+                        <br>
+                        <br>
+                        <span class="newslab" style="color:white;">
+                          Studio Eleven<br>
+                        </span>
+                        <p class="pt-5 pt-lg-0 text-left" style="font-size: 1em; font-weight: 100;">
+                        <span style="color: white; font-size: .9em; font-weight: 500;"> 
+                          output:
+                        </span>
+                        <br>
+                        <br>
+                        <span class="newslab" style="color:white;">
+                          Branding, Website, Photography, Videography
+                        </span>
+                      </p>
                   </div> 
                 </div>
               </div>
@@ -70,6 +95,13 @@
 </template>
 
 <style lang="scss" scoped>
+
+  .link{
+    color: white;
+    &:hover{
+      text-decoration: none;
+    }
+  }
 
   .ribbon{
     background-color: #a1d0c1;
@@ -151,6 +183,7 @@
 
 
 <script>
+/* eslint-disable */
 import CaseStudy from '../components/CaseStudy.vue';
 import Navigation from '../components/Navigation.vue';
 import Footer from '../components/Footer.vue';
