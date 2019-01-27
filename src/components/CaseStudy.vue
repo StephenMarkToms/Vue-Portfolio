@@ -73,7 +73,7 @@ export default {
 
     var $window = $(window);
 
-    console.clear();
+    //console.clear();
     console.log($window.width());
    
     let thisObj = this;

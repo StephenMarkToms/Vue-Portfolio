@@ -35,8 +35,8 @@
               </div>
 
               <div class="page-container">
-                <div class="row justify-content-around">
-                  <div class="mx-auto col-12 col-lg-7 px-0 mt-2">
+                <div class="row my-5 pt-5 justify-content-around">
+                  <div class="mx-auto col-12 col-md-5 col-lg-7 px-0 mt-2">
                       
                       <p class="pt-5 pt-lg-0 text-left" style="font-size: 1.5em; font-weight: 100;">
                         <span class="text-left" style="color: white; font-size: .9em; font-weight: 500;"> 
@@ -48,7 +48,7 @@
                         </span>
                       </p>
                   </div>
-                  <div class="col-2 px-0  mx-5">
+                  <div class="col-2 px-0  mx-5 d-none d-md-block">
                         <p class="pt-5 pt-lg-0 text-left" style="font-size: 1em; font-weight: 100;">
                         <span style="color: white; font-size: .9em; font-weight: 500;"> 
                           client:
@@ -69,6 +69,34 @@
                         </span>
                       </p>
                   </div> 
+                </div>
+                <div class="row breakout mt-5 pt-3 justify-content-center">
+                  <div class="callout" style="background-position: 100% 27%;" :style="{'background-image': 'url(' + require('@/assets/case-studies/studio-eleven/hero-2.jpg') + ')'}">
+                    &nbsp;
+                  </div>
+                </div>
+                <div class="row breakout justify-content-center">
+                  <div class="callout" style="background-position: 100% 27%; background-color: white;" >
+                    &nbsp;
+                  </div>
+                </div>
+                <div class="row my-5 pt-5 justify-content-around">
+                  <div class="mx-auto col-12 col-md-5 col-lg-7 px-0 mt-2">
+                      <p class="pt-5 pt-lg-0 text-left" style="font-size: 1.5em; font-weight: 100;">
+                        <span class="text-left" style="color: white; font-size: .9em; font-weight: 500;"> 
+                          QUICK WORDS
+                        </span>
+                        <br>
+                        <span class="newslab" style="color:white;">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.  
+                        </span>
+                      </p>
+                  </div>
+                </div>
+                <div class="row mt-5 pt-3 justify-content-center">
+                  <div class="callout" style="background-position: 100% 27%;" :style="{'background-image': 'url(' + require('@/assets/case-studies/studio-eleven/hero-2.jpg') + ')'}">
+                    &nbsp;
+                  </div>
                 </div>
               </div>
 
@@ -211,7 +239,7 @@ export default {
           }});
           TweenMax.from($('.cover-photo'), 1, {delay: .75, alpha: 0, scaleX: 1.1, scaleY: 1.1});
 
-          TweenMax.from($('.ribbon'), 1, {alpha: 0});
+          TweenMax.from($('.ribbon'), 1, {alpha: 0, scaleY: 0});
 
           TweenMax.from($('#ribbon-title'), 1, {delay: 1.5, alpha: 0});
 

@@ -76,11 +76,12 @@ export default {
   mounted () {
     //  [App.vue specific] When App.vue is finish loading finish the progress bar
     this.$Progress.finish()
-
+  
 
     TweenMax.from($('.navbar-brand'), .75, {delay: 1, x: "-=100", alpha: 0, ease: Power4.easeOut});
 
     TweenMax.from($('.navbar-nav'), .75, {delay: 1, x: "+=100", alpha: 0, ease: Power4.easeOut});
+
 
   },
   created () {

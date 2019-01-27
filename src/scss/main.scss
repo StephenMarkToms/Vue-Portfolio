@@ -183,3 +183,12 @@ p{
     font-weight: 100;
     font-family: Newslab, serif !important;
   }
+
+  .callout{
+    width: 100%;
+    min-height: 70vh;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .breakout {margin:0 -100%; margin:0 calc(50% - 50vw);}
