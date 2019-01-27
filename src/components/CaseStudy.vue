@@ -56,6 +56,8 @@ export default {
     return{
       animated: false,
       imgSrc: require('@/assets/' + this.thumbnail + '.jpg'),
+      link: "",
+      doneLoad: false,
     }
   },
   props: {
@@ -64,6 +66,7 @@ export default {
     title: String,
     disc: String,
     color: String,
+    id: String,
   },
   mounted: function () {
 
@@ -88,6 +91,13 @@ export default {
 
     });
 
+    $(this.$el).on('click', function(e){
+      thisObj.$parent.nextPage = thisObj.id;
+      if(thisObj.doneLoad){
+        $('.wash').css("background-color", thisObj.color);
+      }
+    });
+
       $('.page').bind({
           resize:function(){
             checkViewStatus();
@@ -109,7 +119,9 @@ export default {
           var thisColor = thisObj.color;
           TweenMax.from($(thisObj.$el), 1, {delay: 1, alpha: 0, scale: .8, ease: Power3.easeOut,
             onComplete: function (){
-              TweenMax.to($(thisObj.$el).find('.wash'), .01, {delay: .5, backgroundColor: thisColor});
+              TweenMax.to($(thisObj.$el).find('.wash'), .01, {delay: .5, backgroundColor: thisColor, onComplete:function(){
+                thisObj.doneLoad = true;
+              }});
               TweenMax.set($(thisObj.$el).find('img'),{opacity: 1});
               TweenMax.to($(thisObj.$el).find('.header'), 1, {delay: .5, opacity: 1});            
               $(thisObj.$el).find('img').addClass('case-img');
@@ -152,16 +164,18 @@ export default {
 
       tile.addEventListener("click", function (e) {
 
-        var newColor = $(this).css("background-color");
+        if(thisObj.doneLoad){
+          var newColor = $(this).css("background-color");
 
-        $('.fixed-wash').css('background-color', newColor);
+          $('.fixed-wash').css('background-color', newColor);
 
-        TweenMax.to($(tile).find('.case-img')[0], .2, { autoAlpha: 0 });
-        TweenMax.to($(tile).find('.scroller-row')[0], .2, { autoAlpha: 0});
+          TweenMax.to($(tile).find('.case-img')[0], .2, { autoAlpha: 0 });
+          TweenMax.to($(tile).find('.scroller-row')[0], .2, { autoAlpha: 0});
 
-        TweenMax.to($(tile), .5, { onComplete:function(){
-            animateHero(tile, page); 
-        }});
+          TweenMax.to($(tile), .5, { onComplete:function(){
+              animateHero(tile, page); 
+          }});
+        }
 
       });
 
@@ -246,7 +260,9 @@ export default {
         body.removeChild(clone);
 
         $(toHero).attr('id', 'activeWash');
-        setTimeout( () => thisObj.$router.push({ path: '/studio-eleven'}), 200);
+
+        console.log(thisObj.$parent.nextPage);
+        setTimeout( () => thisObj.$router.push({ path: '/' + thisObj.$parent.nextPage}), 200);
 
       }
 

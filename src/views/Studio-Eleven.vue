@@ -173,7 +173,7 @@ export default {
 
     animateWash(){
 
-          TweenMax.to($('#activeWash'), .65, {delay: .5, css:{height: "7.3%", top: "65%"}, ease:Power4.easeOut, onComplete: function(){
+          TweenMax.to($('#activeWash'), .65, {delay: .5, css:{height: "6.5%", top: "65%"}, ease:Power4.easeOut, onComplete: function(){
               $('#activeWash').toggleClass('d-none');
           }});
 

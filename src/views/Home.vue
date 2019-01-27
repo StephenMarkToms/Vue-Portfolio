@@ -221,7 +221,8 @@ export default {
   data() {
     return {
       animation: 'enter',
-      doneLoad: false
+      doneLoad: false,
+      nextPage: 'studio-eleven',
     }
   },
   
