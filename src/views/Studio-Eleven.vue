@@ -30,15 +30,15 @@
               </div>
 
               <div class="ribbon mx-0 row justify-content-between pl-4 px-md-5 no-gutters">
-                <h2 id="ribbon-title" class="my-3 mx-md-5" style="font-size: 1em; font-weight: 500;">Studio Eleven <span style="color: #585858; font-weight: 300; font-size: 1em; margin-left: .5em;">Towson, Maryland</span> </h2>
+                <h2 id="ribbon-title" class="pt-1 my-3 mx-md-5" style="font-size: 1em; font-weight: 500;">Studio Eleven <span style="color: #585858; font-weight: 300; font-size: 1em; margin-left: .5em;">Towson, Maryland</span> </h2>
                 <h2 class="my-auto mx-sm-5" style="font-size: 1em; font-weight: 300; letter-spacing: .05em;"><a class="link d-none d-sm-block" href="https://studioeleven.us">visit site  <i class="fas fa-arrow-right"></i></a></h2>
               </div>
 
               <div class="page-container">
-                <div class="row my-5 pt-5 justify-content-around">
+                <div class="row my-5 py-5 justify-content-around">
                   <div class="mx-auto col-12 col-md-5 col-lg-7 px-0 mt-2">
                       
-                      <p class="mt-5 pt-5 pt-lg-0 text-left" style="font-size: 1.5em; font-weight: 100;">
+                      <p class="pt-lg-0 text-left" style="font-size: 1.5em; font-weight: 100;">
                         <span class="text-left" style="color: white; font-size: .9em; font-weight: 500;"> 
                           QUICK WORDS
                         </span>
@@ -72,11 +72,13 @@
                   </div> 
                 </div>
                 <div class="row breakout" style="">
-                  <video style="width: 100% !important; height: auto !important;" autoplay muted loop>
-                    <source :src="require('@/assets/case-studies/studio-eleven/movie.mp4')" type="video/mp4">
-                    Your browser does not support HTML5 video.
-                  </video>
+                  <div class="embed-responsive embed-responsive-16by9">
+                    <video class="embed-responsive-item" autoplay muted loop> 
+                      <source :src="require('@/assets/case-studies/studio-eleven/movie.mp4')" type="video/mp4">
+                    </video>
+                  </div>
                 </div>
+                
                 <!-- <div class="row breakout mt-5 pt-3 justify-content-center">
                   <div class="callout" style="background-position: 100% 27%;" :style="{'background-image': 'url(' + require('@/assets/case-studies/studio-eleven/hero-2.jpg') + ')'}">
                     &nbsp;
@@ -270,6 +272,8 @@ export default {
 
 
 		enter: function enter(el, done) {
+
+      
 
 
       $.fn.isInViewport = function() {

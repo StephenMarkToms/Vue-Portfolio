@@ -127,7 +127,7 @@
 
           
 
-            <Footer></Footer>
+            <Footer id="footer" class="d-none"></Footer>
            
             
 
@@ -312,6 +312,7 @@ export default {
             function(){
               this.doneLoad = true;
               $('.case-study').removeClass('d-none');
+              $('#footer').removeClass('d-none');
             }, 500
           );
           
