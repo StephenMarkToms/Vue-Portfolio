@@ -29,16 +29,16 @@
                 </div>
               </div>
 
-              <div class="ribbon mx-0 row justify-content-between px-5 no-gutters">
-                <h2 id="ribbon-title" class="my-3 mx-5" style="font-size: 1em; font-weight: 500;">Studio Eleven <span style="color: #585858; font-weight: 300; font-size: 1em; margin-left: .5em;">Towson, Maryland</span> </h2>
-                <h2 class="my-auto mx-5" style="font-size: 1em; font-weight: 300; letter-spacing: .05em;"><a class="link" href="https://studioeleven.us">visit site  <i class="fas fa-arrow-right"></i></a></h2>
+              <div class="ribbon mx-0 row justify-content-between pl-4 px-md-5 no-gutters">
+                <h2 id="ribbon-title" class="my-3 mx-md-5" style="font-size: 1em; font-weight: 500;">Studio Eleven <span style="color: #585858; font-weight: 300; font-size: 1em; margin-left: .5em;">Towson, Maryland</span> </h2>
+                <h2 class="my-auto mx-sm-5" style="font-size: 1em; font-weight: 300; letter-spacing: .05em;"><a class="link d-none d-sm-block" href="https://studioeleven.us">visit site  <i class="fas fa-arrow-right"></i></a></h2>
               </div>
 
               <div class="page-container">
                 <div class="row my-5 pt-5 justify-content-around">
                   <div class="mx-auto col-12 col-md-5 col-lg-7 px-0 mt-2">
                       
-                      <p class="pt-5 pt-lg-0 text-left" style="font-size: 1.5em; font-weight: 100;">
+                      <p class="mt-5 pt-5 pt-lg-0 text-left" style="font-size: 1.5em; font-weight: 100;">
                         <span class="text-left" style="color: white; font-size: .9em; font-weight: 500;"> 
                           QUICK WORDS
                         </span>
@@ -48,7 +48,7 @@
                         </span>
                       </p>
                   </div>
-                  <div class="col-2 px-0  mx-5 d-none d-md-block">
+                  <div class="mt-5 pt-5 col-2 px-0  mx-5 d-none d-md-block">
                         <p class="pt-5 pt-lg-0 text-left" style="font-size: 1em; font-weight: 100;">
                         <span style="color: white; font-size: .9em; font-weight: 500;"> 
                           client:
@@ -68,15 +68,27 @@
                           Branding, Website, Photography, Videography
                         </span>
                       </p>
+                      
                   </div> 
                 </div>
-                <div class="row breakout mt-5 pt-3 justify-content-center">
+                <div class="row breakout" style="">
+                  <video style="width: 100% !important; height: auto !important;" autoplay muted loop>
+                    <source :src="require('@/assets/case-studies/studio-eleven/movie.mp4')" type="video/mp4">
+                    Your browser does not support HTML5 video.
+                  </video>
+                </div>
+                <!-- <div class="row breakout mt-5 pt-3 justify-content-center">
                   <div class="callout" style="background-position: 100% 27%;" :style="{'background-image': 'url(' + require('@/assets/case-studies/studio-eleven/hero-2.jpg') + ')'}">
                     &nbsp;
                   </div>
-                </div>
+                </div> -->
                 <div class="row breakout justify-content-center">
                   <div class="callout" style="background-position: 100% 27%; background-color: white;" >
+                    &nbsp;
+                  </div>
+                </div>
+                <div class="row mt-5 pt-5 breakoutzxcZXc justify-content-center">
+                  <div class="callout" style="background-position: 100% 27%;" :style="{'background-image': 'url(' + require('@/assets/case-studies/studio-eleven/hero-2.jpg') + ')'}">
                     &nbsp;
                   </div>
                 </div>
@@ -234,12 +246,12 @@ export default {
 
     animateWash(){
 
-          TweenMax.to($('#activeWash'), .85, {delay: .5, css:{height: "6.5%", top: "65%"}, ease:Power4.easeInOut, onComplete: function(){
+          TweenMax.to($('#activeWash'), .85, {delay: .5, css:{height: "1px", top: "67vh"}, ease:Power4.easeInOut, onComplete: function(){
               $('#activeWash').addClass('d-none');
           }});
           TweenMax.from($('.cover-photo'), 1, {delay: .75, alpha: 0, scaleX: 1.1, scaleY: 1.1});
 
-          TweenMax.from($('.ribbon'), 1, {alpha: 0, scaleY: 0});
+          TweenMax.from($('.ribbon'), .5, {alpha: 0, scaleY: 0});
 
           TweenMax.from($('#ribbon-title'), 1, {delay: 1.5, alpha: 0});
 

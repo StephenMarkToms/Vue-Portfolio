@@ -20,7 +20,6 @@
             <Navigation></Navigation>
 
 
-
             <div id="home-content" class="page-container">
 
               <div class="row mt-md-5 pt-5 mb-5 pb-lg-5">
@@ -122,9 +121,6 @@
                 </div>
               </div>
 
-
-
-            
 
 
             </div>
