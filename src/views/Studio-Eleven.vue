@@ -126,7 +126,7 @@
                   </div>
                 </div>
                 <div class="row my-5 pt-5 justify-content-around">
-                  <div class="mx-auto col-12 col-md-5 col-lg-7 px-0 mt-2">
+                  <div class="mx-auto col-12 col-md-5 col-lg-10 px-0 mt-2">
                       <p class="pt-5 pt-lg-0 text-left" style="font-size: 1.5em; font-weight: 100;">
                         <span class="text-left" style="color: white; font-size: .9em; font-weight: 500;"> 
                           TELLING A STORY
@@ -140,12 +140,12 @@
                 </div>
                 <div class="row mt-5 pt-3 justify-content-around">
                   <div class="col-12 col-md-5 ">
-                    <div class="callout" style="background-position: 56% 46%;" :style="{'background-image': 'url(' + require('@/assets/case-studies/studio-eleven/hero-3.jpg') + ')'}">
+                    <div class="callout" style="border: solid 14px #e4efec; background-position: 56% 46%;" :style="{'background-image': 'url(' + require('@/assets/case-studies/studio-eleven/hero-3.jpg') + ')'}">
                       &nbsp;
                     </div>
                   </div>
                   <div class="mt-5 mt-md-0 col-12 col-md-5 ">
-                    <div class="callout" style="background-position: 100% 27%;" :style="{'background-image': 'url(' + require('@/assets/case-studies/studio-eleven/hero-4.jpg') + ')'}">
+                    <div class="callout" style="border: solid 14px #e4efec; background-position: 100% 27%;" :style="{'background-image': 'url(' + require('@/assets/case-studies/studio-eleven/hero-4.jpg') + ')'}">
                       &nbsp;
                     </div>
                   </div>
@@ -196,7 +196,7 @@
   }
 
   .page-container{
-    margin-top: 27em;
+    margin-top: 50vh;
     // margin-left: 2vw;
     // margin-right: 2vw;
   }
@@ -218,7 +218,7 @@
       font-size: 2em;
     }
     .page-container{
-      margin-top: 29em;
+      margin-top: 53vh;
     }
  }
 
@@ -227,7 +227,7 @@
       font-size: 1.5em;
     }
     .page-container{
-      margin-top: 29em;
+      margin-top: 55vh;
     }
  }
 
