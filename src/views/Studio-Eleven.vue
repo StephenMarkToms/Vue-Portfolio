@@ -71,7 +71,7 @@
                       
                   </div> 
                 </div>
-                <div class="row breakout" style="">
+                <div class="row breakout d-none d-md-block" style="">
                   <div class="embed-responsive embed-responsive-16by9">
                     <video class="embed-responsive-item" autoplay muted loop> 
                       <source :src="require('@/assets/case-studies/studio-eleven/movie.mp4')" type="video/mp4">
@@ -155,16 +155,48 @@
                     &nbsp;
                   </div>
                 </div>
+                <div class="row my-5 pt-5 justify-content-around">
+                  <div class="mx-auto col-12 col-md-5 col-lg-10 px-0 mt-2">
+                      <p class="pt-5 pt-lg-0 text-left" style="font-size: 1.5em; font-weight: 100;">
+                        <span class="text-left" style="color: white; font-size: .9em; font-weight: 500;"> 
+                          FINAL RESULTS
+                        </span>
+                        <br>
+                        <span class="newslab" style="color:white;">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.  
+                        </span>
+                      </p>
+                  </div>
+                </div>
+                <div class="row mt-5 p-3 justify-content-center" style="background-color: white; border: solid 10px #ccc8c8;">
+                  <div class="px-5 my-auto col-12" style="background-position: 100% 27%; " >
+                    <img style="width: 100%; height: auto;" :src="require('@/assets/case-studies/studio-eleven/website-1.png')" >
+                  </div>
+                </div>
+                <div class="row mt-5 p-3 justify-content-center" style="background-color: white; border: solid 10px #ccc8c8;">
+                  <div class="px-5 my-auto col-12" style="background-position: 100% 27%; " >
+                    <img style="width: 100%; height: auto;" :src="require('@/assets/case-studies/studio-eleven/website-2.png')" >
+                  </div>
+                </div>
+                <div class="row mt-5 p-3 justify-content-center" style="background-color: white; border: solid 10px #ccc8c8;">
+                  <div class="px-5 my-auto col-12" style="background-position: 100% 27%; " >
+                    <img style="width: 100%; height: auto;" :src="require('@/assets/case-studies/studio-eleven/website-3.png')" >
+                  </div>
+                </div>
+                <div class="row mt-5 p-3 justify-content-center" style="background-color: white; border: solid 10px #ccc8c8;">
+                  <div class="px-5 my-auto col-12" style="background-position: 100% 27%; " >
+                    <img style="width: 100%; height: auto;" :src="require('@/assets/case-studies/studio-eleven/website-4.png')" >
+                  </div>
+                </div>
+                <div class="row mt-5 pt-5 breakout justify-content-center">
+                  <div class="col mt-5" style="background-color: #252525;" >
+                    <h4 class="my-auto " style="color: rgb(165, 165, 165); padding-top: 15%; padding-bottom: 15%;">Next Project: <span style="color: white;">Callie Tomblin</span></h4>
+                  </div>
+                </div>
+
 
 
               </div>
-
-              
-
-
-            
-
-
             </div>
 
           
