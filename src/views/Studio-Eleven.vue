@@ -36,7 +36,7 @@
 
               <div class="page-container">
                 <div class="row my-5 py-5 justify-content-around">
-                  <div class="mx-auto col-12 col-md-5 col-lg-7 px-0 mt-2">
+                  <div class="mx-auto col-12 col-lg-7 px-0 mt-2">
                       
                       <p class="pt-lg-0 text-left" style="font-size: 1.5em; font-weight: 100;">
                         <span class="text-left" style="color: white; font-size: .9em; font-weight: 500;"> 
@@ -48,7 +48,7 @@
                         </span>
                       </p>
                   </div>
-                  <div class="mt-5 pt-5 col-2 px-0  mx-5 d-none d-md-block">
+                  <div class="pt-5 col-2 px-0  mx-5 d-none d-lg-block">
                         <p class="pt-5 pt-lg-0 text-left" style="font-size: 1em; font-weight: 100;">
                         <span style="color: white; font-size: .9em; font-weight: 500;"> 
                           client:
@@ -85,8 +85,8 @@
                   </div>
                 </div> -->
                 <div class="row py-5 px-5 breakout justify-content-center" style="background-color: white;">
-                  <div class="px-5 my-auto col-12 col-md-6" style="background-position: 100% 27%; " >
-                    <p class="px-5 pt-lg-0 text-left text-black" style="font-size: 1.5em; font-weight: 100;">
+                  <div class="px-5 my-auto col-12 col-lg-6" style="background-position: 100% 27%; " >
+                    <p class="px-lg-5 pt-lg-0 text-left text-black" style="font-size: 1.5em; font-weight: 100;">
                         <span class="text-left" style=" font-size: .9em; font-weight: 500;"> 
                           ESTABLISHING A BRAND
                         </span>
@@ -96,7 +96,7 @@
                         </span>
                       </p>
                   </div>
-                  <div class="px-5 my-auto col-12 col-md-6" style="background-position: 100% 27%; " >
+                  <div class="px-5 my-auto col-12 col-lg-6" style="background-position: 100% 27%; " >
                     <img style="min-height: 36vh" :src="require('@/assets/case-studies/studio-eleven/logo.png')" >
                   </div>
                   <div class="col-12 mt-5">
@@ -126,7 +126,7 @@
                   </div>
                 </div>
                 <div class="row my-5 pt-5 justify-content-around">
-                  <div class="mx-auto col-12 col-md-5 col-lg-10 px-0 mt-2">
+                  <div class="mx-auto col-12 col-lg-10 px-0 mt-2">
                       <p class="pt-5 pt-lg-0 text-left" style="font-size: 1.5em; font-weight: 100;">
                         <span class="text-left" style="color: white; font-size: .9em; font-weight: 500;"> 
                           TELLING A STORY
@@ -228,7 +228,7 @@
   }
 
   .page-container{
-    margin-top: 50vh;
+    margin-top: 25em;
     // margin-left: 2vw;
     // margin-right: 2vw;
   }
@@ -244,13 +244,14 @@
     line-height: 1.5em;
   }
 
+
   // Medium devices (tablets, 768px and up)
   @media (max-width: 768px) { 
     .quote {
       font-size: 2em;
     }
     .page-container{
-      margin-top: 53vh;
+      margin-top: 26em;
     }
  }
 
@@ -259,7 +260,7 @@
       font-size: 1.5em;
     }
     .page-container{
-      margin-top: 55vh;
+      margin-top: 30em;
     }
  }
 
