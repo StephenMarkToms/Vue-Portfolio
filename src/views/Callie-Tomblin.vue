@@ -247,9 +247,7 @@
   }
 
   .page-container{
-    margin-top: 25em;
-    // margin-left: 2vw;
-    // margin-right: 2vw;
+    margin-top: 57vh;
   }
 
   .quote div {
@@ -269,17 +267,11 @@
     .quote {
       font-size: 2em;
     }
-    .page-container{
-      margin-top: 26em;
-    }
  }
 
  @media (max-width: 576px) {
    .quote {
       font-size: 1.5em;
-    }
-    .page-container{
-      margin-top: 30em;
     }
  }
 
@@ -319,7 +311,7 @@
 
   .cover-photo{
     //background-position: top center;
-    background-size: 100%;
+    background-size: cover;
   }
 
 </style>
