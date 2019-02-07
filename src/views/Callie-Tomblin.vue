@@ -350,7 +350,7 @@ export default {
 
     animateWash(){
 
-          TweenMax.to($('.fixed-wash'), .85, {delay: .5, css:{height: "1px", top: "67vh"}, ease:Power4.easeInOut, onComplete: function(){
+          TweenMax.to($('.fixed-wash'), 1.3, {delay: .5, css:{height: "1px", top: "67vh"}, ease:Power4.easeInOut, onComplete: function(){
               $('.fixed-wash').addClass('d-none');
           }});
           TweenMax.from($('.cover-photo'), 1, {delay: .75, alpha: 0, scaleX: 1.1, scaleY: 1.1});

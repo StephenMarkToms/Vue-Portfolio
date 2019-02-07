@@ -31,6 +31,10 @@
   color: #2c3e50;
   /* background-color: #171717; */
   overflow-x: hidden;
+   position: fixed;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden
 }
 
 
