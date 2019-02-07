@@ -183,6 +183,11 @@ p {
   font-family: Newslab, serif !important;
 }
 
+.gordita {
+  font-weight: 100;
+  font-family: gordita, serif !important;
+}
+
 .callout {
   width: 100%;
   min-height: 70vh;
@@ -207,4 +212,8 @@ p {
   max-width: 150px;
   max-height: 100px;
   
+}
+
+.no-dec{
+  text-decoration: none !important;
 }

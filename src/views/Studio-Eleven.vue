@@ -38,12 +38,12 @@
                 <div class="row my-5 py-5 justify-content-around">
                   <div class="mx-auto col-12 col-lg-7 px-0 mt-2">
                       
-                      <p class="pt-lg-0 text-left" style="font-size: 1.5em; font-weight: 100;">
-                        <span class="text-left" style="color: white; font-size: .9em; font-weight: 500;"> 
+                      <p class="newslab pt-lg-0 text-left" style="font-size: 1.5em; font-weight: 100;">
+                        <span class="text-left" style="color: white; font-size: 1.1em; "> 
                           QUICK WORDS
                         </span>
                         <br>
-                        <span class="newslab" style="color:white;">
+                        <span class="gordita" style="color:white;">
                           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.  
                         </span>
                       </p>
@@ -87,17 +87,17 @@
                 <div class="row py-5 px-5 breakout justify-content-center" style="background-color: white;">
                   <div class="px-5 my-auto col-12 col-lg-6" style="background-position: 100% 27%; " >
                     <p class="px-lg-5 pt-lg-0 text-left text-black" style="font-size: 1.5em; font-weight: 100;">
-                        <span class="text-left" style=" font-size: .9em; font-weight: 500;"> 
+                        <span class="text-left newslab" style="font-size: 1.1em;"> 
                           ESTABLISHING A BRAND
                         </span>
                         <br>
-                        <span class="newslab">
+                        <span class="gordita">
                           Lorem ipsum dolor sit amet, cis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.  
                         </span>
                       </p>
                   </div>
                   <div class="px-5 my-auto col-12 col-lg-6" style="background-position: 100% 27%; " >
-                    <img style="min-height: 36vh" :src="require('@/assets/case-studies/studio-eleven/logo.png')" >
+                    <img style="max-width: 100%;" :src="require('@/assets/case-studies/studio-eleven/logo.png')" >
                   </div>
                   <div class="col-12 mt-5">
                         <h3>COLOUR</h3>
@@ -118,7 +118,6 @@
                         </div>
                       </div>
                   </div>
-                  
                 </div>
                 <div class="row mt-5 pt-5 justify-content-center">
                   <div class="callout" style="background-position: 100% 27%;" :style="{'background-image': 'url(' + require('@/assets/case-studies/studio-eleven/hero-6.jpg') + ')'}">
@@ -128,11 +127,11 @@
                 <div class="row my-5 pt-5 justify-content-around">
                   <div class="mx-auto col-12 col-lg-10 px-0 mt-2">
                       <p class="pt-5 pt-lg-0 text-left" style="font-size: 1.5em; font-weight: 100;">
-                        <span class="text-left" style="color: white; font-size: .9em; font-weight: 500;"> 
+                        <span class="newslab text-left" style="color: white; font-size: 1.1em;"> 
                           TELLING A STORY
                         </span>
                         <br>
-                        <span class="newslab" style="color:white;">
+                        <span class="gordita" style="color:white;">
                           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.  
                         </span>
                       </p>
@@ -156,43 +155,59 @@
                   </div>
                 </div>
                 <div class="row my-5 pt-5 justify-content-around">
-                  <div class="mx-auto col-12 col-md-5 col-lg-10 px-0 mt-2">
+                  <div class="mx-auto col-12 col-lg-10 px-0 mt-2">
                       <p class="pt-5 pt-lg-0 text-left" style="font-size: 1.5em; font-weight: 100;">
-                        <span class="text-left" style="color: white; font-size: .9em; font-weight: 500;"> 
+                        <span class="text-left newslab" style="color: white; font-size: 1.1em;"> 
                           FINAL RESULTS
                         </span>
                         <br>
-                        <span class="newslab" style="color:white;">
+                        <span class="gordita" style="color:white;">
                           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.  
                         </span>
                       </p>
                   </div>
                 </div>
-                <div class="row mt-5 p-3 justify-content-center" style="background-color: white; border: solid 10px #ccc8c8;">
+                <div class="row d-none d-md-block mt-5 p-3 justify-content-center" style="background-color: white; border: solid 10px #ccc8c8;">
                   <div class="px-5 my-auto col-12" style="background-position: 100% 27%; " >
                     <img style="width: 100%; height: auto;" :src="require('@/assets/case-studies/studio-eleven/website-1.png')" >
                   </div>
                 </div>
-                <div class="row mt-5 p-3 justify-content-center" style="background-color: white; border: solid 10px #ccc8c8;">
+                <div class="row d-none d-md-block mt-5 p-3 justify-content-center" style="background-color: white; border: solid 10px #ccc8c8;">
                   <div class="px-5 my-auto col-12" style="background-position: 100% 27%; " >
                     <img style="width: 100%; height: auto;" :src="require('@/assets/case-studies/studio-eleven/website-2.png')" >
                   </div>
                 </div>
-                <div class="row mt-5 p-3 justify-content-center" style="background-color: white; border: solid 10px #ccc8c8;">
+                <div class="row d-none d-md-block mt-5 p-3 justify-content-center" style="background-color: white; border: solid 10px #ccc8c8;">
                   <div class="px-5 my-auto col-12" style="background-position: 100% 27%; " >
                     <img style="width: 100%; height: auto;" :src="require('@/assets/case-studies/studio-eleven/website-3.png')" >
                   </div>
                 </div>
-                <div class="row mt-5 p-3 justify-content-center" style="background-color: white; border: solid 10px #ccc8c8;">
+                <div class="row d-none d-md-block mt-5 mb-5 p-3 justify-content-center" style="background-color: white; border: solid 10px #ccc8c8;">
                   <div class="px-5 my-auto col-12" style="background-position: 100% 27%; " >
                     <img style="width: 100%; height: auto;" :src="require('@/assets/case-studies/studio-eleven/website-4.png')" >
                   </div>
                 </div>
-                <div class="row mt-5 pt-5 breakout justify-content-center">
-                  <div class="col mt-5" style="background-color: #252525;" >
-                    <h4 class="my-auto " style="color: rgb(165, 165, 165); padding-top: 15%; padding-bottom: 15%;">Next Project: <span style="color: white;">Callie Tomblin</span></h4>
+                <div class="row breakout pt-5 mt-5 p-3 py-5 justify-content-center" style="background-color: #f0f0f0;">
+                  <div class="px-5 my-5 my-md-auto col-12 col-md-3" style="background-position: 100% 27%; " >
+                    <img style="width: 100%; height: auto;" :src="require('@/assets/case-studies/studio-eleven/mobile/1.jpg')" >
+                  </div>
+                  <div class="px-5 my-5 my-md-auto col-12 col-md-3" style="background-position: 100% 27%; " >
+                    <img style="width: 100%; height: auto;" :src="require('@/assets/case-studies/studio-eleven/mobile/2.jpg')" >
+                  </div>
+                  <div class="px-5 my-5 my-md-auto col-12 col-md-3" style="background-position: 100% 27%; " >
+                    <img style="width: 100%; height: auto;" :src="require('@/assets/case-studies/studio-eleven/mobile/3.jpg')" >
+                  </div>
+                  <div class="px-5 my-5 my-md-auto col-12 col-md-3" style="background-position: 100% 27%; " >
+                    <img style="width: 100%; height: auto;" :src="require('@/assets/case-studies/studio-eleven/mobile/4.jpg')" >
                   </div>
                 </div>
+                <router-link class="no-dec" to="/callie-tomblin">
+                  <div class="row mt-5 pt-5 breakout justify-content-center">
+                    <div class="col mt-5" style="background-color: #252525;" >
+                      <h4 class="no-dec my-auto " style="color: rgb(165, 165, 165); padding-top: 15%; padding-bottom: 15%;">Next Project: <span style="color: white;">Callie Tomblin</span></h4>
+                    </div>
+                  </div>
+                </router-link>
 
 
 
@@ -326,8 +341,8 @@ export default {
 
     animateWash(){
 
-          TweenMax.to($('#activeWash'), .85, {delay: .5, css:{height: "1px", top: "67vh"}, ease:Power4.easeInOut, onComplete: function(){
-              $('#activeWash').addClass('d-none');
+          TweenMax.to($('.fixed-wash'), .85, {delay: .5, css:{height: "1px", top: "67vh"}, ease:Power4.easeInOut, onComplete: function(){
+              $('.fixed-wash').addClass('d-none');
           }});
           TweenMax.from($('.cover-photo'), 1, {delay: .75, alpha: 0, scaleX: 1.1, scaleY: 1.1});
 
