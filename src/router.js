@@ -3,6 +3,7 @@ import Router from "vue-router";
 import Home from "./views/Home.vue";
 import StudioEleven from "./views/Studio-Eleven.vue";
 import CallieTomblin from "./views/Callie-Tomblin.vue";
+import JakeRivers from "./views/Jake-Rivers.vue";
 import About from "./views/About.vue";
 
 
@@ -49,11 +50,28 @@ export default new Router({
         animation: 'home-animation'
       }
     },
-
     {
       path: "/callie-tomblin",
       name: "callie-tomblin",
       component: CallieTomblin,
+      meta: {
+        progress: {
+          func: [
+            {call: 'color', modifier: 'temp', argument: '#ffb000'},
+            {call: 'fail', modifier: 'temp', argument: '#6e0000'},
+            {call: 'location', modifier: 'temp', argument: 'top'},
+            {call: 'transition', modifier: 'temp', argument: {speed: '1.5s', opacity: '0.6s', termination: 400}}
+          ]
+        }
+      },
+      props:{
+        animation: 'home-animation'
+      }
+    },
+    {
+      path: "/jake-rivers",
+      name: "jake-rivers",
+      component: JakeRivers,
       meta: {
         progress: {
           func: [

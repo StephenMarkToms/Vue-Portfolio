@@ -124,7 +124,7 @@
                   </div>
                 </div>
                 <div class="row mt-5 pt-5 justify-content-center">
-                  <div class="callout" style="background-position: 100% 27%;" :style="{'background-image': 'url(' + require('@/assets/case-studies/studio-eleven/hero-6.jpg') + ')'}">
+                  <div class="callout" style="background-position: center top;" :style="{'background-image': 'url(' + require('@/assets/case-studies/callie-tomblin/hero-6.jpg') + ')'}">
                     &nbsp;
                   </div>
                 </div>
@@ -143,18 +143,18 @@
                 </div>
                 <div class="row mt-5 pt-3 justify-content-around">
                   <div class="col-12 col-md-5 ">
-                    <div class="callout" style="border: solid 14px #e4efec; background-position: 56% 46%;" :style="{'background-image': 'url(' + require('@/assets/case-studies/studio-eleven/hero-3.jpg') + ')'}">
+                    <div class="callout" style="border: solid 14px #e4efec; background-position: 56% 46%;" :style="{'background-image': 'url(' + require('@/assets/case-studies/callie-tomblin/hero-3.jpg') + ')'}">
                       &nbsp;
                     </div>
                   </div>
                   <div class="mt-5 mt-md-0 col-12 col-md-5 ">
-                    <div class="callout" style="border: solid 14px #e4efec; background-position: 100% 27%;" :style="{'background-image': 'url(' + require('@/assets/case-studies/studio-eleven/hero-4.jpg') + ')'}">
+                    <div class="callout" style="border: solid 14px #e4efec; background-position: 100% 27%;" :style="{'background-image': 'url(' + require('@/assets/case-studies/callie-tomblin/hero-4.jpg') + ')'}">
                       &nbsp;
                     </div>
                   </div>
                 </div>
                 <div class="row mt-5 pt-5 breakout justify-content-center">
-                  <div class="callout" style="background-position: 75% 27%;" :style="{'background-image': 'url(' + require('@/assets/case-studies/studio-eleven/hero-2.jpg') + ')'}">
+                  <div class="callout" style="background-position: 75% 27%;" :style="{'background-image': 'url(' + require('@/assets/case-studies/callie-tomblin/hero-2.jpg') + ')'}">
                     &nbsp;
                   </div>
                 </div>
@@ -172,37 +172,37 @@
                   </div>
                 </div>
                 <div class="row d-none d-md-block mt-5 p-3 justify-content-center" style="background-color: white; border: solid 10px #ccc8c8;">
-                  <div class="px-5 my-auto col-12" style="background-position: 100% 27%; " >
-                    <img style="width: 100%; height: auto;" :src="require('@/assets/case-studies/studio-eleven/website-1.png')" >
+                  <div class=" my-auto col-12" style="background-position: 100% 27%; " >
+                    <img style="width: 100%; height: auto;" :src="require('@/assets/case-studies/callie-tomblin/website-1.png')" >
                   </div>
                 </div>
                 <div class="row d-none d-md-block mt-5 p-3 justify-content-center" style="background-color: white; border: solid 10px #ccc8c8;">
-                  <div class="px-5 my-auto col-12" style="background-position: 100% 27%; " >
-                    <img style="width: 100%; height: auto;" :src="require('@/assets/case-studies/studio-eleven/website-2.png')" >
+                  <div class=" my-auto col-12" style="background-position: 100% 27%; " >
+                    <img style="width: 100%; height: auto;" :src="require('@/assets/case-studies/callie-tomblin/website-2.png')" >
                   </div>
                 </div>
                 <div class="row d-none d-md-block mt-5 p-3 justify-content-center" style="background-color: white; border: solid 10px #ccc8c8;">
-                  <div class="px-5 my-auto col-12" style="background-position: 100% 27%; " >
-                    <img style="width: 100%; height: auto;" :src="require('@/assets/case-studies/studio-eleven/website-3.png')" >
+                  <div class=" my-auto col-12" style="background-position: 100% 27%; " >
+                    <img style="width: 100%; height: auto;" :src="require('@/assets/case-studies/callie-tomblin/website-3.png')" >
                   </div>
                 </div>
                 <div class="row d-none d-md-block mt-5 mb-5 p-3 justify-content-center" style="background-color: white; border: solid 10px #ccc8c8;">
-                  <div class="px-5 my-auto col-12" style="background-position: 100% 27%; " >
-                    <img style="width: 100%; height: auto;" :src="require('@/assets/case-studies/studio-eleven/website-4.png')" >
+                  <div class=" my-auto col-12" style="background-position: 100% 27%; " >
+                    <img style="width: 100%; height: auto;" :src="require('@/assets/case-studies/callie-tomblin/website-4.png')" >
                   </div>
                 </div>
                 <div class="row breakout pt-5 mt-5 p-3 py-5 justify-content-center" style="background-color: #f0f0f0;">
                   <div class="px-5 my-5 my-md-auto col-12 col-md-3" style="background-position: 100% 27%; " >
-                    <img style="width: 100%; height: auto;" :src="require('@/assets/case-studies/studio-eleven/mobile/1.jpg')" >
+                    <img style="width: 100%; height: auto;" :src="require('@/assets/case-studies/callie-tomblin/mobile/1.jpg')" >
                   </div>
                   <div class="px-5 my-5 my-md-auto col-12 col-md-3" style="background-position: 100% 27%; " >
-                    <img style="width: 100%; height: auto;" :src="require('@/assets/case-studies/studio-eleven/mobile/2.jpg')" >
+                    <img style="width: 100%; height: auto;" :src="require('@/assets/case-studies/callie-tomblin/mobile/2.jpg')" >
                   </div>
                   <div class="px-5 my-5 my-md-auto col-12 col-md-3" style="background-position: 100% 27%; " >
-                    <img style="width: 100%; height: auto;" :src="require('@/assets/case-studies/studio-eleven/mobile/3.jpg')" >
+                    <img style="width: 100%; height: auto;" :src="require('@/assets/case-studies/callie-tomblin/mobile/3.jpg')" >
                   </div>
                   <div class="px-5 my-5 my-md-auto col-12 col-md-3" style="background-position: 100% 27%; " >
-                    <img style="width: 100%; height: auto;" :src="require('@/assets/case-studies/studio-eleven/mobile/4.jpg')" >
+                    <img style="width: 100%; height: auto;" :src="require('@/assets/case-studies/callie-tomblin/mobile/4.jpg')" >
                   </div>
                 </div>
                 <router-link class="no-dec" to="/callie-tomblin">
