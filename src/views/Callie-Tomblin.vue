@@ -89,8 +89,8 @@
                   </div>
                 </div> -->
                 <div class="row py-5 px-5 breakout justify-content-center" style="background-color: white;">
-                  <div class="px-5 my-auto col-12 col-lg-6" style="background-position: 100% 27%; " >
-                    <p class="px-lg-5 pt-lg-0 text-left text-black" style="font-size: 1.5em; font-weight: 100;">
+                  <div class="px-5 py-5 my-auto col-12 col-lg-10" style="background-position: 100% 27%; " >
+                    <p class="px-lg-5 pt-lg-8 text-left text-black" style="font-size: 1.5em; font-weight: 100;">
                         <span class="text-left newslab" style="font-size: 1.1em;"> 
                           ESTABLISHING A BRAND
                         </span>
@@ -100,27 +100,18 @@
                         </span>
                       </p>
                   </div>
-                  <div class="px-5 my-auto col-12 col-lg-6" style="background-position: 100% 27%; " >
-                    <img style="max-width: 100%;" :src="require('@/assets/case-studies/studio-eleven/logo.png')" >
+                  <div class="px-5 my-auto col-12 col-lg-4" style="background-position: 100% 27%; " >
+                    <img style="max-width: 100%;" :src="require('@/assets/case-studies/callie-tomblin/stats-1.png')" >
                   </div>
-                  <div class="col-12 mt-5">
-                        <h3>COLOUR</h3>
+                  <div class="px-5 my-auto col-12 col-lg-6" style="background-position: 100% 27%; " >
+                    <img style="max-width: 100%;" :src="require('@/assets/case-studies/callie-tomblin/stats-3.png')" >
                   </div>
                   <div class="col-12 mt-4">
                     <div class="row mb-5 justify-content-center">
-                        <div class="col-3 color-pallet" style="background-color: #e7efec;">
-                          &nbsp;
-                        </div>
-                        <div class="col-3 color-pallet" style="background-color: #f6e2dd;">
-                          &nbsp;
-                        </div>
-                        <div class="col-3 color-pallet" style="background-color: #d9eaee;">
-                          &nbsp;
-                        </div>
-                        <div class="col-3 color-pallet" style="background-color: #bab8c6;">
-                          &nbsp;
-                        </div>
+                      <div class="col-9">
+                        <img class="img-fluid" :src="require('@/assets/case-studies/callie-tomblin/stats-2.png')" >
                       </div>
+                    </div>
                   </div>
                 </div>
                 <div class="row mt-5 pt-5 justify-content-center">

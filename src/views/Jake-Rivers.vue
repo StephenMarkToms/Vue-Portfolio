@@ -92,7 +92,7 @@
                   <div class="px-5 my-auto col-12 col-lg-6" style="background-position: 100% 27%; " >
                     <p class="px-lg-5 pt-lg-0 text-left text-black" style="font-size: 1.5em; font-weight: 100;">
                         <span class="text-left newslab" style="font-size: 1.1em;"> 
-                          ESTABLISHING A BRAND
+                          SOCIAL MEDIA MARKETING
                         </span>
                         <br>
                         <span class="gordita">
@@ -100,32 +100,19 @@
                         </span>
                       </p>
                   </div>
-                  <div class="px-5 my-auto col-12 col-lg-6" style="background-position: 100% 27%; " >
-                    <img style="max-width: 100%;" :src="require('@/assets/case-studies/studio-eleven/logo.png')" >
+                  <div class="px-5 py-5 my-auto col-12 col-lg-3" style="background-position: 100% 27%; " >
+                    <img class="img-fluid" :src="require('@/assets/case-studies/jake-rivers/insta-2.png')" >
                   </div>
-                  <div class="col-12 mt-5">
-                        <h3>COLOUR</h3>
-                  </div>
-                  <div class="col-12 mt-4">
-                    <div class="row mb-5 justify-content-center">
-                        <div class="col-3 color-pallet" style="background-color: #e7efec;">
-                          &nbsp;
-                        </div>
-                        <div class="col-3 color-pallet" style="background-color: #f6e2dd;">
-                          &nbsp;
-                        </div>
-                        <div class="col-3 color-pallet" style="background-color: #d9eaee;">
-                          &nbsp;
-                        </div>
-                        <div class="col-3 color-pallet" style="background-color: #bab8c6;">
-                          &nbsp;
-                        </div>
-                      </div>
+                  <div class="px-5 py-5 my-auto col-12 col-lg-3" style="background-position: 100% 27%; " >
+                    <img class="img-fluid" :src="require('@/assets/case-studies/jake-rivers/insta-1.png')" >
                   </div>
                 </div>
                 <div class="row mt-5 pt-5 justify-content-center">
-                  <div class="callout" style="background-position: bottom;" :style="{'background-image': 'url(' + require('@/assets/case-studies/jake-rivers/hero-6.jpg') + ')'}">
+                  <!-- <div class="callout" style="background-position: bottom;" :style="{'background-image': 'url(' + require('@/assets/case-studies/jake-rivers/hero-6.jpg') + ')'}">
                     &nbsp;
+                  </div> -->
+                  <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/qAlY3A09emM?rel=0" allowfullscreen></iframe>
                   </div>
                 </div>
                 <div class="row my-5 pt-5 justify-content-around">
@@ -193,16 +180,16 @@
                 </div>
                 <div class="row breakout pt-5 mt-5 p-3 py-5 justify-content-center" style="background-color: #f0f0f0;">
                   <div class="px-5 my-5 my-md-auto col-12 col-md-3" style="background-position: 100% 27%; " >
-                    <img style="width: 100%; height: auto;" :src="require('@/assets/case-studies/callie-tomblin/mobile/1.jpg')" >
+                    <img style="width: 100%; height: auto;" :src="require('@/assets/case-studies/jake-rivers/mobile/1.jpg')" >
                   </div>
                   <div class="px-5 my-5 my-md-auto col-12 col-md-3" style="background-position: 100% 27%; " >
-                    <img style="width: 100%; height: auto;" :src="require('@/assets/case-studies/callie-tomblin/mobile/2.jpg')" >
+                    <img style="width: 100%; height: auto;" :src="require('@/assets/case-studies/jake-rivers/mobile/2.jpg')" >
                   </div>
                   <div class="px-5 my-5 my-md-auto col-12 col-md-3" style="background-position: 100% 27%; " >
-                    <img style="width: 100%; height: auto;" :src="require('@/assets/case-studies/callie-tomblin/mobile/3.jpg')" >
+                    <img style="width: 100%; height: auto;" :src="require('@/assets/case-studies/jake-rivers/mobile/3.jpg')" >
                   </div>
                   <div class="px-5 my-5 my-md-auto col-12 col-md-3" style="background-position: 100% 27%; " >
-                    <img style="width: 100%; height: auto;" :src="require('@/assets/case-studies/callie-tomblin/mobile/4.jpg')" >
+                    <img style="width: 100%; height: auto;" :src="require('@/assets/case-studies/jake-rivers/mobile/4.jpg')" >
                   </div>
                 </div>
                 <router-link class="no-dec" to="/callie-tomblin">
