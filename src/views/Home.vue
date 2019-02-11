@@ -99,6 +99,7 @@
                         <CaseStudy class="my-lg-5"
                             name="Joppa View Elementary School" 
                             thumbnail="jve" 
+                            id="joppa-view" 
                             title="Joppa View Elementary School"
                             disc="Creating a brand identity and website refresh for an upcoming hair salon"
                             color="#8DD9FD"
