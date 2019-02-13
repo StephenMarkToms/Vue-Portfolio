@@ -88,7 +88,7 @@
                     &nbsp;
                   </div>
                 </div> -->
-                <div class="row py-5 px-5 breakout justify-content-center" style="background-color: white;">
+                <div class="row py-5 px-md-5 breakout justify-content-center" style="background-color: white;">
                   <div class="px-5 py-5 my-auto col-12 col-lg-10" style="background-position: 100% 27%; " >
                     <p class="px-lg-5 pt-lg-8 text-left text-black" style="font-size: 1.5em; font-weight: 100;">
                         <span class="text-left newslab" style="font-size: 1.1em;"> 
@@ -199,7 +199,7 @@
                 <router-link class="no-dec" to="/jake-rivers">
                   <div class="row mt-5 pt-5 breakout justify-content-center">
                     <div class="col mt-5" style="background-color: #252525;" >
-                      <h4 class="no-dec my-auto " style="color: rgb(165, 165, 165); padding-top: 15%; padding-bottom: 15%;">Next Project: <span style="color: white;">Jake Matthew Rivers</span></h4>
+                      <h4 class="no-dec my-auto " style="color: rgb(165, 165, 165); padding-top: 15%; padding-bottom: 15%;">Next Project: <br><span style="color: white;">Jake Matthew Rivers</span></h4>
                     </div>
                   </div>
                 </router-link>
@@ -224,6 +224,17 @@
 </template>
 
 <style lang="scss" scoped>
+
+p{
+    font-size: 1.2em !important;
+  }
+
+  @media (min-width: 576px) {
+   p{
+    font-size: 1.5em !important;
+  }
+ }
+
 
   .link{
     color: white;

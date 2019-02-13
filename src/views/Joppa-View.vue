@@ -201,7 +201,7 @@
                 <router-link class="no-dec" to="/emc">
                   <div class="row mt-5 pt-5 breakout justify-content-center">
                     <div class="col mt-5" style="background-color: #252525;" >
-                      <h4 class="no-dec my-auto " style="color: rgb(165, 165, 165); padding-top: 15%; padding-bottom: 15%;">Next Project: <span style="color: white;">EMC Performing Arts Studio</span></h4>
+                      <h4 class="no-dec my-auto " style="color: rgb(165, 165, 165); padding-top: 15%; padding-bottom: 15%;">Next Project: <br><span style="color: white;">EMC Performing Arts Studio</span></h4>
                     </div>
                   </div>
                 </router-link>
@@ -226,6 +226,17 @@
 </template>
 
 <style lang="scss" scoped>
+
+p{
+    font-size: 1.2em !important;
+  }
+
+  @media (min-width: 576px) {
+   p{
+    font-size: 1.5em !important;
+  }
+ }
+
 
   .link{
     color: white;

@@ -16,9 +16,11 @@
 
 
         <div class="navbar-nav ml-auto d-block d-sm-none">
-          <a class="nav-item nav-link" href="#">
-            menu
-          </a>
+          <router-link class="nav-item nav-link mx-2" to="/">works</router-link>
+
+            <router-link class="nav-item nav-link mx-2" to="/about">about</router-link>
+          
+            <a class="nav-item nav-link mx-2" href="#">contact</a>
         </div>
 
 

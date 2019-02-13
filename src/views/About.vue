@@ -36,7 +36,7 @@
 
               <div class="page-container">
                 <div class="row breakout mx-2 my-5 pb-5" >
-								<div class="col-7">
+								<div class="col-12 col-md-7">
 									<h2 class="text-white text-left"><span style="font-weight: 200; font-size: 1.1em;">My Story </span></h2>
 									<p class="text-left text-white" style="font-size: 1.1em;">
 										 I was very young when my father died. But everyone tells me that his relationship with technology was effortless, he spoke gently and listened carefully, and he was never without a camera. It’s incredible that DNA can leave such a legacy. <br><br>
@@ -49,7 +49,7 @@
 									- Stephen 
 									</h3>
 								</div>
-								<div class="col-5 my-auto px-5 ">
+								<div class="col-12 pt-5 pt-md-0 col-md-5 my-auto px-5 ">
 									<img class="img-fluid mx-auto" :src="require('@/assets/about/dad.jpg')" >
 								</div>	
 							</div>
@@ -67,13 +67,13 @@
                   </div>
                 </div> -->
                 <div class="row py-5 px-5 breakout justify-content-center" style="background-color: white;">
-                  <div class="px-5 mx-5 my-auto col-12" style="background-position: 100% 27%; " >
+                  <div class="px-0 px-md-5 mx-5 my-auto col-12" style="background-position: 100% 27%; " >
                     <p class="mx-5 px-5 text-left text-black" style="font-size: 1.5em; font-weight: 100;">
                         <span class="text-left " style="font-size: 1.3em;"> 
                           EXPERIENCE
                         </span>
                         <br>
-												<div class="row mx-5 px-5 text-left">
+												<div class="row px-0 mx-5 px-md-5 text-left">
 													<div class="module-subtitle align-left gordita">
 													<strong><b>Work:</b></strong> 
 													<br>
