@@ -192,10 +192,10 @@
                     <img style="width: 100%; height: auto;" :src="require('@/assets/case-studies/jake-rivers/mobile/4.jpg')" >
                   </div>
                 </div>
-                <router-link class="no-dec" to="/callie-tomblin">
+                <router-link class="no-dec" to="/joppa-view">
                   <div class="row mt-5 pt-5 breakout justify-content-center">
                     <div class="col mt-5" style="background-color: #252525;" >
-                      <h4 class="no-dec my-auto " style="color: rgb(165, 165, 165); padding-top: 15%; padding-bottom: 15%;">Next Project: <span style="color: white;">Callie Tomblin</span></h4>
+                      <h4 class="no-dec my-auto " style="color: rgb(165, 165, 165); padding-top: 15%; padding-bottom: 15%;">Next Project: <span style="color: white;">Joppa View Elementary</span></h4>
                     </div>
                   </div>
                 </router-link>

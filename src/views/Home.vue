@@ -110,6 +110,7 @@
                         <CaseStudy class="my-lg-5"
                             name="EMC Performing Arts" 
                             thumbnail="emc" 
+                            id="emc" 
                             title="Studio Eleven Hair Salon"
                             disc="Creating a brand identity and website refresh for an upcoming hair salon"
                             color="#BBC5A1"

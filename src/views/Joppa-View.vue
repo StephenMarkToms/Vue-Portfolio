@@ -30,7 +30,7 @@
               </div>
 
               <div class="ribbon mx-0 row justify-content-between pl-4 px-md-5 no-gutters" style="background-color:#8DD9FD;">
-                <h2 id="ribbon-title" class="pt-1 my-3 mx-md-5" style="font-size: 1em; font-weight: 500; color: black;">Joppa View Elementary Team BCPS Day <span style="color: black; font-weight: 300; font-size: 1em; margin-left: .5em;">Perry Hall, Maryland</span> </h2>
+                <h2 id="ribbon-title" class="pt-1 my-3 mx-md-5" style="font-size: 1em; font-weight: 500; color: black;">Joppa View Elementary School Team BCPS Day <span style="color: black; font-weight: 300; font-size: 1em; margin-left: .5em;">Perry Hall, Maryland</span> </h2>
                 <h2 class="my-auto mx-sm-5" style="font-size: 1em; font-weight: 300; letter-spacing: .05em;"><a class="link d-none d-sm-block" style="color:black;" href="https://vimeo.com/250881723">watch video  <i class="fas fa-arrow-right"></i></a></h2>
               </div>
 
@@ -198,10 +198,10 @@
                     <img style="width: 100%; height: auto;" :src="require('@/assets/case-studies/jake-rivers/mobile/4.jpg')" >
                   </div>
                 </div> -->
-                <router-link class="no-dec" to="/callie-tomblin">
+                <router-link class="no-dec" to="/emc">
                   <div class="row mt-5 pt-5 breakout justify-content-center">
                     <div class="col mt-5" style="background-color: #252525;" >
-                      <h4 class="no-dec my-auto " style="color: rgb(165, 165, 165); padding-top: 15%; padding-bottom: 15%;">Next Project: <span style="color: white;">Callie Tomblin</span></h4>
+                      <h4 class="no-dec my-auto " style="color: rgb(165, 165, 165); padding-top: 15%; padding-bottom: 15%;">Next Project: <span style="color: white;">EMC Performing Arts Studio</span></h4>
                     </div>
                   </div>
                 </router-link>
