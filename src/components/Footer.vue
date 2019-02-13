@@ -4,22 +4,24 @@
         <div class="row mt-5">
             <div class="row mt-5">
                 <div class="scroller mt-5">
-                    <a href="#" class="marquee-link">    
-                        <div class="lines">
-                            <div class="line">
-                                <span>About</span>
-                                <span>About</span>
-                                <span>About</span>
-                                <span>About</span>
-                                </div>
+                    <router-link class="no-dec" to="/about">
+                        <a href="#" class="marquee-link">    
+                            <div class="lines">
                                 <div class="line">
-                                <span>About</span>
-                                <span>About</span>
-                                <span>About</span>
-                                <span>About</span>
+                                    <span>About</span>
+                                    <span>About</span>
+                                    <span>About</span>
+                                    <span>About</span>
+                                    </div>
+                                    <div class="line">
+                                    <span>About</span>
+                                    <span>About</span>
+                                    <span>About</span>
+                                    <span>About</span>
+                                </div>
                             </div>
-                        </div>
-                    </a>
+                        </a>
+                    </router-link>
                 </div>
             </div>
 
@@ -51,7 +53,7 @@
             
             <div class="col-12 col-lg-5 pr-0" >
                 
-                    <p class="mr-5 pr-md-5 text-white text-lg-right">
+                    <p class="d-none mr-5 pr-md-5 text-white text-lg-right">
                         <a href="#" class="text-white px-1 px-md-3">
                             LinkedIn
                         </a>
