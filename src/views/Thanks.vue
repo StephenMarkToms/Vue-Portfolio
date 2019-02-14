@@ -33,37 +33,17 @@
                       
                       <p class="newslab pt-lg-0 " style="font-size: 1.5em; font-weight: 100;">
                         <span class="text-left" style="color: white; font-size: 1.1em; "> 
-                          SAY HELLO!
+                          Thank you for reaching out!
                         </span>
                         <br>
                         <span class="" style="color:white;">
-                          Don't be shy! Feel free to reach out and contact me.
+                          <small>Your email has been recieved and I will try my best to respond within 48 hours.</small>
                         </span>
-                        <br>
-                        <br>
-                        <small class="text-muted">Phone: 717.413.5695</small>
-                        <br>
-                        <small class="text-muted">Email: s.mark.toms@gmail.com</small>
-                        <br>
-                        <br>
+                        
                         
                       </p>
                   </div>
-                  <div class="col-4">
-                    <!-- <form @submit.prevent="handleSubmit"> -->
-                    <form action="https://smt.design/email.php" method="POST">
-                      <div class="form-group text-white">
-                        <label for="email">Email:</label>
-                        <input type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="JohnDoe@gmail.com">
-                        <small id="emailHelp" class="form-text text-muted">This will be used to contact you.</small>
-                      </div>
-                      <div class="form-group text-white">
-                        <label for="comment">Message:</label>
-                        <textarea name="message" class="form-control" rows="5" id="comment"></textarea>
-                      </div>
-                      <button id="submit" type="submit" class="btn btn-primary">Submit</button>
-                    </form>
-                  </div>
+                  
   
                 </div>
               </div>

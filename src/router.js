@@ -8,6 +8,7 @@ import JoppaView from "./views/Joppa-View.vue";
 import EMC from "./views/EMC.vue";
 import About from "./views/About.vue";
 import Contact from "./views/Contact.vue";
+import Thanks from "./views/Thanks.vue";
 import store from './store.js'
 
 
@@ -145,6 +146,21 @@ export default new Router({
       path: "/contact",
       name: "contact",
       component: Contact,
+      meta: {
+        progress: {
+          func: [
+            {call: 'color', modifier: 'temp', argument: '#ffb000'},
+            {call: 'fail', modifier: 'temp', argument: '#6e0000'},
+            {call: 'location', modifier: 'temp', argument: 'top'},
+            {call: 'transition', modifier: 'temp', argument: {speed: '1.5s', opacity: '0.6s', termination: 400}}
+          ]
+        }
+      }
+    },
+    {
+      path: "/thanks",
+      name: "thanks",
+      component: Thanks,
       meta: {
         progress: {
           func: [
