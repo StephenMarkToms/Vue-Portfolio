@@ -44,7 +44,10 @@
                         </span>
                         <br>
                         <span class="gordita" style="color:white;">
-                          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.  
+                          Studio Eleven is a small upscale salon in the heart of Towson. Providing customized personal hair services just for its clients in a relaxing environment. Studio Eleven specializes in Balayage (Hand Painting),  Custom Deep Conditioning Treatments, Color Corrections and Keratin Treatments. 
+                          <br>
+                          <br>
+                          The body of work encompassed creating a brand, website, photography, a promotional video, and tracking website analytics.
                         </span>
                       </p>
                   </div>
@@ -54,7 +57,6 @@
                           client:
                         </span>
                         <br>
-                        <br>
                         <span class="newslab" style="color:white;">
                           Studio Eleven<br>
                         </span>
@@ -63,9 +65,11 @@
                           output:
                         </span>
                         <br>
-                        <br>
                         <span class="newslab" style="color:white;">
-                          Branding, Website, Photography, Videography
+                          Branding<br> 
+                          Website<br> 
+                          Photography<br> 
+                          Videography
                         </span>
                       </p>
                       
@@ -92,7 +96,7 @@
                         </span>
                         <br>
                         <span class="gordita">
-                          Lorem ipsum dolor sit amet, cis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.  
+                          Working with the Studio Eleven logo, a bright color pallet was established. Pastels were chosen to keep a light and feminine design.  
                         </span>
                       </p>
                   </div>
@@ -100,7 +104,7 @@
                     <img style="max-width: 100%;" :src="require('@/assets/case-studies/studio-eleven/logo.png')" >
                   </div>
                   <div class="col-12 mt-5">
-                        <h3>COLOUR</h3>
+                        <h3>COLOR</h3>
                   </div>
                   <div class="col-12 mt-4">
                     <div class="row mb-5 justify-content-center">
@@ -132,7 +136,7 @@
                         </span>
                         <br>
                         <span class="gordita" style="color:white;">
-                          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.  
+                          Part of the branding experience was establishing a modern look for the company. With this goal in mind, while capturing photography and videography, this was created by posing the models organically.   
                         </span>
                       </p>
                   </div>
@@ -162,7 +166,9 @@
                         </span>
                         <br>
                         <span class="gordita" style="color:white;">
-                          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.  
+                          After establishing brand, creating fresh content, a simple site was designed. The provided logo was broken apart to convey the brand through the website as a whole instead of staying locked in the logo area. Every color used was of a light pastel to keep a soft feel. While laying in content and writing copy the grid layout was broken to emphasize importance to certain sections. 
+                          <br><br>
+                          Using modern web standards the responsive design and pixel tracking was implemented to enhance compatibility, measure the success and user behavior. 
                         </span>
                       </p>
                   </div>

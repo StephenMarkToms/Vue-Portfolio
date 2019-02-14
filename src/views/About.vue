@@ -39,8 +39,9 @@
 								<div class="col-12 col-md-7">
 									<h2 class="text-white text-left"><span style="font-weight: 200; font-size: 1.1em;">My Story </span></h2>
 									<p class="text-left text-white" style="font-size: 1.1em;">
-										 I was very young when my father died. But everyone tells me that his relationship with technology was effortless, he spoke gently and listened carefully, and he was never without a camera. It’s incredible that DNA can leave such a legacy. <br><br>
-              			 This work for me is about the ability to synthesize my degree in Information Systems & Technology from Penn State with my desire to represent the individual, and the world around us, in a new and interesting way. The skills I acquired through my education allow me to create professional looking photos, videos, and websites. More importantly, I like people. I want to get to know you and to understand what’s important to you. Whether it’s using a laundromat as a visually pleasing landscape for an individual photo shoot or wading through icy craters for an ethereal wedding shoot, I believe in the work it takes to make every image perfect. 	
+										 I was very young when my father died. But everyone tells me that his relationship with technology was effortless, he spoke gently and listened carefully, and he was never without a camera. It’s incredible that DNA can leave such a legacy. 
+                     <br><br>
+              			 This work for me is about the ability to synthesize my degree in Information Systems & Technology from Penn State with my desire to represent the individual, and the world around us, in a new and interesting way. The skills I acquired through my education and experiences allow me to create professional software, websites, videos, and photos. More importantly, I like people. I want to get to know you and to understand what’s important to you. Whether it’s creating an online presence for an artist, a piece of software, or building a brand for a local business, I believe in the work it takes to make every project perfect. 	
 										
 									</p>
 									<br>
@@ -91,7 +92,7 @@
 													<br>
 													<strong><b>Programming:</b></strong> 
 													<br>
-													JAVA, C++, C#, HTML5, XML, Node.js, Canvas, Bash, JavaScript, PHP, CSS, SQL, MS Access, ActionScript 2.0, ActionScript 3.0, Adobe Flash CS4 - Creative Cloud 
+													JAVA, C++, C#, HTML5, XML, Node.js, Canvas, Bash, JavaScript, PHP, CSS3, Web Standards, SQL, MS Access, ActionScript 2.0, ActionScript 3.0, Adobe Flash CS4 - Creative Cloud 
 													<br>
 													<br>
 													<strong><b>Libraries:</b></strong> 

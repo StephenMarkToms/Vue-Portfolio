@@ -30,8 +30,8 @@
               </div>
 
               <div class="ribbon mx-0 row justify-content-between pl-4 px-md-5 no-gutters">
-                <h2 id="ribbon-title" class="pt-1 my-3 mx-md-5" style="font-size: 1em; font-weight: 500;">Studio Eleven <span style="color: #585858; font-weight: 300; font-size: 1em; margin-left: .5em;">Towson, Maryland</span> </h2>
-                <h2 class="my-auto mx-sm-5" style="font-size: 1em; font-weight: 300; letter-spacing: .05em;"><a class="link d-none d-sm-block" href="https://studioeleven.us">visit site  <i class="fas fa-arrow-right"></i></a></h2>
+                <h2 id="ribbon-title" class="pt-1 my-3 mx-md-5" style="font-size: 1em; font-weight: 500;">EMC <span style="color: #585858; font-weight: 300; font-size: 1em; margin-left: .5em;">New Freedom, Pennslyvania</span> </h2>
+                <h2 class="my-auto mx-sm-5" style="font-size: 1em; font-weight: 300; letter-spacing: .05em;"></h2>
               </div>
 
               <div class="page-container">
@@ -40,11 +40,11 @@
                       
                       <p class="newslab pt-lg-0 text-left" style="font-size: 1.5em; font-weight: 100;">
                         <span class="text-left" style="color: white; font-size: 1.1em; "> 
-                          QUICK WORDS
+                        QUICK WORDS
                         </span>
                         <br>
                         <span class="gordita" style="color:white;">
-                          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.  
+                        EMC Performing Arts Studio is 
                         </span>
                       </p>
                   </div>
@@ -54,18 +54,17 @@
                           client:
                         </span>
                         <br>
-                        <br>
                         <span class="newslab" style="color:white;">
-                          Studio Eleven<br>
+                          EMC Performing Arts Studio
+                          <br>
                         </span>
                         <p class="pt-5 pt-lg-0 text-left" style="font-size: 1em; font-weight: 100;">
                         <span style="color: white; font-size: .9em; font-weight: 500;"> 
                           output:
                         </span>
                         <br>
-                        <br>
                         <span class="newslab" style="color:white;">
-                          Branding, Website, Photography, Videography
+                          Photography
                         </span>
                       </p>
                       

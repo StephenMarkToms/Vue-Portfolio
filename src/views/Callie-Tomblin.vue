@@ -44,7 +44,10 @@
                         </span>
                         <br>
                         <span class="gordita" style="color:white;">
-                          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.  
+                          Self-taught Singer/Songwriter Callie Tomblin began playing guitar when she was 14 years old. She has been singing and writing her own music since she was a child and is able to perform songs from every genre.
+                          <br>
+                          <br>
+                          The body of work included creating an online presence for an artist that had a substancial following and reconition locally. 
                         </span>
                       </p>
                   </div>
@@ -54,7 +57,6 @@
                           client:
                         </span>
                         <br>
-                        <br>
                         <span class="newslab" style="color:white;">
                           Callie Tomblin<br>
                         </span>
@@ -63,9 +65,7 @@
                           output:
                         </span>
                         <br>
-                        <br>
                         <span class="newslab" style="color:white;">
-                          Branding<br>
                           Website<br> 
                           Social Media Marketing<br>
                           Photography<br>
@@ -92,11 +92,14 @@
                   <div class="px-5 py-5 my-auto col-12 col-lg-10" style="background-position: 100% 27%; " >
                     <p class="px-lg-5 pt-lg-8 text-left text-black" style="font-size: 1.5em; font-weight: 100;">
                         <span class="text-left newslab" style="font-size: 1.1em;"> 
-                          ESTABLISHING A BRAND
+                          CREATING MEASURABLE RESULTS
                         </span>
                         <br>
                         <span class="gordita">
-                          Lorem ipsum dolor sit amet, cis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.  
+                          The client wanted to be able to have a professional website to represent her work while being able to be easily to manage, have indepth reporting and be able to import. 
+                          <br>
+                          <br>
+                          This was achieved by setting up a CMS based website and embedding a GA Pixel while staying inline with GDPR standards.
                         </span>
                       </p>
                   </div>
@@ -119,7 +122,7 @@
                     &nbsp;
                   </div>
                 </div>
-                <div class="row my-5 pt-5 justify-content-around">
+                <!-- <div class="row my-5 pt-5 justify-content-around">
                   <div class="mx-auto col-12 col-lg-10 px-0 mt-2">
                       <p class="pt-5 pt-lg-0 text-left" style="font-size: 1.5em; font-weight: 100;">
                         <span class="newslab text-left" style="color: white; font-size: 1.1em;"> 
@@ -131,7 +134,7 @@
                         </span>
                       </p>
                   </div>
-                </div>
+                </div> -->
                 <div class="row mt-5 pt-3 justify-content-around">
                   <div class="col-12 col-md-5 ">
                     <div class="callout" style="border: solid 14px #e4efec; background-position: 56% 46%;" :style="{'background-image': 'url(' + require('@/assets/case-studies/callie-tomblin/hero-3.jpg') + ')'}">
@@ -157,7 +160,7 @@
                         </span>
                         <br>
                         <span class="gordita" style="color:white;">
-                          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.  
+                          After gathering photography, videography, a website was created along with a social media marketing campaign to drive traffic. Starting with roughly 2000 followers on Instagram, Callie's following has grown to about 7100 while getting about 30 users per day via web traffic.
                         </span>
                       </p>
                   </div>
