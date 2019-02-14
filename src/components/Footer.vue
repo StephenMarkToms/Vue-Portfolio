@@ -27,6 +27,7 @@
 
             <div class="row py-3 bg-black" >
                 <div class="scroller-2">
+                    <router-link class="no-dec" to="/contact">
                     <div class="lines-2">
                         <div class="line-2">
                             <span>Get in Touch</span>
@@ -39,6 +40,7 @@
                             <span>Get in Touch</span>
                         </div>
                     </div>
+                    </router-link>
                 </div>
             </div>
         </div>
