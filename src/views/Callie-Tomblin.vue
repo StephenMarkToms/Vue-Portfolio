@@ -44,6 +44,9 @@
                         </span>
                         <br>
                         <span class="gordita" style="color:white;">
+                          Identity generator working with an up and coming musician to find a style that matches her voice. Her presence came to life through images and a modern website that share her story
+                          <br>
+                          <br>
                           Self-taught Singer/Songwriter Callie Tomblin began playing guitar when she was 14 years old. She has been singing and writing her own music since she was a child and is able to perform songs from every genre.
                           <br>
                           <br>

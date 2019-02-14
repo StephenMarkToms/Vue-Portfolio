@@ -11,7 +11,7 @@
 
             <router-link class="nav-item nav-link mx-2" to="/about">about</router-link>
           
-            <a class="nav-item nav-link mx-2" href="#">contact</a>
+             <router-link class="nav-item nav-link mx-2" to="/contact">contact</router-link>
         </div>
 
 
@@ -20,7 +20,7 @@
 
             <router-link class="nav-item nav-link mx-2" to="/about">about</router-link>
           
-            <a class="nav-item nav-link mx-2" href="#">contact</a>
+             <router-link class="nav-item nav-link mx-2" to="/contact">contact</router-link>
         </div>
 
 

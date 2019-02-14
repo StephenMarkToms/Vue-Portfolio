@@ -44,7 +44,13 @@
                         </span>
                         <br>
                         <span class="gordita" style="color:white;">
-                        EMC Performing Arts Studio is 
+                        Captured professional content to help a local business boost their online presence through social media and website redesign
+                        <br>
+                        <br>
+                        EMC Performing Arts Studio is an established dance company helping children and adults receive exceptional training through a  diverse team of professional performing arts teachers in a family friendly environment. 
+                        <br>
+                        <br>
+                        EMC reached out to asking for professional images to use for a social media campaign and website content.
                         </span>
                       </p>
                   </div>

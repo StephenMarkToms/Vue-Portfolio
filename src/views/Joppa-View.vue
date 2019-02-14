@@ -44,11 +44,14 @@
                         </span>
                         <br>
                         <span class="gordita" style="color:white;">
-                          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.  
+                          Played around with ideas, and experiences from each of my clients to put together a promotional video for a local elementary school.
+                          <br>
+                          <br>
+                          Joppa View Elementary School had a Team Blue BCPS Day to celebrate its faculty and students. This was just a fun volunteer project to help encapsulate day.
                         </span>
                       </p>
                   </div>
-                  <div class="pt-5 col-2 px-0  mx-5 d-none d-lg-block">
+                  <!-- <div class="pt-5 col-2 px-0  mx-5 d-none d-lg-block">
                         <p class="pt-5 pt-lg-0 text-left" style="font-size: 1em; font-weight: 100;">
                         <span style="color: white; font-size: .9em; font-weight: 500;"> 
                           client:
@@ -73,7 +76,7 @@
                         </span>
                       </p>
                       
-                  </div> 
+                  </div>  -->
                 </div>
                 <div class="row breakout d-none d-md-block" style="">
                   <div class="embed-responsive embed-responsive-16by9">

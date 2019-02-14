@@ -77,7 +77,7 @@
                             id="jake-rivers" 
                             thumbnail="jake-rivers" 
                             title="Jake Matthew Rivers"
-                            disc="Creating a brand identity and website refresh for an upcoming hair salon"
+                            disc="Establishing a brand identity and promotional video for a musician"
                             color="#b73a40"
                             
                         ></CaseStudy>
@@ -101,7 +101,7 @@
                             thumbnail="jve" 
                             id="joppa-view" 
                             title="Joppa View Elementary School"
-                            disc="Creating a brand identity and website refresh for an upcoming hair salon"
+                            disc="Creating a organic video for social media awareness"
                             color="#8DD9FD"
                         ></CaseStudy>
                      </div>
@@ -112,7 +112,7 @@
                             thumbnail="emc" 
                             id="emc" 
                             title="Studio Eleven Hair Salon"
-                            disc="Creating a brand identity and website refresh for an upcoming hair salon"
+                            disc="Creating digital content for a website and social media"
                             color="#BBC5A1"
                         ></CaseStudy>
                      </div>

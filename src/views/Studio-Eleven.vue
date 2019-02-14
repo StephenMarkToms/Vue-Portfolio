@@ -44,6 +44,9 @@
                         </span>
                         <br>
                         <span class="gordita" style="color:white;">
+                          Behind the scenes creative genius responsible for a Salon’s rebranding. Worked with models, and the salon owners to establish their brand identity through capturing images, and social media.
+                          <br>
+                          <br>
                           Studio Eleven is a small upscale salon in the heart of Towson. Providing customized personal hair services just for its clients in a relaxing environment. Studio Eleven specializes in Balayage (Hand Painting),  Custom Deep Conditioning Treatments, Color Corrections and Keratin Treatments. 
                           <br>
                           <br>

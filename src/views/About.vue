@@ -252,7 +252,7 @@
   }
 
   .cover-photo{
-    //background-position: top center;
+    background-position: top center;
     background-size: cover;
   }
 

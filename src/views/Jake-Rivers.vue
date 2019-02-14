@@ -44,7 +44,14 @@
                         </span>
                         <br>
                         <span class="gordita" style="color:white;">
-                          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.  
+                          Content curator helping a local musician visually express his story with his audience through digital images, website, and a long form video.
+                          <br>
+                          <br>
+                          Jake Matthew Rivers is a cellist and singer-songwriter from Glen Rock, PA . At the age of eight, Jake gravitated to taking up the cello and later, adapting acoustic guitar. In time, Jake began to experiment with sounds that focused on rhythmic and percussive stylings. Beginning his musical journey at the age of 8 with cello lessons at school, music began to click. Since then, he has been exploring new sounds and effects. 
+                          <br>
+                          <br>
+                          This body of work included creating a website, social media marketing from an non existent profile, and curating content.
+
                         </span>
                       </p>
                   </div>
@@ -54,15 +61,13 @@
                           client:
                         </span>
                         <br>
-                        <br>
                         <span class="newslab" style="color:white;">
-                          Callie Tomblin<br>
+                          Jake  Rivers<br>
                         </span>
                         <p class="pt-5 pt-lg-0 text-left" style="font-size: 1em; font-weight: 100;">
                         <span style="color: white; font-size: .9em; font-weight: 500;"> 
                           output:
                         </span>
-                        <br>
                         <br>
                         <span class="newslab" style="color:white;">
                           Branding<br>
@@ -96,7 +101,7 @@
                         </span>
                         <br>
                         <span class="gordita">
-                          Lorem ipsum dolor sit amet, cis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.  
+                          Created a social media presence for Jake's image and provided content collected during photoshoots for posts. Each post was marketed testing out different audiences till a niche audience was found for cello players.
                         </span>
                       </p>
                   </div>
@@ -123,7 +128,7 @@
                         </span>
                         <br>
                         <span class="gordita" style="color:white;">
-                          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.  
+                          Created a promotional video encapsulating Jake's unique story and how music has had an importance through his life.
                         </span>
                       </p>
                   </div>
@@ -153,7 +158,7 @@
                         </span>
                         <br>
                         <span class="gordita" style="color:white;">
-                          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.  
+                          After launching Jake's website and creating his social media presence along with the promotional video he was able to reach over 5800 followers online.  
                         </span>
                       </p>
                   </div>
