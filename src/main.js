@@ -31,11 +31,6 @@ import './scss/fonts.scss'
 
 //global styles
 import './scss/main.scss'
-import axios from 'axios'
-
-Vue.use(axios)
-
-Vue.prototype.$axios = axios
 
 
 // jquery

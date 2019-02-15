@@ -111,7 +111,7 @@
                             name="EMC Performing Arts" 
                             thumbnail="emc" 
                             id="emc" 
-                            title="Studio Eleven Hair Salon"
+                            title="EMC Performing Arts"
                             disc="Creating digital content for a website and social media"
                             color="#BBC5A1"
                         ></CaseStudy>

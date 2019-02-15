@@ -9,7 +9,6 @@ import EMC from "./views/EMC.vue";
 import About from "./views/About.vue";
 import Contact from "./views/Contact.vue";
 import Thanks from "./views/Thanks.vue";
-import store from './store.js'
 
 
 Vue.use(Router);

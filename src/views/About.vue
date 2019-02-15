@@ -132,7 +132,7 @@
 													<br>
 													<strong><b>Software:</b></strong> 
 													<br>
-													Adobe Creative Cloud, Microsoft 365
+													Adobe Creative Cloud, Microsoft 365, Sublime, VS Code, SQL Pro, WAMP, MAMP PRO
 													</div>
 												</div>
                       </p>
