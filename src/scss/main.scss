@@ -56,29 +56,6 @@ body {
 }
 
 
-
-
-
-
-// h1{
-
-//     font-family: sailec-thin;
-//     font-size: 1.3em;
-//     font-family: sailec;
-
-// }
-
-@media (min-width: 768px) {
-
-  // h1{
-
-  //     font-size: 2em;
-  //     font-weight: 300;
-
-  // }
-
-}
-
 .quote div {
   white-space: nowrap;
 }
@@ -217,3 +194,51 @@ p {
 .no-dec{
   text-decoration: none !important;
 }
+
+.works-bg{
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  clip-path: circle(24% at 50% 41%);
+  background-position: 50%;
+  transition: all .5s ease-out;
+  transition-delay: 0s;
+  opacity: .3;
+}
+
+.works-btn{
+  margin-bottom: -10px;
+  margin-top: 10px;
+
+  font-size: 3.5em;
+  cursor: pointer;
+  opacity: .4;
+  transition: all .25s;
+  &:hover{
+    opacity: 1;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .works-btn{
+    font-size: 2em;
+  }
+
+}
+
+
+.f-300{
+  font-weight: 300;
+}
+
+.works-holder{
+
+  height: 35vh;
+
+}
+

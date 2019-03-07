@@ -7,7 +7,7 @@
 
       
         <div class="navbar-nav ml-auto d-none d-sm-block">
-            <router-link class="nav-item nav-link mx-2" to="/">works</router-link>
+            <router-link class="nav-item nav-link mx-2" to="/works">works</router-link>
 
             <router-link class="nav-item nav-link mx-2" to="/about">about</router-link>
           

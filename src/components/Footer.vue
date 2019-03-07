@@ -46,8 +46,8 @@
         </div>
         <div class="row mb-0 mx-auto breadcrumb bg-black mr-5 pr-md-5">
             <div class="col-12 col-lg-6 ml-lg-1 pl-auto">
-                <a href="#">
-                    <p class=" text-lg-left" style="color: #444137;">
+                <a href="/about">
+                    <p class=" text-lg-left" style="color: #444137; text-decoration: none;">
                         SMT Designs 2019 designed and developed by Stephen Mark Toms
                     </p>
                 </a>
