@@ -81,6 +81,7 @@
                 <div class="row breakout d-none d-md-block" style="">
                   <div class="embed-responsive embed-responsive-16by9">
                     <video class="embed-responsive-item" autoplay muted loop> 
+                      <source :src="require('@/assets/case-studies/studio-eleven/movie.webm')" type="video/webm">
                       <source :src="require('@/assets/case-studies/studio-eleven/movie.mp4')" type="video/mp4">
                     </video>
                   </div>
