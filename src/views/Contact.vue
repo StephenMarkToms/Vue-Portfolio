@@ -49,7 +49,7 @@
                         
                       </p>
                   </div>
-                  <div class="col-4">
+                  <div class="col-12 col-md-4">
                     <!-- <form @submit.prevent="handleSubmit"> -->
                     <form action="https://smt.design/email.php" method="POST">
                       <div class="form-group text-white">
