@@ -37,7 +37,7 @@
               <div class="page-container">
                 <div class="row breakout mx-2 my-5 pb-5" >
 								<div class="col-12 col-md-7">
-									<h2 class="text-white text-left"><span style="font-weight: 200; font-size: 1.1em;">My Story </span></h2>
+									<h2 class="mt-5 mt-md-0 text-white text-left"><span style="font-weight: 200; font-size: 1.1em;">My Story </span></h2>
 									<p class="text-left text-white" style="font-size: 1.1em;">
 										 I was very young when my father died. But everyone tells me that his relationship with technology was effortless, he spoke gently and listened carefully, and he was never without a camera. It’s incredible that DNA can leave such a legacy. 
                      <br><br>
@@ -68,10 +68,10 @@
                     &nbsp;
                   </div>
                 </div> -->
-                <div class="row py-5 px-5 breakout justify-content-center" style="background-color: white;">
+                <div class="row py-5 px-md-5 breakout justify-content-center" style="background-color: white;">
                   <div class="px-0 px-md-5 mx-5 my-auto col-12" style="background-position: 100% 27%; " >
                     <p class="mx-5 px-5 text-left text-black" style="font-size: 1.5em; font-weight: 100;">
-                        <span class="text-left " style="font-size: 1.3em;"> 
+                        <span class="text-center text-md-left"> 
                           EXPERIENCE
                         </span>
                         <br>
@@ -148,7 +148,7 @@
                   </div>
                 </div>
                 
-                <router-link class="no-dec" to="/">
+                <router-link class="no-dec" to="/works">
                   <div class="row mt-5 pt-5 breakout justify-content-center">
                     <div class="col mt-5" style="background-color: #252525;" >
                       <h4 class="no-dec my-auto " style="color: rgb(165, 165, 165); padding-top: 15%; padding-bottom: 15%;">View <span style="color: white;">works</span></h4>
@@ -176,6 +176,13 @@
 </template>
 
 <style lang="scss" scoped>
+
+  @media(max-width: 500px){
+    .page-container{
+        margin-left: 0vw; 
+        margin-right: 0vw; 
+    }
+  }
 
   .link{
     color: white;
